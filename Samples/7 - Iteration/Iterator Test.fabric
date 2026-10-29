@@ -1,0 +1,3394 @@
+{
+  "connections" : [
+
+  ],
+  "notes" : [
+
+  ],
+  "id" : "FDFE2BE2-DDB0-437E-9C2E-ED404A18692E",
+  "version" : {
+    "beta" : {
+
+    }
+  },
+  "requiredPlugins" : [
+    {
+      "id" : "graphics.fabric.CoreNodes"
+    }
+  ],
+  "nodeMap" : [
+    {
+      "type" : "graphics.fabric.CoreNodes\/DirectionalLightNode",
+      "value" : {
+        "ports" : [
+          {
+            "name" : "inputLookAt",
+            "payload" : {
+              "base" : {
+                "name" : "Look At",
+                "parameter" : {
+                  "type" : "float3",
+                  "base" : {
+                    "label" : "Look At",
+                    "defaultValue" : [
+                      0,
+                      0,
+                      0
+                    ],
+                    "min" : [
+                      0,
+                      0,
+                      0
+                    ],
+                    "max" : [
+                      1,
+                      1,
+                      1
+                    ],
+                    "value" : [
+                      0,
+                      0,
+                      0
+                    ],
+                    "id" : "B7FE8660-0D1A-4727-BAE6-6875782DF240",
+                    "description" : "Target position the light points toward",
+                    "controlType" : "inputfield"
+                  }
+                },
+                "published" : false,
+                "portDescription" : "Target position the light points toward",
+                "kind" : "Inlet",
+                "id" : "B7FE8660-0D1A-4727-BAE6-6875782DF240"
+              },
+              "isParameterPort" : true,
+              "isProxyPort" : false,
+              "type" : "Vector 3"
+            }
+          },
+          {
+            "name" : "inputColor",
+            "payload" : {
+              "base" : {
+                "kind" : "Inlet",
+                "published" : false,
+                "name" : "Color",
+                "portDescription" : "RGB color of the light",
+                "id" : "43F3AE4D-F5AA-45B2-B4A1-B63ABF08F4A6",
+                "parameter" : {
+                  "type" : "float3",
+                  "base" : {
+                    "label" : "Color",
+                    "defaultValue" : [
+                      1,
+                      1,
+                      1
+                    ],
+                    "min" : [
+                      0,
+                      0,
+                      0
+                    ],
+                    "max" : [
+                      1,
+                      1,
+                      1
+                    ],
+                    "value" : [
+                      1,
+                      1,
+                      1
+                    ],
+                    "id" : "43F3AE4D-F5AA-45B2-B4A1-B63ABF08F4A6",
+                    "description" : "RGB color of the light",
+                    "controlType" : "inputfield"
+                  }
+                }
+              },
+              "isParameterPort" : true,
+              "type" : "Vector 3",
+              "isProxyPort" : false
+            }
+          },
+          {
+            "name" : "inputIntensity",
+            "payload" : {
+              "base" : {
+                "parameter" : {
+                  "type" : "float",
+                  "base" : {
+                    "label" : "Intensity",
+                    "defaultValue" : 1,
+                    "min" : 0,
+                    "max" : 10,
+                    "value" : 1,
+                    "id" : "DAE10284-639A-433D-A1E1-A9B430072E28",
+                    "description" : "Brightness multiplier for the light",
+                    "controlType" : "slider"
+                  }
+                },
+                "kind" : "Inlet",
+                "portDescription" : "Brightness multiplier for the light",
+                "id" : "DAE10284-639A-433D-A1E1-A9B430072E28",
+                "name" : "Intensity",
+                "published" : false
+              },
+              "isProxyPort" : false,
+              "type" : "Float",
+              "isParameterPort" : true
+            }
+          },
+          {
+            "name" : "inputShadowStrength",
+            "payload" : {
+              "base" : {
+                "kind" : "Inlet",
+                "name" : "Shadow Strength",
+                "parameter" : {
+                  "type" : "float",
+                  "base" : {
+                    "label" : "Shadow Strength",
+                    "defaultValue" : 0.5,
+                    "min" : 0,
+                    "max" : 1,
+                    "value" : 0.5,
+                    "id" : "2A2C25D0-969E-4E0F-97F7-16D7C903C57B",
+                    "description" : "Opacity of cast shadows (0 = invisible, 1 = fully dark)",
+                    "controlType" : "slider"
+                  }
+                },
+                "published" : false,
+                "id" : "2A2C25D0-969E-4E0F-97F7-16D7C903C57B",
+                "portDescription" : "Opacity of cast shadows (0 = invisible, 1 = fully dark)"
+              },
+              "isParameterPort" : true,
+              "type" : "Float",
+              "isProxyPort" : false
+            }
+          },
+          {
+            "name" : "inputShadowRadius",
+            "payload" : {
+              "isProxyPort" : false,
+              "isParameterPort" : true,
+              "type" : "Float",
+              "base" : {
+                "id" : "5635F5ED-8096-4AAA-8DE0-7FB3F178C8CB",
+                "published" : false,
+                "portDescription" : "Blur radius for soft shadow edges",
+                "parameter" : {
+                  "base" : {
+                    "label" : "Shadow Radius",
+                    "defaultValue" : 2,
+                    "min" : 0,
+                    "max" : 16,
+                    "value" : 2,
+                    "id" : "5635F5ED-8096-4AAA-8DE0-7FB3F178C8CB",
+                    "controlType" : "slider",
+                    "description" : "Blur radius for soft shadow edges"
+                  },
+                  "type" : "float"
+                },
+                "kind" : "Inlet",
+                "name" : "Shadow Radius"
+              }
+            }
+          },
+          {
+            "name" : "inputShadowBias",
+            "payload" : {
+              "type" : "Float",
+              "isProxyPort" : false,
+              "base" : {
+                "published" : false,
+                "parameter" : {
+                  "type" : "float",
+                  "base" : {
+                    "label" : "Shadow Bias",
+                    "defaultValue" : 0.005,
+                    "min" : 0,
+                    "max" : 1,
+                    "value" : 0.005,
+                    "id" : "F548D4A1-1CED-45D4-A379-FA94A2125F1E",
+                    "description" : "Offset to prevent shadow acne artifacts",
+                    "controlType" : "slider"
+                  }
+                },
+                "kind" : "Inlet",
+                "portDescription" : "Offset to prevent shadow acne artifacts",
+                "name" : "Shadow Bias",
+                "id" : "F548D4A1-1CED-45D4-A379-FA94A2125F1E"
+              },
+              "isParameterPort" : true
+            }
+          },
+          {
+            "name" : "inputVisible",
+            "payload" : {
+              "isProxyPort" : false,
+              "type" : "Bool",
+              "base" : {
+                "kind" : "Inlet",
+                "parameter" : {
+                  "base" : {
+                    "id" : "EEBB54B6-503A-4C84-B743-7AA6638C76B0",
+                    "label" : "Visible",
+                    "value" : true,
+                    "controlType" : "button",
+                    "description" : "When enabled, the object is rendered in the scene",
+                    "defaultValue" : true
+                  },
+                  "type" : "bool"
+                },
+                "published" : false,
+                "id" : "EEBB54B6-503A-4C84-B743-7AA6638C76B0",
+                "portDescription" : "When enabled, the object is rendered in the scene",
+                "name" : "Visible"
+              },
+              "isParameterPort" : true
+            }
+          },
+          {
+            "name" : "inputRenderOrder",
+            "payload" : {
+              "isParameterPort" : true,
+              "type" : "Int",
+              "isProxyPort" : false,
+              "base" : {
+                "kind" : "Inlet",
+                "parameter" : {
+                  "type" : "int",
+                  "base" : {
+                    "label" : "Render Order",
+                    "defaultValue" : 0,
+                    "min" : 0,
+                    "max" : 1,
+                    "value" : 0,
+                    "id" : "79857345-12C1-4B0C-90FC-EC8ADA57F27E",
+                    "controlType" : "inputfield",
+                    "description" : "Draw order within the same render pass (lower = earlier)"
+                  }
+                },
+                "published" : false,
+                "portDescription" : "Draw order within the same render pass (lower = earlier)",
+                "name" : "Render Order",
+                "id" : "79857345-12C1-4B0C-90FC-EC8ADA57F27E"
+              }
+            }
+          },
+          {
+            "name" : "inputPosition",
+            "payload" : {
+              "type" : "Vector 3",
+              "base" : {
+                "parameter" : {
+                  "base" : {
+                    "label" : "Position",
+                    "defaultValue" : [
+                      0,
+                      0,
+                      0
+                    ],
+                    "min" : [
+                      0,
+                      0,
+                      0
+                    ],
+                    "max" : [
+                      1,
+                      1,
+                      1
+                    ],
+                    "value" : [
+                      1,
+                      2,
+                      5
+                    ],
+                    "id" : "183D861C-1545-4F8B-B658-D7EDA7B59F14",
+                    "controlType" : "inputfield",
+                    "description" : "Position in 3D space (X, Y, Z) in world units"
+                  },
+                  "type" : "float3"
+                },
+                "name" : "Position",
+                "id" : "183D861C-1545-4F8B-B658-D7EDA7B59F14",
+                "published" : false,
+                "portDescription" : "Position in 3D space (X, Y, Z) in world units",
+                "kind" : "Inlet"
+              },
+              "isParameterPort" : true,
+              "isProxyPort" : false
+            }
+          },
+          {
+            "name" : "inputScale",
+            "payload" : {
+              "base" : {
+                "name" : "Scale",
+                "parameter" : {
+                  "base" : {
+                    "label" : "Scale",
+                    "defaultValue" : [
+                      1,
+                      1,
+                      1
+                    ],
+                    "min" : [
+                      0,
+                      0,
+                      0
+                    ],
+                    "max" : [
+                      1,
+                      1,
+                      1
+                    ],
+                    "value" : [
+                      1,
+                      1,
+                      1
+                    ],
+                    "id" : "AA5E1864-0C31-410C-87B3-2944FF17CF27",
+                    "description" : "Scale factor along each axis (X, Y, Z)",
+                    "controlType" : "inputfield"
+                  },
+                  "type" : "float3"
+                },
+                "kind" : "Inlet",
+                "published" : false,
+                "portDescription" : "Scale factor along each axis (X, Y, Z)",
+                "id" : "AA5E1864-0C31-410C-87B3-2944FF17CF27"
+              },
+              "type" : "Vector 3",
+              "isProxyPort" : false,
+              "isParameterPort" : true
+            }
+          },
+          {
+            "name" : "inputOrientation",
+            "payload" : {
+              "isParameterPort" : true,
+              "type" : "Vector 4",
+              "isProxyPort" : false,
+              "base" : {
+                "name" : "Orientation",
+                "kind" : "Inlet",
+                "published" : false,
+                "portDescription" : "Orientation as quaternion (X, Y, Z, W)",
+                "id" : "2084C308-8DC1-4144-927E-6A35E62887DB",
+                "parameter" : {
+                  "base" : {
+                    "label" : "Orientation",
+                    "defaultValue" : [
+                      0,
+                      0,
+                      0,
+                      0
+                    ],
+                    "min" : [
+                      0,
+                      0,
+                      0,
+                      0
+                    ],
+                    "max" : [
+                      1,
+                      1,
+                      1,
+                      1
+                    ],
+                    "value" : [
+                      0,
+                      0,
+                      0,
+                      0
+                    ],
+                    "id" : "2084C308-8DC1-4144-927E-6A35E62887DB",
+                    "description" : "Orientation as quaternion (X, Y, Z, W)",
+                    "controlType" : "inputfield"
+                  },
+                  "type" : "float4"
+                }
+              }
+            }
+          }
+        ],
+        "nodeOffset" : [
+          -378.0338918169691,
+          205.9482373322562
+        ],
+        "id" : "C1AD51D6-2FD7-49F4-B1E6-A2F8B968BEC0"
+      }
+    },
+    {
+      "type" : "graphics.fabric.CoreNodes\/IteratorNode",
+      "value" : {
+        "nodeOffset" : [
+          -383.7822907099371,
+          -88.0012756403712
+        ],
+        "subGraph" : {
+          "connections" : [
+            {
+              "inletPortID" : "373F6F6B-B435-445D-81C3-D1B7B7D69B1D",
+              "active" : true,
+              "outletPortID" : "338807B0-8D76-4E22-A115-D6DE741ABFCD",
+              "id" : "724436A6-5E87-4EED-9669-E0DE99CAEBE6"
+            },
+            {
+              "inletPortID" : "A6EC639E-43B0-4ACB-9460-25D5E4A77E92",
+              "active" : true,
+              "outletPortID" : "C01BBD75-4D7B-452A-9295-7501B2BC7632",
+              "id" : "CD950E76-5A93-493D-98E8-F8860A52EA4A"
+            },
+            {
+              "inletPortID" : "475464DE-01B6-42E9-A965-AAA5CCA3C342",
+              "active" : true,
+              "outletPortID" : "F4E94447-69A3-45B2-A9B0-AC80B36531C4",
+              "id" : "2E1FC8D4-04DE-43F6-800A-2E83B099DBA5"
+            },
+            {
+              "inletPortID" : "FD8450C3-15B4-466D-B009-DDFDDBFEA934",
+              "active" : true,
+              "outletPortID" : "8A028C1B-3045-4094-BC44-879CF27F7B0D",
+              "id" : "FD75E702-89D8-4A9A-98A5-60CCA73B32D3"
+            },
+            {
+              "inletPortID" : "A461E779-4DA2-442B-8C51-B6B708C6A5E0",
+              "active" : true,
+              "outletPortID" : "8A028C1B-3045-4094-BC44-879CF27F7B0D",
+              "id" : "8DB77849-2E30-4981-AD7F-5CE8BF65E6D7"
+            },
+            {
+              "inletPortID" : "DA82DAC7-1413-4D04-ABD8-BD534D4A201E",
+              "active" : true,
+              "outletPortID" : "C28FE262-13A8-4A8B-81AB-8FA728F0D411",
+              "id" : "71F27A75-EAB2-42C7-93C2-4A2BA72327A2"
+            },
+            {
+              "inletPortID" : "55E1BB8E-E4DC-4F78-8D02-539B512B7678",
+              "active" : true,
+              "outletPortID" : "BDE95813-498E-4925-B4E1-0393FCF57892",
+              "id" : "A64963F9-1B3C-425F-81A2-A92DA1F5F192"
+            },
+            {
+              "inletPortID" : "F878A952-3FBF-4B98-86EE-9F2123C25768",
+              "active" : true,
+              "outletPortID" : "048D3EB7-40DF-4F6F-A735-B85161E9AE6C",
+              "id" : "FCA2844C-8BC2-4920-ABE8-40C7CCB8A81B"
+            },
+            {
+              "inletPortID" : "A394A740-BC70-4EBC-A368-35E87EF4FDB2",
+              "active" : true,
+              "outletPortID" : "A4ED4D03-7777-487F-A6AF-B8A7045936CA",
+              "id" : "A82991AB-96D0-4110-A344-0967D8CD0F73"
+            },
+            {
+              "inletPortID" : "FA3A6998-030A-47B1-84C5-4E53D62B23B0",
+              "active" : true,
+              "outletPortID" : "19FECCEC-4F29-4B74-B32D-0888243B40FB",
+              "id" : "33A2F1A5-3DCC-4154-8F98-7AD2C246CA5C"
+            },
+            {
+              "inletPortID" : "18A9AB66-6458-46FC-BB97-2969A2F7A64C",
+              "active" : true,
+              "outletPortID" : "19FECCEC-4F29-4B74-B32D-0888243B40FB",
+              "id" : "7DEF1428-57DE-4017-8950-DBA2722A5B42"
+            },
+            {
+              "inletPortID" : "72831DCA-B506-4811-8677-4A9A219C272C",
+              "active" : true,
+              "outletPortID" : "BE53D237-ECC2-49AC-A6F9-3DC028BFD712",
+              "id" : "6F7C5250-914D-4E4A-B038-81A681B7D1EC"
+            },
+            {
+              "inletPortID" : "4E06A066-2455-4645-8AAC-9E228011706F",
+              "active" : true,
+              "outletPortID" : "048D3EB7-40DF-4F6F-A735-B85161E9AE6C",
+              "id" : "A62356F6-B29A-4450-8D95-94BA647E5A5C"
+            },
+            {
+              "inletPortID" : "5DBCFB32-73E2-428A-B721-1C5120B5C2DB",
+              "active" : true,
+              "outletPortID" : "5B5C7933-C6BF-45B9-8E61-2364586CC280",
+              "id" : "60ABC96B-C194-4EE9-9700-7B118F2D7F0B"
+            },
+            {
+              "inletPortID" : "88C0C51E-A58C-475E-A488-5BFBFC3862F2",
+              "active" : true,
+              "outletPortID" : "EC7A178C-9DC5-4B29-8C22-137305119FEC",
+              "id" : "96C29D58-AAA7-4F92-941A-016EBFDB48C1"
+            },
+            {
+              "inletPortID" : "DA37D2AE-8D7E-4919-92F9-7BDDFA10099D",
+              "active" : true,
+              "outletPortID" : "552F91FE-F995-4C82-9DC8-FD64AC49C90A",
+              "id" : "53F62218-13FA-407F-8788-E05BDD6D24AE"
+            },
+            {
+              "inletPortID" : "8F5036EE-A194-4318-8AFD-42BD39866A15",
+              "active" : true,
+              "outletPortID" : "D1E3E48D-09A1-44D4-8E01-444F6586C173",
+              "id" : "3BBB9249-A89E-4494-B505-A571FF136E7B"
+            },
+            {
+              "inletPortID" : "6BD3E519-82A6-4ECD-8A56-E3106ACC9807",
+              "active" : true,
+              "outletPortID" : "AA30CB42-3FDE-4504-9953-4364633841BA",
+              "id" : "9EE97A6A-04ED-4A03-B51C-A5E1D50521B6"
+            },
+            {
+              "inletPortID" : "0CFB1A53-616F-4275-A35B-2835745D617F",
+              "active" : true,
+              "outletPortID" : "AAC823E3-C413-4376-AAB2-DC45390BAAE8",
+              "id" : "0B5FFBF7-FE00-4F1C-9009-879D56F6E352"
+            },
+            {
+              "inletPortID" : "A341DB8B-F688-46AB-B661-110FDAC58132",
+              "active" : true,
+              "outletPortID" : "9EEA8482-0BDE-4C75-A77C-BB7148104EE6",
+              "id" : "1B489001-A934-479F-BD0F-B4BB791DD0EF"
+            },
+            {
+              "inletPortID" : "09FC864A-78FC-4F06-B751-2BABAA63065A",
+              "active" : true,
+              "outletPortID" : "65715C26-0001-480F-A845-768437BFC369",
+              "id" : "7FAE83F9-7FFE-4BB3-A4C9-3B245870F395"
+            },
+            {
+              "inletPortID" : "6FE7B6C0-0750-4BFD-9EAE-CC1A9D897F46",
+              "active" : true,
+              "outletPortID" : "866A7321-9410-4839-B968-CA44ABC6E4E8",
+              "id" : "FC27B7CF-6537-42AE-A980-8F2FA2639E34"
+            },
+            {
+              "inletPortID" : "0A162DCE-E33B-41CE-BC04-09F41858B585",
+              "active" : true,
+              "outletPortID" : "866A7321-9410-4839-B968-CA44ABC6E4E8",
+              "id" : "2E9EFE60-E3AB-40E6-8EFB-4A4BB6DC9044"
+            },
+            {
+              "inletPortID" : "BCB168AB-B50C-4CCC-BF2B-6B036E52C4C5",
+              "active" : true,
+              "outletPortID" : "A4ED4D03-7777-487F-A6AF-B8A7045936CA",
+              "id" : "ECAB4319-3387-428B-BA8E-6F53130522CB"
+            },
+            {
+              "inletPortID" : "6BA2F5D2-7BF0-4B50-B8E9-A831ABD66A2A",
+              "active" : true,
+              "outletPortID" : "9EEA8482-0BDE-4C75-A77C-BB7148104EE6",
+              "id" : "4A330E55-8DE5-48C0-A8BB-96D4B87CCBB7"
+            },
+            {
+              "inletPortID" : "442663EA-8CD9-48D6-AA59-48FCB7230CF6",
+              "active" : true,
+              "outletPortID" : "6AF5F606-F0A6-44AA-AC61-7EFD4C63C4FB",
+              "id" : "02D627EF-EAF5-4BE7-A67B-0381D5EC1973"
+            },
+            {
+              "inletPortID" : "756834B2-E8AC-4D8E-BF42-D52E1B6B3EB9",
+              "active" : true,
+              "outletPortID" : "914EC437-3F5E-413C-B2B3-D924BD797AC3",
+              "id" : "2F0476B7-FE40-49A0-AC02-220EF81BBB0C"
+            },
+            {
+              "inletPortID" : "87C5EA89-AF9E-43FE-9AA5-BDE41A43B694",
+              "active" : true,
+              "outletPortID" : "19FECCEC-4F29-4B74-B32D-0888243B40FB",
+              "id" : "B3C10C3D-5A9D-4DD6-9B2D-5540193F05C8"
+            }
+          ],
+          "version" : {
+            "beta" : {
+
+            }
+          },
+          "notes" : [
+
+          ],
+          "id" : "DCEF2348-EF5A-4D17-BAF1-DDE58BDB672A",
+          "requiredPlugins" : [
+            {
+              "id" : "graphics.fabric.CoreNodes"
+            }
+          ],
+          "nodeMap" : [
+            {
+              "type" : "graphics.fabric.CoreNodes\/PassThroughNode<Bool>",
+              "value" : {
+                "nodeOffset" : [
+                  -1120.0349681285006,
+                  -334.1733291155324
+                ],
+                "id" : "096FF29B-6F1A-4B5E-A8EE-A874DC5E5270",
+                "ports" : [
+                  {
+                    "name" : "input",
+                    "payload" : {
+                      "base" : {
+                        "name" : "Bool",
+                        "published" : true,
+                        "kind" : "Inlet",
+                        "id" : "33751250-1750-4100-8500-F731343C0770",
+                        "portDescription" : "Input Bool",
+                        "parameter" : {
+                          "type" : "bool",
+                          "base" : {
+                            "id" : "33751250-1750-4100-8500-F731343C0770",
+                            "label" : "Spin?",
+                            "description" : "Input Bool",
+                            "value" : true,
+                            "controlType" : "button",
+                            "defaultValue" : false
+                          }
+                        },
+                        "publishedName" : "Spin?"
+                      },
+                      "type" : "Bool",
+                      "isParameterPort" : true,
+                      "isProxyPort" : false
+                    }
+                  },
+                  {
+                    "name" : "output",
+                    "payload" : {
+                      "type" : "Bool",
+                      "isParameterPort" : false,
+                      "isProxyPort" : false,
+                      "base" : {
+                        "published" : false,
+                        "kind" : "Outlet",
+                        "id" : "338807B0-8D76-4E22-A115-D6DE741ABFCD",
+                        "name" : "Bool",
+                        "portDescription" : "Output Bool"
+                      }
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "type" : "graphics.fabric.CoreNodes\/MathExpressionNode",
+              "value" : {
+                "nodeOffset" : [
+                  -895.0349681285006,
+                  -321.6733291155324
+                ],
+                "ports" : [
+                  {
+                    "name" : "Amount",
+                    "payload" : {
+                      "type" : "Float",
+                      "isProxyPort" : false,
+                      "base" : {
+                        "name" : "Amount",
+                        "kind" : "Inlet",
+                        "id" : "373F6F6B-B435-445D-81C3-D1B7B7D69B1D",
+                        "published" : false,
+                        "parameter" : {
+                          "type" : "float",
+                          "base" : {
+                            "controlType" : "inputfield",
+                            "id" : "373F6F6B-B435-445D-81C3-D1B7B7D69B1D",
+                            "max" : 1,
+                            "min" : 0,
+                            "label" : "Amount",
+                            "defaultValue" : 0,
+                            "description" : "",
+                            "value" : 1
+                          }
+                        }
+                      },
+                      "isParameterPort" : true
+                    }
+                  },
+                  {
+                    "name" : "Speed",
+                    "payload" : {
+                      "type" : "Float",
+                      "isProxyPort" : false,
+                      "isParameterPort" : true,
+                      "base" : {
+                        "parameter" : {
+                          "type" : "float",
+                          "base" : {
+                            "value" : 2,
+                            "label" : "Speed",
+                            "defaultValue" : 0,
+                            "min" : 0,
+                            "id" : "2E127E13-9B6D-436E-9954-97F3340A8315",
+                            "controlType" : "inputfield",
+                            "description" : "",
+                            "max" : 1
+                          }
+                        },
+                        "id" : "2E127E13-9B6D-436E-9954-97F3340A8315",
+                        "published" : true,
+                        "kind" : "Inlet",
+                        "name" : "Speed"
+                      }
+                    }
+                  },
+                  {
+                    "name" : "result",
+                    "payload" : {
+                      "base" : {
+                        "id" : "C01BBD75-4D7B-452A-9295-7501B2BC7632",
+                        "name" : "result",
+                        "published" : false,
+                        "kind" : "Outlet"
+                      },
+                      "type" : "Float",
+                      "isParameterPort" : false,
+                      "isProxyPort" : false
+                    }
+                  }
+                ],
+                "stringExpression" : "Amount * Speed",
+                "id" : "300FEACB-A0A9-4BBB-9243-3616E262256E"
+              }
+            },
+            {
+              "value" : {
+                "strategy" : "Spring",
+                "nodeOffset" : [
+                  -670.0349681285006,
+                  -296.6733291155324
+                ],
+                "id" : "E2D12D04-0D80-4225-ABF6-86DFF58C0409",
+                "ports" : [
+                  {
+                    "payload" : {
+                      "type" : "Float",
+                      "base" : {
+                        "name" : "Number",
+                        "parameter" : {
+                          "type" : "float",
+                          "base" : {
+                            "id" : "A6EC639E-43B0-4ACB-9460-25D5E4A77E92",
+                            "defaultValue" : 0,
+                            "controlType" : "inputfield",
+                            "min" : 0,
+                            "max" : 1,
+                            "label" : "Number",
+                            "description" : "Value to smooth",
+                            "value" : 2
+                          }
+                        },
+                        "id" : "A6EC639E-43B0-4ACB-9460-25D5E4A77E92",
+                        "published" : false,
+                        "kind" : "Inlet",
+                        "portDescription" : "Value to smooth"
+                      },
+                      "isParameterPort" : true,
+                      "isProxyPort" : false
+                    },
+                    "name" : "inputNumber"
+                  },
+                  {
+                    "payload" : {
+                      "isParameterPort" : true,
+                      "base" : {
+                        "kind" : "Inlet",
+                        "published" : false,
+                        "portDescription" : "Smoothing amount: 0 barely smooths, 1 smooths heavily",
+                        "parameter" : {
+                          "base" : {
+                            "label" : "Smoothing",
+                            "max" : 1,
+                            "value" : 0.5,
+                            "min" : 0,
+                            "id" : "66C78B1E-AFA7-469A-8349-2C9F03ED7493",
+                            "defaultValue" : 0.5,
+                            "controlType" : "inputfield",
+                            "description" : "Smoothing amount: 0 barely smooths, 1 smooths heavily"
+                          },
+                          "type" : "float"
+                        },
+                        "id" : "66C78B1E-AFA7-469A-8349-2C9F03ED7493",
+                        "name" : "Smoothing"
+                      },
+                      "isProxyPort" : false,
+                      "type" : "Float"
+                    },
+                    "name" : "inputSmoothing"
+                  },
+                  {
+                    "payload" : {
+                      "isParameterPort" : true,
+                      "type" : "Float",
+                      "isProxyPort" : false,
+                      "base" : {
+                        "id" : "D6A91831-7349-429A-893B-C38B0F2A9D34",
+                        "kind" : "Inlet",
+                        "name" : "Damping",
+                        "published" : false,
+                        "portDescription" : "0 is bouncy (overshoots), ~0.5 is critically damped, 1 is overdamped (sluggish)",
+                        "parameter" : {
+                          "base" : {
+                            "controlType" : "inputfield",
+                            "label" : "Damping",
+                            "min" : 0,
+                            "max" : 1,
+                            "defaultValue" : 0.5,
+                            "description" : "0 is bouncy (overshoots), ~0.5 is critically damped, 1 is overdamped (sluggish)",
+                            "id" : "D6A91831-7349-429A-893B-C38B0F2A9D34",
+                            "value" : 0.2
+                          },
+                          "type" : "float"
+                        }
+                      }
+                    },
+                    "name" : "inputDamping"
+                  },
+                  {
+                    "payload" : {
+                      "isParameterPort" : true,
+                      "base" : {
+                        "kind" : "Inlet",
+                        "published" : false,
+                        "id" : "B8C4A767-8BB9-44B2-833A-37A851A56EC0",
+                        "parameter" : {
+                          "base" : {
+                            "options" : [
+                              "Up & Down",
+                              "Up",
+                              "Down"
+                            ],
+                            "description" : "Which direction is smoothed; the other tracks instantly. Down is VU-meter style.",
+                            "label" : "Direction",
+                            "defaultValue" : "Up & Down",
+                            "value" : "Up & Down",
+                            "id" : "B8C4A767-8BB9-44B2-833A-37A851A56EC0",
+                            "controlType" : "dropdown"
+                          },
+                          "type" : "string"
+                        },
+                        "portDescription" : "Which direction is smoothed; the other tracks instantly. Down is VU-meter style.",
+                        "name" : "Direction"
+                      },
+                      "isProxyPort" : false,
+                      "type" : "String"
+                    },
+                    "name" : "inputDirection"
+                  },
+                  {
+                    "payload" : {
+                      "isParameterPort" : false,
+                      "type" : "Float",
+                      "isProxyPort" : false,
+                      "base" : {
+                        "name" : "Number",
+                        "published" : false,
+                        "portDescription" : "Smoothed value",
+                        "id" : "F4E94447-69A3-45B2-A9B0-AC80B36531C4",
+                        "kind" : "Outlet"
+                      }
+                    },
+                    "name" : "outputNumber"
+                  }
+                ]
+              },
+              "type" : "graphics.fabric.CoreNodes\/NumberSmoothNode"
+            },
+            {
+              "value" : {
+                "nodeOffset" : [
+                  -454.2094835432281,
+                  -321.3495666730978
+                ],
+                "id" : "78F57638-35E6-4C8A-98E3-C8218BDC0BDE",
+                "ports" : [
+                  {
+                    "payload" : {
+                      "type" : "Float",
+                      "isParameterPort" : true,
+                      "base" : {
+                        "name" : "Number",
+                        "kind" : "Inlet",
+                        "portDescription" : "Value to integrate over time",
+                        "published" : false,
+                        "id" : "475464DE-01B6-42E9-A965-AAA5CCA3C342",
+                        "parameter" : {
+                          "type" : "float",
+                          "base" : {
+                            "label" : "Number",
+                            "controlType" : "inputfield",
+                            "id" : "475464DE-01B6-42E9-A965-AAA5CCA3C342",
+                            "min" : 0,
+                            "max" : 1,
+                            "defaultValue" : 0,
+                            "description" : "Value to integrate over time",
+                            "value" : 2
+                          }
+                        }
+                      },
+                      "isProxyPort" : false
+                    },
+                    "name" : "inputNumber"
+                  },
+                  {
+                    "payload" : {
+                      "type" : "Bool",
+                      "isProxyPort" : false,
+                      "isParameterPort" : true,
+                      "base" : {
+                        "published" : false,
+                        "portDescription" : "Hold the Integral at zero while on",
+                        "name" : "Reset",
+                        "kind" : "Inlet",
+                        "id" : "4FE41596-F54E-45E4-8EA1-E260BDC885D3",
+                        "parameter" : {
+                          "type" : "bool",
+                          "base" : {
+                            "description" : "Hold the Integral at zero while on",
+                            "controlType" : "button",
+                            "label" : "Reset",
+                            "id" : "4FE41596-F54E-45E4-8EA1-E260BDC885D3",
+                            "value" : false,
+                            "defaultValue" : false
+                          }
+                        }
+                      }
+                    },
+                    "name" : "inputReset"
+                  },
+                  {
+                    "payload" : {
+                      "type" : "Float",
+                      "isProxyPort" : false,
+                      "isParameterPort" : false,
+                      "base" : {
+                        "published" : false,
+                        "kind" : "Outlet",
+                        "name" : "Number",
+                        "portDescription" : "Accumulated sum of input values over time",
+                        "id" : "8A028C1B-3045-4094-BC44-879CF27F7B0D"
+                      }
+                    },
+                    "name" : "outputNumber"
+                  }
+                ]
+              },
+              "type" : "graphics.fabric.CoreNodes\/NumberIntegralNode"
+            },
+            {
+              "value" : {
+                "strategy" : "Euler",
+                "ports" : [
+                  {
+                    "name" : "inputX",
+                    "payload" : {
+                      "type" : "Float",
+                      "base" : {
+                        "name" : "X (Pitch)",
+                        "id" : "FD8450C3-15B4-466D-B009-DDFDDBFEA934",
+                        "published" : false,
+                        "portDescription" : "Rotation around the X axis in degrees",
+                        "kind" : "Inlet",
+                        "parameter" : {
+                          "type" : "float",
+                          "base" : {
+                            "value" : 1127.9893,
+                            "controlType" : "inputfield",
+                            "min" : 0,
+                            "defaultValue" : 0,
+                            "label" : "X (Pitch)",
+                            "max" : 1,
+                            "id" : "FD8450C3-15B4-466D-B009-DDFDDBFEA934",
+                            "description" : "Rotation around the X axis in degrees"
+                          }
+                        }
+                      },
+                      "isProxyPort" : false,
+                      "isParameterPort" : true
+                    }
+                  },
+                  {
+                    "name" : "inputY",
+                    "payload" : {
+                      "isProxyPort" : false,
+                      "base" : {
+                        "id" : "A461E779-4DA2-442B-8C51-B6B708C6A5E0",
+                        "kind" : "Inlet",
+                        "parameter" : {
+                          "base" : {
+                            "min" : 0,
+                            "max" : 1,
+                            "defaultValue" : 0,
+                            "description" : "Rotation around the Y axis in degrees",
+                            "label" : "Y (Yaw)",
+                            "value" : 1127.9893,
+                            "id" : "A461E779-4DA2-442B-8C51-B6B708C6A5E0",
+                            "controlType" : "inputfield"
+                          },
+                          "type" : "float"
+                        },
+                        "published" : false,
+                        "name" : "Y (Yaw)",
+                        "portDescription" : "Rotation around the Y axis in degrees"
+                      },
+                      "isParameterPort" : true,
+                      "type" : "Float"
+                    }
+                  },
+                  {
+                    "name" : "inputZ",
+                    "payload" : {
+                      "isParameterPort" : true,
+                      "isProxyPort" : false,
+                      "type" : "Float",
+                      "base" : {
+                        "id" : "F878A952-3FBF-4B98-86EE-9F2123C25768",
+                        "name" : "Z (Roll)",
+                        "kind" : "Inlet",
+                        "parameter" : {
+                          "type" : "float",
+                          "base" : {
+                            "value" : 1,
+                            "controlType" : "inputfield",
+                            "description" : "Rotation around the Z axis in degrees",
+                            "defaultValue" : 0,
+                            "min" : 0,
+                            "id" : "F878A952-3FBF-4B98-86EE-9F2123C25768",
+                            "label" : "Z (Roll)",
+                            "max" : 1
+                          }
+                        },
+                        "published" : false,
+                        "portDescription" : "Rotation around the Z axis in degrees"
+                      }
+                    }
+                  },
+                  {
+                    "name" : "outputOrientation",
+                    "payload" : {
+                      "isProxyPort" : false,
+                      "isParameterPort" : false,
+                      "base" : {
+                        "name" : "Orientation",
+                        "published" : false,
+                        "kind" : "Outlet",
+                        "id" : "C28FE262-13A8-4A8B-81AB-8FA728F0D411",
+                        "portDescription" : "Quaternion orientation (X, Y, Z, W)"
+                      },
+                      "type" : "Vector 4"
+                    }
+                  }
+                ],
+                "nodeOffset" : [
+                  -232.0415048281102,
+                  -235.5407757085959
+                ],
+                "id" : "DF50CD9C-86EF-4052-8C5B-28DB7371E1B2"
+              },
+              "type" : "graphics.fabric.CoreNodes\/ComposeOrientationNode"
+            },
+            {
+              "value" : {
+                "ports" : [
+                  {
+                    "payload" : {
+                      "isProxyPort" : false,
+                      "type" : "Float",
+                      "base" : {
+                        "id" : "8D9C43D2-0215-4506-AAB4-C4979F282A0A",
+                        "portDescription" : "Width of the box along the X axis in world units",
+                        "name" : "Width",
+                        "kind" : "Inlet",
+                        "published" : false,
+                        "parameter" : {
+                          "base" : {
+                            "controlType" : "inputfield",
+                            "max" : 1,
+                            "min" : 0,
+                            "description" : "Width of the box along the X axis in world units",
+                            "label" : "Width",
+                            "defaultValue" : 1,
+                            "id" : "8D9C43D2-0215-4506-AAB4-C4979F282A0A",
+                            "value" : 1
+                          },
+                          "type" : "float"
+                        }
+                      },
+                      "isParameterPort" : true
+                    },
+                    "name" : "inputWidthParam"
+                  },
+                  {
+                    "payload" : {
+                      "base" : {
+                        "kind" : "Inlet",
+                        "parameter" : {
+                          "type" : "float",
+                          "base" : {
+                            "description" : "Height of the box along the Y axis in world units",
+                            "label" : "Height",
+                            "id" : "38615ADD-4641-4DF6-801F-51C8C42DF584",
+                            "defaultValue" : 1,
+                            "value" : 1,
+                            "controlType" : "inputfield",
+                            "min" : 0,
+                            "max" : 1
+                          }
+                        },
+                        "name" : "Height",
+                        "published" : false,
+                        "portDescription" : "Height of the box along the Y axis in world units",
+                        "id" : "38615ADD-4641-4DF6-801F-51C8C42DF584"
+                      },
+                      "type" : "Float",
+                      "isParameterPort" : true,
+                      "isProxyPort" : false
+                    },
+                    "name" : "inputHeightParam"
+                  },
+                  {
+                    "payload" : {
+                      "type" : "Float",
+                      "isParameterPort" : true,
+                      "isProxyPort" : false,
+                      "base" : {
+                        "published" : false,
+                        "portDescription" : "Depth of the box along the Z axis in world units",
+                        "id" : "30A82518-7BB6-40CE-A5D7-5875CE30398B",
+                        "name" : "Depth",
+                        "parameter" : {
+                          "type" : "float",
+                          "base" : {
+                            "max" : 1,
+                            "description" : "Depth of the box along the Z axis in world units",
+                            "id" : "30A82518-7BB6-40CE-A5D7-5875CE30398B",
+                            "defaultValue" : 1,
+                            "label" : "Depth",
+                            "controlType" : "inputfield",
+                            "min" : 0,
+                            "value" : 1
+                          }
+                        },
+                        "kind" : "Inlet"
+                      }
+                    },
+                    "name" : "inputDepthParam"
+                  },
+                  {
+                    "payload" : {
+                      "type" : "Vector 3",
+                      "isProxyPort" : false,
+                      "base" : {
+                        "name" : "Resolution",
+                        "kind" : "Inlet",
+                        "portDescription" : "Number of segments along each axis (X, Y, Z)",
+                        "parameter" : {
+                          "base" : {
+                            "value" : [
+                              1,
+                              1,
+                              1
+                            ],
+                            "max" : [
+                              1,
+                              1,
+                              1
+                            ],
+                            "label" : "Resolution",
+                            "description" : "Number of segments along each axis (X, Y, Z)",
+                            "defaultValue" : [
+                              1,
+                              1,
+                              1
+                            ],
+                            "controlType" : "inputfield",
+                            "min" : [
+                              0,
+                              0,
+                              0
+                            ],
+                            "id" : "1B6832AD-4661-4D26-B24D-DE66083BDA03"
+                          },
+                          "type" : "float3"
+                        },
+                        "published" : false,
+                        "id" : "1B6832AD-4661-4D26-B24D-DE66083BDA03"
+                      },
+                      "isParameterPort" : true
+                    },
+                    "name" : "inputResolutionParam"
+                  },
+                  {
+                    "payload" : {
+                      "base" : {
+                        "portDescription" : "Rendering primitive type for the geometry mesh",
+                        "id" : "6D3DABE7-8E82-461E-BB2F-98619FF7D545",
+                        "kind" : "Inlet",
+                        "parameter" : {
+                          "type" : "string",
+                          "base" : {
+                            "label" : "Primitive",
+                            "description" : "Rendering primitive type for the geometry mesh",
+                            "value" : "Triangle",
+                            "id" : "6D3DABE7-8E82-461E-BB2F-98619FF7D545",
+                            "controlType" : "dropdown",
+                            "options" : [
+                              "Point",
+                              "Line",
+                              "Line Strip",
+                              "Triangle",
+                              "Triangle Strip"
+                            ],
+                            "defaultValue" : "Triangle"
+                          }
+                        },
+                        "name" : "Primitive",
+                        "published" : false
+                      },
+                      "type" : "String",
+                      "isProxyPort" : false,
+                      "isParameterPort" : true
+                    },
+                    "name" : "inputPrimitiveType"
+                  },
+                  {
+                    "payload" : {
+                      "isParameterPort" : false,
+                      "type" : "Geometry",
+                      "isProxyPort" : false,
+                      "base" : {
+                        "published" : false,
+                        "portDescription" : "The generated geometry mesh",
+                        "kind" : "Outlet",
+                        "id" : "914EC437-3F5E-413C-B2B3-D924BD797AC3",
+                        "name" : "Geometry"
+                      }
+                    },
+                    "name" : "outputGeometry"
+                  }
+                ],
+                "nodeOffset" : [
+                  -205.82859491625004,
+                  56.26782702928449
+                ],
+                "id" : "3872ECF2-A2D4-4E7C-BE7F-EC980634B805"
+              },
+              "type" : "graphics.fabric.CoreNodes\/BoxGeometryNode"
+            },
+            {
+              "value" : {
+                "ports" : [
+                  {
+                    "name" : "inputDiffuseTexture",
+                    "payload" : {
+                      "base" : {
+                        "name" : "Diffuse Texture",
+                        "portDescription" : "Base color\/albedo texture map",
+                        "kind" : "Inlet",
+                        "published" : false,
+                        "id" : "D04CC891-EB48-4A28-BA5C-56231BCFF021"
+                      },
+                      "isProxyPort" : false,
+                      "type" : "Image",
+                      "isParameterPort" : false
+                    }
+                  },
+                  {
+                    "name" : "inputNormalTexture",
+                    "payload" : {
+                      "base" : {
+                        "kind" : "Inlet",
+                        "name" : "Normal Texture",
+                        "portDescription" : "Normal map for surface detail",
+                        "published" : false,
+                        "id" : "B4BE42F3-561D-4095-AD88-B97506C0C962"
+                      },
+                      "type" : "Image",
+                      "isParameterPort" : false,
+                      "isProxyPort" : false
+                    }
+                  },
+                  {
+                    "name" : "inputEmissiveTexture",
+                    "payload" : {
+                      "isParameterPort" : false,
+                      "base" : {
+                        "kind" : "Inlet",
+                        "published" : false,
+                        "portDescription" : "Emission\/glow texture map",
+                        "id" : "82866758-6540-4D36-ADEC-9C5C7A56411C",
+                        "name" : "Emissive Texture"
+                      },
+                      "type" : "Image",
+                      "isProxyPort" : false
+                    }
+                  },
+                  {
+                    "name" : "inputSpecularTexture",
+                    "payload" : {
+                      "isParameterPort" : false,
+                      "base" : {
+                        "name" : "Specular Texture",
+                        "id" : "808EDCA4-CF9C-42F2-8205-513EDFAD0437",
+                        "published" : false,
+                        "kind" : "Inlet",
+                        "portDescription" : "Specular intensity texture map"
+                      },
+                      "type" : "Image",
+                      "isProxyPort" : false
+                    }
+                  },
+                  {
+                    "name" : "inputRoughnessTexture",
+                    "payload" : {
+                      "type" : "Image",
+                      "isParameterPort" : false,
+                      "isProxyPort" : false,
+                      "base" : {
+                        "portDescription" : "Surface roughness texture map",
+                        "id" : "D5A6C236-332F-4153-8ED2-D7E922272CD8",
+                        "published" : false,
+                        "name" : "Roughness Texture",
+                        "kind" : "Inlet"
+                      }
+                    }
+                  },
+                  {
+                    "name" : "inputMetallicTexture",
+                    "payload" : {
+                      "type" : "Image",
+                      "isParameterPort" : false,
+                      "isProxyPort" : false,
+                      "base" : {
+                        "published" : false,
+                        "name" : "Metallic Texture",
+                        "kind" : "Inlet",
+                        "id" : "50D5402F-9F46-4A80-9DF0-8B70C21BC26E",
+                        "portDescription" : "Metallic property texture map"
+                      }
+                    }
+                  },
+                  {
+                    "name" : "inputBaseColor",
+                    "payload" : {
+                      "isProxyPort" : false,
+                      "type" : "Color",
+                      "isParameterPort" : true,
+                      "base" : {
+                        "id" : "0CFB1A53-616F-4275-A35B-2835745D617F",
+                        "kind" : "Inlet",
+                        "name" : "Base Color",
+                        "published" : false,
+                        "parameter" : {
+                          "type" : "float4",
+                          "base" : {
+                            "defaultValue" : [
+                              1,
+                              1,
+                              1,
+                              1
+                            ],
+                            "id" : "0CFB1A53-616F-4275-A35B-2835745D617F",
+                            "min" : [
+                              0,
+                              0,
+                              0,
+                              0
+                            ],
+                            "max" : [
+                              1,
+                              1,
+                              1,
+                              1
+                            ],
+                            "label" : "Base Color",
+                            "value" : [
+                              0.6507606,
+                              0.6507606,
+                              0.4455662,
+                              1
+                            ],
+                            "controlType" : "colorpicker",
+                            "description" : "Base diffuse color of the material (RGBA)"
+                          }
+                        },
+                        "portDescription" : "Base diffuse color of the material (RGBA)"
+                      }
+                    }
+                  },
+                  {
+                    "name" : "inputEmissiveColor",
+                    "payload" : {
+                      "base" : {
+                        "id" : "97FE6648-6269-48E8-A581-DA60816EEE06",
+                        "portDescription" : "Self-illumination color independent of lighting (RGBA)",
+                        "published" : false,
+                        "name" : "Emissive Color",
+                        "kind" : "Inlet",
+                        "parameter" : {
+                          "base" : {
+                            "id" : "97FE6648-6269-48E8-A581-DA60816EEE06",
+                            "min" : [
+                              0,
+                              0,
+                              0,
+                              0
+                            ],
+                            "max" : [
+                              1,
+                              1,
+                              1,
+                              1
+                            ],
+                            "description" : "Self-illumination color independent of lighting (RGBA)",
+                            "defaultValue" : [
+                              0,
+                              0,
+                              0,
+                              0
+                            ],
+                            "value" : [
+                              0,
+                              0,
+                              0,
+                              0
+                            ],
+                            "controlType" : "colorpicker",
+                            "label" : "Emissive Color"
+                          },
+                          "type" : "float4"
+                        }
+                      },
+                      "isParameterPort" : true,
+                      "isProxyPort" : false,
+                      "type" : "Color"
+                    }
+                  },
+                  {
+                    "name" : "inputSpecular",
+                    "payload" : {
+                      "isProxyPort" : false,
+                      "type" : "Float",
+                      "isParameterPort" : true,
+                      "base" : {
+                        "id" : "14461C1B-E190-4F3D-BDE1-92DC09007B86",
+                        "parameter" : {
+                          "type" : "float",
+                          "base" : {
+                            "label" : "Specular",
+                            "defaultValue" : 0.25,
+                            "id" : "14461C1B-E190-4F3D-BDE1-92DC09007B86",
+                            "description" : "Intensity of specular highlights (0 = none, 1 = full)",
+                            "value" : 0.25,
+                            "min" : 0,
+                            "max" : 1,
+                            "controlType" : "slider"
+                          }
+                        },
+                        "name" : "Specular",
+                        "published" : false,
+                        "portDescription" : "Intensity of specular highlights (0 = none, 1 = full)",
+                        "kind" : "Inlet"
+                      }
+                    }
+                  },
+                  {
+                    "name" : "inputRoughness",
+                    "payload" : {
+                      "type" : "Float",
+                      "isParameterPort" : true,
+                      "base" : {
+                        "kind" : "Inlet",
+                        "id" : "2AED95C4-3DE9-4EB7-AB02-88A5092923FF",
+                        "name" : "Roughness",
+                        "parameter" : {
+                          "base" : {
+                            "defaultValue" : 0.25,
+                            "value" : 0.25,
+                            "min" : 0,
+                            "description" : "Surface roughness where 0 is smooth and 1 is fully rough",
+                            "id" : "2AED95C4-3DE9-4EB7-AB02-88A5092923FF",
+                            "label" : "Roughness",
+                            "controlType" : "slider",
+                            "max" : 1
+                          },
+                          "type" : "float"
+                        },
+                        "published" : false,
+                        "portDescription" : "Surface roughness where 0 is smooth and 1 is fully rough"
+                      },
+                      "isProxyPort" : false
+                    }
+                  },
+                  {
+                    "name" : "inputMetallic",
+                    "payload" : {
+                      "type" : "Float",
+                      "isParameterPort" : true,
+                      "isProxyPort" : false,
+                      "base" : {
+                        "id" : "1936E16F-9AA6-40D1-89D1-953F3CA5DA91",
+                        "name" : "Metallic",
+                        "kind" : "Inlet",
+                        "published" : false,
+                        "portDescription" : "Metallic property where 0 is dielectric and 1 is pure metal",
+                        "parameter" : {
+                          "type" : "float",
+                          "base" : {
+                            "label" : "Metallic",
+                            "description" : "Metallic property where 0 is dielectric and 1 is pure metal",
+                            "value" : 0.75,
+                            "defaultValue" : 0.75,
+                            "controlType" : "slider",
+                            "min" : 0,
+                            "id" : "1936E16F-9AA6-40D1-89D1-953F3CA5DA91",
+                            "max" : 1
+                          }
+                        }
+                      }
+                    }
+                  },
+                  {
+                    "name" : "inputOcclusion",
+                    "payload" : {
+                      "base" : {
+                        "parameter" : {
+                          "base" : {
+                            "label" : "Occlusion",
+                            "value" : 0.75,
+                            "controlType" : "slider",
+                            "max" : 1,
+                            "id" : "D28A66EF-8D65-4D8F-909E-13A88539BE31",
+                            "defaultValue" : 0.75,
+                            "description" : "Ambient occlusion factor to darken crevices (0-1)",
+                            "min" : 0
+                          },
+                          "type" : "float"
+                        },
+                        "id" : "D28A66EF-8D65-4D8F-909E-13A88539BE31",
+                        "portDescription" : "Ambient occlusion factor to darken crevices (0-1)",
+                        "published" : false,
+                        "name" : "Occlusion",
+                        "kind" : "Inlet"
+                      },
+                      "isProxyPort" : false,
+                      "isParameterPort" : true,
+                      "type" : "Float"
+                    }
+                  },
+                  {
+                    "name" : "inputEnvironmentIntensity",
+                    "payload" : {
+                      "base" : {
+                        "kind" : "Inlet",
+                        "published" : false,
+                        "parameter" : {
+                          "type" : "float",
+                          "base" : {
+                            "value" : 1,
+                            "min" : 0,
+                            "description" : "Strength of environment map reflections (0-1)",
+                            "label" : "Environment Intensity",
+                            "defaultValue" : 1,
+                            "max" : 1,
+                            "id" : "E749E80A-8C41-4D48-A885-2B06AF9F454E",
+                            "controlType" : "slider"
+                          }
+                        },
+                        "id" : "E749E80A-8C41-4D48-A885-2B06AF9F454E",
+                        "name" : "Environment Intensity",
+                        "portDescription" : "Strength of environment map reflections (0-1)"
+                      },
+                      "type" : "Float",
+                      "isProxyPort" : false,
+                      "isParameterPort" : true
+                    }
+                  },
+                  {
+                    "name" : "inputGammaCorrection",
+                    "payload" : {
+                      "isParameterPort" : true,
+                      "isProxyPort" : false,
+                      "type" : "Float",
+                      "base" : {
+                        "parameter" : {
+                          "base" : {
+                            "min" : 0,
+                            "max" : 2.4,
+                            "defaultValue" : 1,
+                            "id" : "D8BDB5C0-C277-47C7-BAA7-45659C20BD8F",
+                            "description" : "Gamma correction value for color space conversion",
+                            "controlType" : "slider",
+                            "label" : "Gamma Correction",
+                            "value" : 1
+                          },
+                          "type" : "float"
+                        },
+                        "name" : "Gamma Correction",
+                        "published" : false,
+                        "portDescription" : "Gamma correction value for color space conversion",
+                        "id" : "D8BDB5C0-C277-47C7-BAA7-45659C20BD8F",
+                        "kind" : "Inlet"
+                      }
+                    }
+                  },
+                  {
+                    "name" : "inputPointSize",
+                    "payload" : {
+                      "isProxyPort" : false,
+                      "base" : {
+                        "parameter" : {
+                          "type" : "float",
+                          "base" : {
+                            "label" : "Point Size",
+                            "description" : "Point Size",
+                            "id" : "C39B0C5E-D11D-44A8-8CF0-B7379D769C68",
+                            "controlType" : "slider",
+                            "value" : 1,
+                            "defaultValue" : 1,
+                            "min" : 0.5,
+                            "max" : 64
+                          }
+                        },
+                        "name" : "Point Size",
+                        "portDescription" : "Point Size",
+                        "kind" : "Inlet",
+                        "published" : false,
+                        "id" : "C39B0C5E-D11D-44A8-8CF0-B7379D769C68"
+                      },
+                      "type" : "Float",
+                      "isParameterPort" : true
+                    }
+                  },
+                  {
+                    "name" : "inputReceivesLighting",
+                    "payload" : {
+                      "isProxyPort" : false,
+                      "type" : "Bool",
+                      "isParameterPort" : true,
+                      "base" : {
+                        "parameter" : {
+                          "type" : "bool",
+                          "base" : {
+                            "defaultValue" : true,
+                            "id" : "94A08CD6-7DB2-44B1-AAD2-1E2FBC0F55C3",
+                            "label" : "Receives Lighting",
+                            "value" : true,
+                            "description" : "When enabled, the material responds to scene lighting",
+                            "controlType" : "button"
+                          }
+                        },
+                        "id" : "94A08CD6-7DB2-44B1-AAD2-1E2FBC0F55C3",
+                        "kind" : "Inlet",
+                        "name" : "Receives Lighting",
+                        "published" : false,
+                        "portDescription" : "When enabled, the material responds to scene lighting"
+                      }
+                    }
+                  },
+                  {
+                    "name" : "inputWriteDepth",
+                    "payload" : {
+                      "type" : "Bool",
+                      "base" : {
+                        "name" : "Write Depth",
+                        "id" : "169679B4-0E62-45A3-ADE4-1ED3D62428A9",
+                        "parameter" : {
+                          "base" : {
+                            "label" : "Write Depth",
+                            "description" : "When enabled, writes depth values to the depth buffer",
+                            "value" : true,
+                            "defaultValue" : true,
+                            "id" : "169679B4-0E62-45A3-ADE4-1ED3D62428A9",
+                            "controlType" : "button"
+                          },
+                          "type" : "bool"
+                        },
+                        "kind" : "Inlet",
+                        "published" : false,
+                        "portDescription" : "When enabled, writes depth values to the depth buffer"
+                      },
+                      "isProxyPort" : false,
+                      "isParameterPort" : true
+                    }
+                  },
+                  {
+                    "name" : "inputDepthTest",
+                    "payload" : {
+                      "isProxyPort" : false,
+                      "type" : "Bool",
+                      "isParameterPort" : true,
+                      "base" : {
+                        "kind" : "Inlet",
+                        "published" : false,
+                        "id" : "FB36C504-139F-4480-AE94-FDA369103D24",
+                        "portDescription" : "When enabled, performs depth testing against existing geometry",
+                        "name" : "Depth Test",
+                        "parameter" : {
+                          "type" : "bool",
+                          "base" : {
+                            "description" : "When enabled, performs depth testing against existing geometry",
+                            "defaultValue" : true,
+                            "controlType" : "button",
+                            "label" : "Depth Test",
+                            "value" : true,
+                            "id" : "FB36C504-139F-4480-AE94-FDA369103D24"
+                          }
+                        }
+                      }
+                    }
+                  },
+                  {
+                    "name" : "inputBlending",
+                    "payload" : {
+                      "isProxyPort" : false,
+                      "type" : "String",
+                      "isParameterPort" : true,
+                      "base" : {
+                        "parameter" : {
+                          "base" : {
+                            "value" : "Disabled",
+                            "description" : "Blending mode for combining with background pixels",
+                            "id" : "18175A20-16A1-4BAA-BB13-3382B0F16366",
+                            "label" : "Blending Mode",
+                            "defaultValue" : "Disabled",
+                            "controlType" : "dropdown",
+                            "options" : [
+                              "Disabled",
+                              "Alpha",
+                              "Additive",
+                              "Subtractive"
+                            ]
+                          },
+                          "type" : "string"
+                        },
+                        "name" : "Blending Mode",
+                        "published" : false,
+                        "portDescription" : "Blending mode for combining with background pixels",
+                        "id" : "18175A20-16A1-4BAA-BB13-3382B0F16366",
+                        "kind" : "Inlet"
+                      }
+                    }
+                  },
+                  {
+                    "name" : "outputMaterial",
+                    "payload" : {
+                      "isProxyPort" : false,
+                      "type" : "Material",
+                      "isParameterPort" : false,
+                      "base" : {
+                        "id" : "BDE95813-498E-4925-B4E1-0393FCF57892",
+                        "name" : "Material",
+                        "kind" : "Outlet",
+                        "published" : false,
+                        "portDescription" : "The configured material"
+                      }
+                    }
+                  }
+                ],
+                "nodeOffset" : [
+                  -205.6778414095461,
+                  408.67771867602914
+                ],
+                "id" : "F474E632-039A-4F3A-8009-D04A413B6180"
+              },
+              "type" : "graphics.fabric.CoreNodes\/StandardMaterialNode"
+            },
+            {
+              "value" : {
+                "ports" : [
+                  {
+                    "payload" : {
+                      "type" : "Bool",
+                      "isParameterPort" : true,
+                      "isProxyPort" : false,
+                      "base" : {
+                        "parameter" : {
+                          "type" : "bool",
+                          "base" : {
+                            "id" : "0B4EB283-5A3C-421F-88A1-619342062CDE",
+                            "controlType" : "button",
+                            "description" : "When enabled, the object is rendered in the scene",
+                            "value" : true,
+                            "label" : "Visible",
+                            "defaultValue" : true
+                          }
+                        },
+                        "id" : "0B4EB283-5A3C-421F-88A1-619342062CDE",
+                        "published" : false,
+                        "portDescription" : "When enabled, the object is rendered in the scene",
+                        "name" : "Visible",
+                        "kind" : "Inlet"
+                      }
+                    },
+                    "name" : "inputVisible"
+                  },
+                  {
+                    "payload" : {
+                      "type" : "Int",
+                      "isParameterPort" : true,
+                      "base" : {
+                        "parameter" : {
+                          "type" : "int",
+                          "base" : {
+                            "id" : "1D25E604-EAD0-44C8-8FDF-6D46022BC8D3",
+                            "label" : "Render Order",
+                            "controlType" : "inputfield",
+                            "description" : "Draw order within the same render pass (lower = earlier)",
+                            "defaultValue" : 0,
+                            "min" : 0,
+                            "max" : 1,
+                            "value" : 0
+                          }
+                        },
+                        "name" : "Render Order",
+                        "kind" : "Inlet",
+                        "id" : "1D25E604-EAD0-44C8-8FDF-6D46022BC8D3",
+                        "published" : false,
+                        "portDescription" : "Draw order within the same render pass (lower = earlier)"
+                      },
+                      "isProxyPort" : false
+                    },
+                    "name" : "inputRenderOrder"
+                  },
+                  {
+                    "payload" : {
+                      "type" : "Vector 3",
+                      "isProxyPort" : false,
+                      "isParameterPort" : true,
+                      "base" : {
+                        "name" : "Position",
+                        "id" : "88C0C51E-A58C-475E-A488-5BFBFC3862F2",
+                        "kind" : "Inlet",
+                        "portDescription" : "Position in 3D space (X, Y, Z) in world units",
+                        "published" : false,
+                        "parameter" : {
+                          "type" : "float3",
+                          "base" : {
+                            "label" : "Position",
+                            "max" : [
+                              1,
+                              1,
+                              1
+                            ],
+                            "value" : [
+                              1,
+                              0,
+                              0
+                            ],
+                            "id" : "88C0C51E-A58C-475E-A488-5BFBFC3862F2",
+                            "controlType" : "inputfield",
+                            "description" : "Position in 3D space (X, Y, Z) in world units",
+                            "min" : [
+                              0,
+                              0,
+                              0
+                            ],
+                            "defaultValue" : [
+                              0,
+                              0,
+                              0
+                            ]
+                          }
+                        }
+                      }
+                    },
+                    "name" : "inputPosition"
+                  },
+                  {
+                    "payload" : {
+                      "isParameterPort" : true,
+                      "base" : {
+                        "parameter" : {
+                          "base" : {
+                            "description" : "Scale factor along each axis (X, Y, Z)",
+                            "min" : [
+                              0,
+                              0,
+                              0
+                            ],
+                            "value" : [
+                              0.2,
+                              0.2,
+                              0.2
+                            ],
+                            "max" : [
+                              1,
+                              1,
+                              1
+                            ],
+                            "id" : "72831DCA-B506-4811-8677-4A9A219C272C",
+                            "controlType" : "inputfield",
+                            "label" : "Scale",
+                            "defaultValue" : [
+                              1,
+                              1,
+                              1
+                            ]
+                          },
+                          "type" : "float3"
+                        },
+                        "id" : "72831DCA-B506-4811-8677-4A9A219C272C",
+                        "kind" : "Inlet",
+                        "name" : "Scale",
+                        "portDescription" : "Scale factor along each axis (X, Y, Z)",
+                        "published" : false
+                      },
+                      "isProxyPort" : false,
+                      "type" : "Vector 3"
+                    },
+                    "name" : "inputScale"
+                  },
+                  {
+                    "payload" : {
+                      "isProxyPort" : false,
+                      "type" : "Vector 4",
+                      "base" : {
+                        "parameter" : {
+                          "type" : "float4",
+                          "base" : {
+                            "max" : [
+                              1,
+                              1,
+                              1,
+                              1
+                            ],
+                            "id" : "DA82DAC7-1413-4D04-ABD8-BD534D4A201E",
+                            "description" : "Orientation as quaternion (X, Y, Z, W)",
+                            "value" : [
+                              0.3747374,
+                              0.36825344,
+                              0.17264211,
+                              0.8331602
+                            ],
+                            "min" : [
+                              0,
+                              0,
+                              0,
+                              0
+                            ],
+                            "label" : "Orientation",
+                            "controlType" : "inputfield",
+                            "defaultValue" : [
+                              0,
+                              0,
+                              0,
+                              0
+                            ]
+                          }
+                        },
+                        "id" : "DA82DAC7-1413-4D04-ABD8-BD534D4A201E",
+                        "name" : "Orientation",
+                        "kind" : "Inlet",
+                        "published" : false,
+                        "portDescription" : "Orientation as quaternion (X, Y, Z, W)"
+                      },
+                      "isParameterPort" : true
+                    },
+                    "name" : "inputOrientation"
+                  },
+                  {
+                    "payload" : {
+                      "base" : {
+                        "published" : false,
+                        "name" : "Geometry",
+                        "id" : "756834B2-E8AC-4D8E-BF42-D52E1B6B3EB9",
+                        "kind" : "Inlet",
+                        "portDescription" : "Geometry mesh to render"
+                      },
+                      "isParameterPort" : false,
+                      "type" : "Geometry",
+                      "isProxyPort" : false
+                    },
+                    "name" : "inputGeometry"
+                  },
+                  {
+                    "payload" : {
+                      "type" : "Material",
+                      "isProxyPort" : false,
+                      "isParameterPort" : false,
+                      "base" : {
+                        "portDescription" : "Material to apply to the geometry",
+                        "kind" : "Inlet",
+                        "published" : false,
+                        "id" : "55E1BB8E-E4DC-4F78-8D02-539B512B7678",
+                        "name" : "Material"
+                      }
+                    },
+                    "name" : "inputMaterial"
+                  },
+                  {
+                    "payload" : {
+                      "isParameterPort" : true,
+                      "base" : {
+                        "parameter" : {
+                          "type" : "bool",
+                          "base" : {
+                            "id" : "235A1B09-71A3-4D4F-9C8D-735914E7D3DC",
+                            "controlType" : "button",
+                            "label" : "Enable Shadows",
+                            "defaultValue" : true,
+                            "value" : true,
+                            "description" : "When enabled, the mesh casts and receives shadows"
+                          }
+                        },
+                        "id" : "235A1B09-71A3-4D4F-9C8D-735914E7D3DC",
+                        "kind" : "Inlet",
+                        "published" : false,
+                        "portDescription" : "When enabled, the mesh casts and receives shadows",
+                        "name" : "Enable Shadows"
+                      },
+                      "isProxyPort" : false,
+                      "type" : "Bool"
+                    },
+                    "name" : "inputCastsShadow"
+                  },
+                  {
+                    "payload" : {
+                      "isParameterPort" : true,
+                      "type" : "Bool",
+                      "isProxyPort" : false,
+                      "base" : {
+                        "parameter" : {
+                          "base" : {
+                            "value" : false,
+                            "label" : "Double Sided",
+                            "defaultValue" : false,
+                            "id" : "8F3710E0-8DC3-4759-81CE-AE8DC90EF8E4",
+                            "controlType" : "button",
+                            "description" : "When enabled, renders both front and back faces"
+                          },
+                          "type" : "bool"
+                        },
+                        "name" : "Double Sided",
+                        "published" : false,
+                        "portDescription" : "When enabled, renders both front and back faces",
+                        "id" : "8F3710E0-8DC3-4759-81CE-AE8DC90EF8E4",
+                        "kind" : "Inlet"
+                      }
+                    },
+                    "name" : "inputDoubleSided"
+                  },
+                  {
+                    "payload" : {
+                      "isParameterPort" : true,
+                      "type" : "String",
+                      "base" : {
+                        "id" : "0D17B7C2-FEA5-43F0-94D4-A6327E2590E6",
+                        "kind" : "Inlet",
+                        "portDescription" : "Which faces to cull during rendering",
+                        "name" : "Culling Mode",
+                        "published" : false,
+                        "parameter" : {
+                          "type" : "string",
+                          "base" : {
+                            "value" : "Back",
+                            "label" : "Culling Mode",
+                            "defaultValue" : "Back",
+                            "options" : [
+                              "Back",
+                              "Front",
+                              "None"
+                            ],
+                            "id" : "0D17B7C2-FEA5-43F0-94D4-A6327E2590E6",
+                            "description" : "Which faces to cull during rendering",
+                            "controlType" : "dropdown"
+                          }
+                        }
+                      },
+                      "isProxyPort" : false
+                    },
+                    "name" : "inputCullingMode"
+                  }
+                ],
+                "nodeOffset" : [
+                  26.42521839458732,
+                  -123.8652808218676
+                ],
+                "id" : "3BFB8DAC-09DD-49B7-826D-06722DBA99D9"
+              },
+              "type" : "graphics.fabric.CoreNodes\/MeshNode"
+            },
+            {
+              "value" : {
+                "ports" : [
+
+                ],
+                "nodeOffset" : [
+                  -1263.1022417678232,
+                  -152.75117115360172
+                ],
+                "outputProgressPort" : {
+                  "kind" : "Outlet",
+                  "id" : "048D3EB7-40DF-4F6F-A735-B85161E9AE6C",
+                  "name" : "Iterator Progress",
+                  "published" : false
+                },
+                "outputIterationCountPort" : {
+                  "kind" : "Outlet",
+                  "id" : "A4ED4D03-7777-487F-A6AF-B8A7045936CA",
+                  "name" : "Number of Iterations",
+                  "published" : false
+                },
+                "id" : "CAF57942-B86E-47F0-9BD8-14C2FC66C9B3",
+                "outputIndexPort" : {
+                  "kind" : "Outlet",
+                  "id" : "65715C26-0001-480F-A845-768437BFC369",
+                  "name" : "Current Iteration",
+                  "published" : false
+                }
+              },
+              "type" : "graphics.fabric.CoreNodes\/IteratorInfoNode"
+            },
+            {
+              "value" : {
+                "ports" : [
+                  {
+                    "payload" : {
+                      "type" : "Float",
+                      "isParameterPort" : true,
+                      "base" : {
+                        "name" : "Number A",
+                        "parameter" : {
+                          "type" : "float",
+                          "base" : {
+                            "controlType" : "inputfield",
+                            "label" : "Number A",
+                            "description" : "First operand for the binary operation",
+                            "max" : 1,
+                            "id" : "15808E2C-2FF5-4541-9086-361BA4C630EE",
+                            "defaultValue" : 0,
+                            "value" : 1,
+                            "min" : 0
+                          }
+                        },
+                        "kind" : "Inlet",
+                        "published" : false,
+                        "portDescription" : "First operand for the binary operation",
+                        "id" : "15808E2C-2FF5-4541-9086-361BA4C630EE"
+                      },
+                      "isProxyPort" : false
+                    },
+                    "name" : "inputNumber1"
+                  },
+                  {
+                    "payload" : {
+                      "isProxyPort" : false,
+                      "type" : "Float",
+                      "isParameterPort" : true,
+                      "base" : {
+                        "name" : "Number B",
+                        "portDescription" : "Second operand for the binary operation",
+                        "id" : "A394A740-BC70-4EBC-A368-35E87EF4FDB2",
+                        "parameter" : {
+                          "type" : "float",
+                          "base" : {
+                            "defaultValue" : 0,
+                            "min" : 0,
+                            "id" : "A394A740-BC70-4EBC-A368-35E87EF4FDB2",
+                            "max" : 1,
+                            "value" : 5,
+                            "label" : "Number B",
+                            "controlType" : "inputfield",
+                            "description" : "Second operand for the binary operation"
+                          }
+                        },
+                        "kind" : "Inlet",
+                        "published" : false
+                      }
+                    },
+                    "name" : "inputNumber2"
+                  },
+                  {
+                    "payload" : {
+                      "isParameterPort" : true,
+                      "isProxyPort" : false,
+                      "base" : {
+                        "kind" : "Inlet",
+                        "published" : false,
+                        "portDescription" : "Mathematical operation to perform",
+                        "parameter" : {
+                          "base" : {
+                            "value" : "Divide",
+                            "id" : "6D028D9E-F65E-4184-9DF4-A06FB69B341C",
+                            "options" : [
+                              "Add",
+                              "Subtract",
+                              "Multiply",
+                              "Divide",
+                              "Power",
+                              "Minimum",
+                              "Maximum",
+                              "Modulo"
+                            ],
+                            "description" : "Mathematical operation to perform",
+                            "label" : "Operator",
+                            "controlType" : "dropdown",
+                            "defaultValue" : "Add"
+                          },
+                          "type" : "string"
+                        },
+                        "id" : "6D028D9E-F65E-4184-9DF4-A06FB69B341C",
+                        "name" : "Operator"
+                      },
+                      "type" : "String"
+                    },
+                    "name" : "inputParam"
+                  },
+                  {
+                    "payload" : {
+                      "base" : {
+                        "kind" : "Outlet",
+                        "published" : false,
+                        "id" : "19FECCEC-4F29-4B74-B32D-0888243B40FB",
+                        "name" : "Number",
+                        "portDescription" : "Result of the binary operation"
+                      },
+                      "isParameterPort" : false,
+                      "type" : "Float",
+                      "isProxyPort" : false
+                    },
+                    "name" : "outputNumber"
+                  }
+                ],
+                "nodeOffset" : [
+                  -786.8293667815406,
+                  125.61680470202646
+                ],
+                "id" : "6DB2F629-D45B-4BD7-AAE6-CF6C3A41A7E8"
+              },
+              "type" : "graphics.fabric.CoreNodes\/NumberBinaryOperator"
+            },
+            {
+              "value" : {
+                "nodeOffset" : [
+                  -603.4301199125948,
+                  127.58531847306222
+                ],
+                "ports" : [
+                  {
+                    "name" : "inputComponent0",
+                    "payload" : {
+                      "isParameterPort" : true,
+                      "isProxyPort" : false,
+                      "type" : "Float",
+                      "base" : {
+                        "portDescription" : "X component",
+                        "parameter" : {
+                          "base" : {
+                            "max" : 1,
+                            "label" : "X",
+                            "value" : 0.2,
+                            "min" : 0,
+                            "defaultValue" : 0,
+                            "id" : "FA3A6998-030A-47B1-84C5-4E53D62B23B0",
+                            "controlType" : "inputfield",
+                            "description" : "X component"
+                          },
+                          "type" : "float"
+                        },
+                        "name" : "X",
+                        "kind" : "Inlet",
+                        "id" : "FA3A6998-030A-47B1-84C5-4E53D62B23B0",
+                        "published" : false
+                      }
+                    }
+                  },
+                  {
+                    "name" : "inputComponent1",
+                    "payload" : {
+                      "isParameterPort" : true,
+                      "isProxyPort" : false,
+                      "type" : "Float",
+                      "base" : {
+                        "parameter" : {
+                          "type" : "float",
+                          "base" : {
+                            "id" : "18A9AB66-6458-46FC-BB97-2969A2F7A64C",
+                            "defaultValue" : 0,
+                            "controlType" : "inputfield",
+                            "label" : "Y",
+                            "max" : 1,
+                            "value" : 0.2,
+                            "min" : 0,
+                            "description" : "Y component"
+                          }
+                        },
+                        "name" : "Y",
+                        "published" : false,
+                        "portDescription" : "Y component",
+                        "id" : "18A9AB66-6458-46FC-BB97-2969A2F7A64C",
+                        "kind" : "Inlet"
+                      }
+                    }
+                  },
+                  {
+                    "name" : "inputComponent2",
+                    "payload" : {
+                      "isParameterPort" : true,
+                      "base" : {
+                        "name" : "Z",
+                        "published" : false,
+                        "portDescription" : "Z component",
+                        "kind" : "Inlet",
+                        "parameter" : {
+                          "type" : "float",
+                          "base" : {
+                            "defaultValue" : 0,
+                            "value" : 0.2,
+                            "id" : "87C5EA89-AF9E-43FE-9AA5-BDE41A43B694",
+                            "label" : "Z",
+                            "min" : 0,
+                            "max" : 1,
+                            "controlType" : "inputfield",
+                            "description" : "Z component"
+                          }
+                        },
+                        "id" : "87C5EA89-AF9E-43FE-9AA5-BDE41A43B694"
+                      },
+                      "type" : "Float",
+                      "isProxyPort" : false
+                    }
+                  },
+                  {
+                    "name" : "outputVector",
+                    "payload" : {
+                      "isParameterPort" : false,
+                      "base" : {
+                        "id" : "BE53D237-ECC2-49AC-A6F9-3DC028BFD712",
+                        "published" : false,
+                        "name" : "Vector 3",
+                        "kind" : "Outlet",
+                        "portDescription" : "Combined Vector 3"
+                      },
+                      "type" : "Vector 3",
+                      "isProxyPort" : false
+                    }
+                  }
+                ],
+                "strategy" : "Vector 3",
+                "id" : "F4E9A8AF-8A6E-49A9-B7C1-DF30EF13FA93"
+              },
+              "type" : "graphics.fabric.CoreNodes\/ComposeVectorNode"
+            },
+            {
+              "value" : {
+                "id" : "E757D775-E1C3-44E4-A7C2-A27303BF1F29",
+                "nodeOffset" : [
+                  -620.9839966691507,
+                  -83.14294082199467
+                ],
+                "strategy" : "Vector 3",
+                "ports" : [
+                  {
+                    "name" : "inputComponent0",
+                    "payload" : {
+                      "type" : "Float",
+                      "isProxyPort" : false,
+                      "isParameterPort" : true,
+                      "base" : {
+                        "parameter" : {
+                          "type" : "float",
+                          "base" : {
+                            "controlType" : "inputfield",
+                            "defaultValue" : 0,
+                            "id" : "5DBCFB32-73E2-428A-B721-1C5120B5C2DB",
+                            "min" : 0,
+                            "max" : 1,
+                            "description" : "X component",
+                            "label" : "X",
+                            "value" : 1
+                          }
+                        },
+                        "id" : "5DBCFB32-73E2-428A-B721-1C5120B5C2DB",
+                        "name" : "X",
+                        "published" : false,
+                        "portDescription" : "X component",
+                        "kind" : "Inlet"
+                      }
+                    }
+                  },
+                  {
+                    "name" : "inputComponent1",
+                    "payload" : {
+                      "type" : "Float",
+                      "isProxyPort" : false,
+                      "isParameterPort" : true,
+                      "base" : {
+                        "kind" : "Inlet",
+                        "portDescription" : "Y component",
+                        "id" : "0BD333AA-83DC-41A7-8F9E-FD41EB512851",
+                        "parameter" : {
+                          "type" : "float",
+                          "base" : {
+                            "max" : 1,
+                            "value" : 0,
+                            "id" : "0BD333AA-83DC-41A7-8F9E-FD41EB512851",
+                            "controlType" : "inputfield",
+                            "label" : "Y",
+                            "defaultValue" : 0,
+                            "description" : "Y component",
+                            "min" : 0
+                          }
+                        },
+                        "published" : false,
+                        "name" : "Y"
+                      }
+                    }
+                  },
+                  {
+                    "name" : "inputComponent2",
+                    "payload" : {
+                      "type" : "Float",
+                      "base" : {
+                        "published" : false,
+                        "parameter" : {
+                          "type" : "float",
+                          "base" : {
+                            "value" : 0,
+                            "defaultValue" : 0,
+                            "label" : "Z",
+                            "id" : "86DF1D18-F75F-49F9-97AB-BD8CEC81BAC1",
+                            "description" : "Z component",
+                            "controlType" : "inputfield",
+                            "max" : 1,
+                            "min" : 0
+                          }
+                        },
+                        "id" : "86DF1D18-F75F-49F9-97AB-BD8CEC81BAC1",
+                        "name" : "Z",
+                        "kind" : "Inlet",
+                        "portDescription" : "Z component"
+                      },
+                      "isParameterPort" : true,
+                      "isProxyPort" : false
+                    }
+                  },
+                  {
+                    "name" : "outputVector",
+                    "payload" : {
+                      "isProxyPort" : false,
+                      "type" : "Vector 3",
+                      "isParameterPort" : false,
+                      "base" : {
+                        "id" : "EC7A178C-9DC5-4B29-8C22-137305119FEC",
+                        "kind" : "Outlet",
+                        "portDescription" : "Combined Vector 3",
+                        "name" : "Vector 3",
+                        "published" : false
+                      }
+                    }
+                  }
+                ]
+              },
+              "type" : "graphics.fabric.CoreNodes\/ComposeVectorNode"
+            },
+            {
+              "value" : {
+                "nodeOffset" : [
+                  -793.9376628520299,
+                  -40.87039772501612
+                ],
+                "id" : "696C996A-CB4B-4A39-8CF9-2883311CF075",
+                "ports" : [
+                  {
+                    "name" : "inputNumber",
+                    "payload" : {
+                      "type" : "Float",
+                      "base" : {
+                        "published" : false,
+                        "parameter" : {
+                          "type" : "float",
+                          "base" : {
+                            "max" : 1,
+                            "description" : "The input value to remap",
+                            "defaultValue" : 0,
+                            "id" : "4E06A066-2455-4645-8AAC-9E228011706F",
+                            "label" : "Number",
+                            "min" : 0,
+                            "controlType" : "inputfield",
+                            "value" : 1
+                          }
+                        },
+                        "name" : "Number",
+                        "kind" : "Inlet",
+                        "id" : "4E06A066-2455-4645-8AAC-9E228011706F",
+                        "portDescription" : "The input value to remap"
+                      },
+                      "isProxyPort" : false,
+                      "isParameterPort" : true
+                    }
+                  },
+                  {
+                    "name" : "inputMinNumber",
+                    "payload" : {
+                      "type" : "Float",
+                      "isParameterPort" : true,
+                      "isProxyPort" : false,
+                      "base" : {
+                        "name" : "Input Min",
+                        "parameter" : {
+                          "type" : "float",
+                          "base" : {
+                            "min" : 0,
+                            "max" : 1,
+                            "id" : "041A7735-2752-4D04-9685-23722877D7B0",
+                            "controlType" : "inputfield",
+                            "defaultValue" : 0,
+                            "label" : "Input Min",
+                            "description" : "Minimum of the input range",
+                            "value" : 0
+                          }
+                        },
+                        "published" : false,
+                        "id" : "041A7735-2752-4D04-9685-23722877D7B0",
+                        "kind" : "Inlet",
+                        "portDescription" : "Minimum of the input range"
+                      }
+                    }
+                  },
+                  {
+                    "name" : "inputMaxNumber",
+                    "payload" : {
+                      "isProxyPort" : false,
+                      "isParameterPort" : true,
+                      "base" : {
+                        "published" : false,
+                        "portDescription" : "Maximum of the input range",
+                        "name" : "Input Max",
+                        "id" : "BA27340F-485A-4950-9FF6-BCF82926E4DC",
+                        "parameter" : {
+                          "base" : {
+                            "min" : 0,
+                            "value" : 1,
+                            "max" : 1,
+                            "description" : "Maximum of the input range",
+                            "label" : "Input Max",
+                            "controlType" : "inputfield",
+                            "id" : "BA27340F-485A-4950-9FF6-BCF82926E4DC",
+                            "defaultValue" : 1
+                          },
+                          "type" : "float"
+                        },
+                        "kind" : "Inlet"
+                      },
+                      "type" : "Float"
+                    }
+                  },
+                  {
+                    "name" : "inputNewMinNumber",
+                    "payload" : {
+                      "isProxyPort" : false,
+                      "type" : "Float",
+                      "base" : {
+                        "kind" : "Inlet",
+                        "published" : false,
+                        "name" : "Output Min",
+                        "portDescription" : "Minimum of the output range",
+                        "parameter" : {
+                          "type" : "float",
+                          "base" : {
+                            "defaultValue" : 0,
+                            "controlType" : "inputfield",
+                            "description" : "Minimum of the output range",
+                            "min" : 0,
+                            "label" : "Output Min",
+                            "id" : "D643AB15-A500-4089-B98E-AE640A1B73AA",
+                            "max" : 1,
+                            "value" : -1
+                          }
+                        },
+                        "id" : "D643AB15-A500-4089-B98E-AE640A1B73AA"
+                      },
+                      "isParameterPort" : true
+                    }
+                  },
+                  {
+                    "name" : "inputNewMaxNumber",
+                    "payload" : {
+                      "base" : {
+                        "name" : "Output Max",
+                        "id" : "EC54E4BF-925A-4190-A3BA-0244BFE0FF14",
+                        "portDescription" : "Maximum of the output range",
+                        "kind" : "Inlet",
+                        "parameter" : {
+                          "type" : "float",
+                          "base" : {
+                            "label" : "Output Max",
+                            "value" : 1,
+                            "description" : "Maximum of the output range",
+                            "min" : 0,
+                            "id" : "EC54E4BF-925A-4190-A3BA-0244BFE0FF14",
+                            "max" : 1,
+                            "defaultValue" : 1,
+                            "controlType" : "inputfield"
+                          }
+                        },
+                        "published" : false
+                      },
+                      "isParameterPort" : true,
+                      "isProxyPort" : false,
+                      "type" : "Float"
+                    }
+                  },
+                  {
+                    "name" : "inputClamp",
+                    "payload" : {
+                      "base" : {
+                        "name" : "Clamp",
+                        "published" : false,
+                        "portDescription" : "Respect the given ranges: inputs outside [Input Min, Input Max] map to the output min\/max instead of extrapolating past them. Off by default.",
+                        "id" : "9543891D-EF94-4D82-A5E9-6396DA3C4CEF",
+                        "parameter" : {
+                          "type" : "bool",
+                          "base" : {
+                            "value" : false,
+                            "controlType" : "toggle",
+                            "label" : "Clamp",
+                            "description" : "Respect the given ranges: inputs outside [Input Min, Input Max] map to the output min\/max instead of extrapolating past them. Off by default.",
+                            "defaultValue" : false,
+                            "id" : "9543891D-EF94-4D82-A5E9-6396DA3C4CEF"
+                          }
+                        },
+                        "kind" : "Inlet"
+                      },
+                      "isProxyPort" : false,
+                      "type" : "Bool",
+                      "isParameterPort" : true
+                    }
+                  },
+                  {
+                    "name" : "outputNumber",
+                    "payload" : {
+                      "isParameterPort" : false,
+                      "base" : {
+                        "portDescription" : "The remapped output value",
+                        "id" : "5B5C7933-C6BF-45B9-8E61-2364586CC280",
+                        "kind" : "Outlet",
+                        "published" : false,
+                        "name" : "Number"
+                      },
+                      "type" : "Float",
+                      "isProxyPort" : false
+                    }
+                  }
+                ]
+              },
+              "type" : "graphics.fabric.CoreNodes\/NumberRemapNode"
+            },
+            {
+              "value" : {
+                "nodeOffset" : [
+                  -625.4619001255851,
+                  349.82743471008143
+                ],
+                "ports" : [
+                  {
+                    "name" : "inputTime",
+                    "payload" : {
+                      "base" : {
+                        "parameter" : {
+                          "type" : "float",
+                          "base" : {
+                            "id" : "6FE7B6C0-0750-4BFD-9EAE-CC1A9D897F46",
+                            "label" : "Time",
+                            "controlType" : "inputfield",
+                            "description" : "Time value to sample the noise function",
+                            "min" : 0,
+                            "value" : 116.791595,
+                            "max" : 1,
+                            "defaultValue" : 0
+                          }
+                        },
+                        "name" : "Time",
+                        "kind" : "Inlet",
+                        "id" : "6FE7B6C0-0750-4BFD-9EAE-CC1A9D897F46",
+                        "published" : false,
+                        "portDescription" : "Time value to sample the noise function"
+                      },
+                      "isParameterPort" : true,
+                      "isProxyPort" : false,
+                      "type" : "Float"
+                    }
+                  },
+                  {
+                    "name" : "inputFrequency",
+                    "payload" : {
+                      "type" : "Float",
+                      "isProxyPort" : false,
+                      "base" : {
+                        "id" : "F45915CA-19C4-4682-8E0E-6862EC886F03",
+                        "parameter" : {
+                          "type" : "float",
+                          "base" : {
+                            "value" : 1,
+                            "label" : "Frequency",
+                            "max" : 10,
+                            "defaultValue" : 1,
+                            "id" : "F45915CA-19C4-4682-8E0E-6862EC886F03",
+                            "controlType" : "slider",
+                            "min" : 0,
+                            "description" : "Frequency of the noise pattern (higher = more variation)"
+                          }
+                        },
+                        "name" : "Frequency",
+                        "kind" : "Inlet",
+                        "portDescription" : "Frequency of the noise pattern (higher = more variation)",
+                        "published" : false
+                      },
+                      "isParameterPort" : true
+                    }
+                  },
+                  {
+                    "name" : "outputNumber",
+                    "payload" : {
+                      "base" : {
+                        "id" : "552F91FE-F995-4C82-9DC8-FD64AC49C90A",
+                        "portDescription" : "Smooth random noise value",
+                        "published" : false,
+                        "kind" : "Outlet",
+                        "name" : "Number"
+                      },
+                      "type" : "Float",
+                      "isParameterPort" : false,
+                      "isProxyPort" : false
+                    }
+                  }
+                ],
+                "id" : "C6A8F739-9583-4C10-9F44-A8BB72E934EF"
+              },
+              "type" : "graphics.fabric.CoreNodes\/GradientNoiseNode"
+            },
+            {
+              "value" : {
+                "ports" : [
+                  {
+                    "name" : "inputTime",
+                    "payload" : {
+                      "type" : "Float",
+                      "base" : {
+                        "parameter" : {
+                          "base" : {
+                            "max" : 1,
+                            "label" : "Time",
+                            "value" : 116.791595,
+                            "defaultValue" : 0,
+                            "id" : "0A162DCE-E33B-41CE-BC04-09F41858B585",
+                            "description" : "Time value to sample the noise function",
+                            "controlType" : "inputfield",
+                            "min" : 0
+                          },
+                          "type" : "float"
+                        },
+                        "portDescription" : "Time value to sample the noise function",
+                        "id" : "0A162DCE-E33B-41CE-BC04-09F41858B585",
+                        "published" : false,
+                        "name" : "Time",
+                        "kind" : "Inlet"
+                      },
+                      "isParameterPort" : true,
+                      "isProxyPort" : false
+                    }
+                  },
+                  {
+                    "name" : "inputFrequency",
+                    "payload" : {
+                      "isParameterPort" : true,
+                      "isProxyPort" : false,
+                      "type" : "Float",
+                      "base" : {
+                        "parameter" : {
+                          "type" : "float",
+                          "base" : {
+                            "min" : 0,
+                            "id" : "E0977F7D-3756-4BD0-A614-6331072B7386",
+                            "max" : 10,
+                            "defaultValue" : 1,
+                            "label" : "Frequency",
+                            "value" : 1,
+                            "controlType" : "slider",
+                            "description" : "Frequency of the noise pattern (higher = more variation)"
+                          }
+                        },
+                        "id" : "E0977F7D-3756-4BD0-A614-6331072B7386",
+                        "portDescription" : "Frequency of the noise pattern (higher = more variation)",
+                        "published" : false,
+                        "name" : "Frequency",
+                        "kind" : "Inlet"
+                      }
+                    }
+                  },
+                  {
+                    "name" : "outputNumber",
+                    "payload" : {
+                      "type" : "Float",
+                      "isParameterPort" : false,
+                      "isProxyPort" : false,
+                      "base" : {
+                        "published" : false,
+                        "kind" : "Outlet",
+                        "name" : "Number",
+                        "id" : "D1E3E48D-09A1-44D4-8E01-444F6586C173",
+                        "portDescription" : "Smooth random noise value"
+                      }
+                    }
+                  }
+                ],
+                "id" : "D977C0FB-6584-4C6B-BBFD-53FB6A535040",
+                "nodeOffset" : [
+                  -621.9111188755851,
+                  463.49149721008143
+                ]
+              },
+              "type" : "graphics.fabric.CoreNodes\/GradientNoiseNode"
+            },
+            {
+              "value" : {
+                "nodeOffset" : [
+                  -621.2236188755851,
+                  566.9368097100814
+                ],
+                "ports" : [
+                  {
+                    "payload" : {
+                      "isParameterPort" : true,
+                      "type" : "Float",
+                      "isProxyPort" : false,
+                      "base" : {
+                        "parameter" : {
+                          "base" : {
+                            "value" : 1.8255077e+10,
+                            "max" : 1,
+                            "min" : 0,
+                            "description" : "Time value to sample the noise function",
+                            "controlType" : "inputfield",
+                            "label" : "Time",
+                            "defaultValue" : 0,
+                            "id" : "442663EA-8CD9-48D6-AA59-48FCB7230CF6"
+                          },
+                          "type" : "float"
+                        },
+                        "kind" : "Inlet",
+                        "portDescription" : "Time value to sample the noise function",
+                        "name" : "Time",
+                        "published" : false,
+                        "id" : "442663EA-8CD9-48D6-AA59-48FCB7230CF6"
+                      }
+                    },
+                    "name" : "inputTime"
+                  },
+                  {
+                    "payload" : {
+                      "isParameterPort" : true,
+                      "base" : {
+                        "id" : "03FAB393-6AB9-4845-81C5-EDB167830AE6",
+                        "parameter" : {
+                          "type" : "float",
+                          "base" : {
+                            "value" : 1,
+                            "label" : "Frequency",
+                            "description" : "Frequency of the noise pattern (higher = more variation)",
+                            "max" : 10,
+                            "id" : "03FAB393-6AB9-4845-81C5-EDB167830AE6",
+                            "defaultValue" : 1,
+                            "min" : 0,
+                            "controlType" : "slider"
+                          }
+                        },
+                        "name" : "Frequency",
+                        "published" : false,
+                        "portDescription" : "Frequency of the noise pattern (higher = more variation)",
+                        "kind" : "Inlet"
+                      },
+                      "type" : "Float",
+                      "isProxyPort" : false
+                    },
+                    "name" : "inputFrequency"
+                  },
+                  {
+                    "payload" : {
+                      "type" : "Float",
+                      "base" : {
+                        "published" : false,
+                        "name" : "Number",
+                        "id" : "AA30CB42-3FDE-4504-9953-4364633841BA",
+                        "portDescription" : "Smooth random noise value",
+                        "kind" : "Outlet"
+                      },
+                      "isParameterPort" : false,
+                      "isProxyPort" : false
+                    },
+                    "name" : "outputNumber"
+                  }
+                ],
+                "id" : "F91F2286-6C40-403F-9E4E-B5803BB6E522"
+              },
+              "type" : "graphics.fabric.CoreNodes\/GradientNoiseNode"
+            },
+            {
+              "value" : {
+                "ports" : [
+                  {
+                    "name" : "inputComponent0",
+                    "payload" : {
+                      "type" : "Float",
+                      "isParameterPort" : true,
+                      "base" : {
+                        "portDescription" : "X component",
+                        "kind" : "Inlet",
+                        "name" : "X",
+                        "parameter" : {
+                          "type" : "float",
+                          "base" : {
+                            "controlType" : "inputfield",
+                            "value" : 0.6507606,
+                            "id" : "DA37D2AE-8D7E-4919-92F9-7BDDFA10099D",
+                            "defaultValue" : 0,
+                            "description" : "X component",
+                            "min" : 0,
+                            "max" : 1,
+                            "label" : "X"
+                          }
+                        },
+                        "id" : "DA37D2AE-8D7E-4919-92F9-7BDDFA10099D",
+                        "published" : false
+                      },
+                      "isProxyPort" : false
+                    }
+                  },
+                  {
+                    "name" : "inputComponent1",
+                    "payload" : {
+                      "type" : "Float",
+                      "isParameterPort" : true,
+                      "isProxyPort" : false,
+                      "base" : {
+                        "portDescription" : "Y component",
+                        "published" : false,
+                        "name" : "Y",
+                        "id" : "8F5036EE-A194-4318-8AFD-42BD39866A15",
+                        "kind" : "Inlet",
+                        "parameter" : {
+                          "type" : "float",
+                          "base" : {
+                            "label" : "Y",
+                            "value" : 0.6507606,
+                            "controlType" : "inputfield",
+                            "min" : 0,
+                            "defaultValue" : 0,
+                            "max" : 1,
+                            "description" : "Y component",
+                            "id" : "8F5036EE-A194-4318-8AFD-42BD39866A15"
+                          }
+                        }
+                      }
+                    }
+                  },
+                  {
+                    "name" : "inputComponent2",
+                    "payload" : {
+                      "type" : "Float",
+                      "base" : {
+                        "published" : false,
+                        "portDescription" : "Z component",
+                        "parameter" : {
+                          "base" : {
+                            "value" : 0.4455662,
+                            "description" : "Z component",
+                            "defaultValue" : 0,
+                            "label" : "Z",
+                            "id" : "6BD3E519-82A6-4ECD-8A56-E3106ACC9807",
+                            "min" : 0,
+                            "max" : 1,
+                            "controlType" : "inputfield"
+                          },
+                          "type" : "float"
+                        },
+                        "id" : "6BD3E519-82A6-4ECD-8A56-E3106ACC9807",
+                        "name" : "Z",
+                        "kind" : "Inlet"
+                      },
+                      "isParameterPort" : true,
+                      "isProxyPort" : false
+                    }
+                  },
+                  {
+                    "name" : "inputComponent3",
+                    "payload" : {
+                      "type" : "Float",
+                      "isParameterPort" : true,
+                      "isProxyPort" : false,
+                      "base" : {
+                        "parameter" : {
+                          "type" : "float",
+                          "base" : {
+                            "label" : "W",
+                            "id" : "40DE2076-4C33-4448-AB57-1A5A127FEBA2",
+                            "defaultValue" : 0,
+                            "max" : 1,
+                            "description" : "W component",
+                            "value" : 1,
+                            "controlType" : "inputfield",
+                            "min" : 0
+                          }
+                        },
+                        "portDescription" : "W component",
+                        "name" : "W",
+                        "id" : "40DE2076-4C33-4448-AB57-1A5A127FEBA2",
+                        "published" : false,
+                        "kind" : "Inlet"
+                      }
+                    }
+                  },
+                  {
+                    "name" : "outputVector",
+                    "payload" : {
+                      "isProxyPort" : false,
+                      "type" : "Vector 4",
+                      "base" : {
+                        "published" : false,
+                        "portDescription" : "Combined Vector 4",
+                        "kind" : "Outlet",
+                        "id" : "AAC823E3-C413-4376-AAB2-DC45390BAAE8",
+                        "name" : "Vector 4"
+                      },
+                      "isParameterPort" : false
+                    }
+                  }
+                ],
+                "id" : "36D3478A-B8BA-4563-894F-C785D3CA3C3A",
+                "strategy" : "Vector 4",
+                "nodeOffset" : [
+                  -421.4036242023767,
+                  373.39943068208413
+                ]
+              },
+              "type" : "graphics.fabric.CoreNodes\/ComposeVectorNode"
+            },
+            {
+              "value" : {
+                "id" : "1D4C5047-E8B5-4AE3-B07C-5560E8447312",
+                "ports" : [
+                  {
+                    "payload" : {
+                      "isParameterPort" : false,
+                      "base" : {
+                        "published" : false,
+                        "id" : "9EEA8482-0BDE-4C75-A77C-BB7148104EE6",
+                        "portDescription" : "Elapsed time in seconds since graph execution started",
+                        "name" : "Seconds",
+                        "kind" : "Outlet"
+                      },
+                      "type" : "Float",
+                      "isProxyPort" : false
+                    },
+                    "name" : "outputNumber"
+                  }
+                ],
+                "nodeOffset" : [
+                  -1043.6602031678308,
+                  336.67033085478124
+                ]
+              },
+              "type" : "graphics.fabric.CoreNodes\/CurrentTimeNode"
+            },
+            {
+              "value" : {
+                "nodeOffset" : [
+                  -813.7197126255851,
+                  363.28837221008143
+                ],
+                "id" : "42DC5A1F-C6C7-4BDA-B07F-DDB4F14C4BF6",
+                "ports" : [
+                  {
+                    "name" : "inputNumber1",
+                    "payload" : {
+                      "base" : {
+                        "published" : false,
+                        "id" : "A341DB8B-F688-46AB-B661-110FDAC58132",
+                        "portDescription" : "First operand for the binary operation",
+                        "name" : "Number A",
+                        "parameter" : {
+                          "base" : {
+                            "description" : "First operand for the binary operation",
+                            "defaultValue" : 0,
+                            "min" : 0,
+                            "value" : 112.791595,
+                            "max" : 1,
+                            "controlType" : "inputfield",
+                            "label" : "Number A",
+                            "id" : "A341DB8B-F688-46AB-B661-110FDAC58132"
+                          },
+                          "type" : "float"
+                        },
+                        "kind" : "Inlet"
+                      },
+                      "isParameterPort" : true,
+                      "type" : "Float",
+                      "isProxyPort" : false
+                    }
+                  },
+                  {
+                    "name" : "inputNumber2",
+                    "payload" : {
+                      "base" : {
+                        "name" : "Number B",
+                        "published" : false,
+                        "portDescription" : "Second operand for the binary operation",
+                        "parameter" : {
+                          "type" : "float",
+                          "base" : {
+                            "id" : "09FC864A-78FC-4F06-B751-2BABAA63065A",
+                            "min" : 0,
+                            "max" : 1,
+                            "label" : "Number B",
+                            "value" : 4,
+                            "defaultValue" : 0,
+                            "controlType" : "inputfield",
+                            "description" : "Second operand for the binary operation"
+                          }
+                        },
+                        "id" : "09FC864A-78FC-4F06-B751-2BABAA63065A",
+                        "kind" : "Inlet"
+                      },
+                      "type" : "Float",
+                      "isParameterPort" : true,
+                      "isProxyPort" : false
+                    }
+                  },
+                  {
+                    "name" : "inputParam",
+                    "payload" : {
+                      "base" : {
+                        "id" : "3380500A-B59C-42D5-8770-EF366E7D62F3",
+                        "parameter" : {
+                          "type" : "string",
+                          "base" : {
+                            "id" : "3380500A-B59C-42D5-8770-EF366E7D62F3",
+                            "value" : "Add",
+                            "controlType" : "dropdown",
+                            "options" : [
+                              "Add",
+                              "Subtract",
+                              "Multiply",
+                              "Divide",
+                              "Power",
+                              "Minimum",
+                              "Maximum",
+                              "Modulo"
+                            ],
+                            "defaultValue" : "Add",
+                            "description" : "Mathematical operation to perform",
+                            "label" : "Operator"
+                          }
+                        },
+                        "name" : "Operator",
+                        "published" : false,
+                        "portDescription" : "Mathematical operation to perform",
+                        "kind" : "Inlet"
+                      },
+                      "type" : "String",
+                      "isParameterPort" : true,
+                      "isProxyPort" : false
+                    }
+                  },
+                  {
+                    "name" : "outputNumber",
+                    "payload" : {
+                      "type" : "Float",
+                      "isProxyPort" : false,
+                      "base" : {
+                        "id" : "866A7321-9410-4839-B968-CA44ABC6E4E8",
+                        "published" : false,
+                        "kind" : "Outlet",
+                        "portDescription" : "Result of the binary operation",
+                        "name" : "Number"
+                      },
+                      "isParameterPort" : false
+                    }
+                  }
+                ]
+              },
+              "type" : "graphics.fabric.CoreNodes\/NumberBinaryOperator"
+            },
+            {
+              "value" : {
+                "ports" : [
+                  {
+                    "name" : "inputNumber1",
+                    "payload" : {
+                      "type" : "Float",
+                      "isParameterPort" : true,
+                      "base" : {
+                        "kind" : "Inlet",
+                        "portDescription" : "First operand for the binary operation",
+                        "parameter" : {
+                          "base" : {
+                            "defaultValue" : 0,
+                            "id" : "6BA2F5D2-7BF0-4B50-B8E9-A831ABD66A2A",
+                            "min" : 0,
+                            "label" : "Number A",
+                            "value" : 112.791595,
+                            "description" : "First operand for the binary operation",
+                            "max" : 1,
+                            "controlType" : "inputfield"
+                          },
+                          "type" : "float"
+                        },
+                        "published" : false,
+                        "name" : "Number A",
+                        "id" : "6BA2F5D2-7BF0-4B50-B8E9-A831ABD66A2A"
+                      },
+                      "isProxyPort" : false
+                    }
+                  },
+                  {
+                    "name" : "inputNumber2",
+                    "payload" : {
+                      "isParameterPort" : true,
+                      "base" : {
+                        "kind" : "Inlet",
+                        "portDescription" : "Second operand for the binary operation",
+                        "id" : "BCB168AB-B50C-4CCC-BF2B-6B036E52C4C5",
+                        "name" : "Number B",
+                        "parameter" : {
+                          "type" : "float",
+                          "base" : {
+                            "description" : "Second operand for the binary operation",
+                            "controlType" : "inputfield",
+                            "value" : 5,
+                            "min" : 0,
+                            "defaultValue" : 0,
+                            "id" : "BCB168AB-B50C-4CCC-BF2B-6B036E52C4C5",
+                            "label" : "Number B",
+                            "max" : 1
+                          }
+                        },
+                        "published" : false
+                      },
+                      "isProxyPort" : false,
+                      "type" : "Float"
+                    }
+                  },
+                  {
+                    "name" : "inputParam",
+                    "payload" : {
+                      "isParameterPort" : true,
+                      "isProxyPort" : false,
+                      "base" : {
+                        "id" : "652EAC75-7FD0-4A63-968F-00D0B307F0A0",
+                        "kind" : "Inlet",
+                        "portDescription" : "Mathematical operation to perform",
+                        "parameter" : {
+                          "type" : "string",
+                          "base" : {
+                            "value" : "Power",
+                            "description" : "Mathematical operation to perform",
+                            "options" : [
+                              "Add",
+                              "Subtract",
+                              "Multiply",
+                              "Divide",
+                              "Power",
+                              "Minimum",
+                              "Maximum",
+                              "Modulo"
+                            ],
+                            "defaultValue" : "Add",
+                            "label" : "Operator",
+                            "id" : "652EAC75-7FD0-4A63-968F-00D0B307F0A0",
+                            "controlType" : "dropdown"
+                          }
+                        },
+                        "name" : "Operator",
+                        "published" : false
+                      },
+                      "type" : "String"
+                    }
+                  },
+                  {
+                    "name" : "outputNumber",
+                    "payload" : {
+                      "isParameterPort" : false,
+                      "isProxyPort" : false,
+                      "type" : "Float",
+                      "base" : {
+                        "name" : "Number",
+                        "portDescription" : "Result of the binary operation",
+                        "id" : "6AF5F606-F0A6-44AA-AC61-7EFD4C63C4FB",
+                        "kind" : "Outlet",
+                        "published" : false
+                      }
+                    }
+                  }
+                ],
+                "nodeOffset" : [
+                  -813.989069155451,
+                  500.71472778969746
+                ],
+                "id" : "CFCE05A0-EE41-46E6-AFF4-4576252CF5B2"
+              },
+              "type" : "graphics.fabric.CoreNodes\/NumberBinaryOperator"
+            }
+          ]
+        },
+        "proxyPorts" : [
+          {
+            "base" : {
+              "innerPortID" : "33751250-1750-4100-8500-F731343C0770",
+              "id" : "33751250-1750-4100-8500-F731343C0770",
+              "declaredPortType" : "Bool",
+              "kind" : "Inlet",
+              "published" : false,
+              "portDescription" : "Input Bool",
+              "name" : "Bool"
+            },
+            "isProxyPort" : true,
+            "isParameterPort" : true,
+            "type" : "Bool"
+          },
+          {
+            "base" : {
+              "id" : "2E127E13-9B6D-436E-9954-97F3340A8315",
+              "name" : "Speed",
+              "declaredPortType" : "Float",
+              "innerPortID" : "2E127E13-9B6D-436E-9954-97F3340A8315",
+              "kind" : "Inlet",
+              "published" : false
+            },
+            "isProxyPort" : true,
+            "isParameterPort" : true,
+            "type" : "Float"
+          }
+        ],
+        "id" : "F887D065-4FB6-48F3-8A7F-5F55DE9243DB",
+        "ports" : [
+          {
+            "name" : "inputIteratonCount",
+            "payload" : {
+              "isParameterPort" : true,
+              "type" : "Int",
+              "isProxyPort" : false,
+              "base" : {
+                "parameter" : {
+                  "type" : "int",
+                  "base" : {
+                    "controlType" : "inputfield",
+                    "defaultValue" : 0,
+                    "value" : 5,
+                    "label" : "Iterations",
+                    "min" : 100,
+                    "description" : "Number of times to execute the subgraph",
+                    "id" : "D619BDFC-3E0D-4A70-AA3B-FD8708A98CB8",
+                    "max" : 2
+                  }
+                },
+                "published" : false,
+                "kind" : "Inlet",
+                "name" : "Iterations",
+                "id" : "D619BDFC-3E0D-4A70-AA3B-FD8708A98CB8",
+                "portDescription" : "Number of times to execute the subgraph"
+              }
+            }
+          }
+        ]
+      }
+    }
+  ]
+}
