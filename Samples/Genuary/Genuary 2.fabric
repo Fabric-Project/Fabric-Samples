@@ -633,36 +633,6 @@
             }
           },
           {
-            "name" : "inputRenderPass",
-            "payload" : {
-              "isParameterPort" : true,
-              "isProxyPort" : false,
-              "base" : {
-                "kind" : "Inlet",
-                "published" : false,
-                "connections" : [
-
-                ],
-                "parameter" : {
-                  "base" : {
-                    "value" : 0,
-                    "min" : 0,
-                    "label" : "Render Pass",
-                    "controlType" : "inputfield",
-                    "description" : "",
-                    "id" : "EC2098CC-CC62-46DE-A36D-2CB865F8B43F",
-                    "defaultValue" : 0,
-                    "max" : 1
-                  },
-                  "type" : "int"
-                },
-                "id" : "EC2098CC-CC62-46DE-A36D-2CB865F8B43F",
-                "name" : "Render Pass"
-              },
-              "type" : "Int"
-            }
-          },
-          {
             "name" : "inputPosition",
             "payload" : {
               "isParameterPort" : true,
@@ -1210,36 +1180,6 @@
               "isParameterPort" : true,
               "base" : {
                 "published" : false,
-                "kind" : "Inlet",
-                "parameter" : {
-                  "base" : {
-                    "max" : 1,
-                    "value" : 0,
-                    "label" : "Render Pass",
-                    "defaultValue" : 0,
-                    "controlType" : "inputfield",
-                    "min" : 0,
-                    "description" : "",
-                    "id" : "BA1FC14B-D792-4712-A51D-BE198B463F0C"
-                  },
-                  "type" : "int"
-                },
-                "id" : "BA1FC14B-D792-4712-A51D-BE198B463F0C",
-                "name" : "Render Pass",
-                "connections" : [
-
-                ]
-              },
-              "type" : "Int",
-              "isProxyPort" : false
-            },
-            "name" : "inputRenderPass"
-          },
-          {
-            "payload" : {
-              "isParameterPort" : true,
-              "base" : {
-                "published" : false,
                 "connections" : [
 
                 ],
@@ -1669,36 +1609,6 @@
                   }
                 }
               }
-            }
-          },
-          {
-            "name" : "inputRenderPass",
-            "payload" : {
-              "base" : {
-                "id" : "6972DCC5-EF87-4737-941B-183DD6F1289E",
-                "kind" : "Inlet",
-                "connections" : [
-
-                ],
-                "published" : false,
-                "name" : "Render Pass",
-                "parameter" : {
-                  "base" : {
-                    "defaultValue" : 0,
-                    "min" : 0,
-                    "id" : "6972DCC5-EF87-4737-941B-183DD6F1289E",
-                    "description" : "",
-                    "value" : 0,
-                    "max" : 1,
-                    "label" : "Render Pass",
-                    "controlType" : "inputfield"
-                  },
-                  "type" : "int"
-                }
-              },
-              "isProxyPort" : false,
-              "isParameterPort" : true,
-              "type" : "Int"
             }
           },
           {
@@ -3144,7 +3054,7 @@
               "type" : "Image",
               "isParameterPort" : false
             },
-            "name" : "inputTexturePort"
+            "name" : "Image"
           },
           {
             "payload" : {
@@ -4753,7 +4663,7 @@
               "type" : "Int",
               "isProxyPort" : false
             },
-            "name" : "inputWidth"
+            "name" : "Width"
           },
           {
             "payload" : {
@@ -4783,7 +4693,7 @@
               },
               "isParameterPort" : true
             },
-            "name" : "inputHeight"
+            "name" : "Height"
           },
           {
             "payload" : {
@@ -5127,7 +5037,7 @@
       "value" : {
         "ports" : [
           {
-            "name" : "inputTexturePort",
+            "name" : "Image",
             "payload" : {
               "isParameterPort" : false,
               "isProxyPort" : false,

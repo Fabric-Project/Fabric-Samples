@@ -598,34 +598,6 @@
                   {
                     "payload": {
                       "base": {
-                        "published": false,
-                        "kind": "Inlet",
-                        "name": "Render Pass",
-                        "id": "EE297335-F2D8-469A-B29B-C051A2171EE4",
-                        "connections": [],
-                        "parameter": {
-                          "type": "int",
-                          "base": {
-                            "label": "Render Pass",
-                            "controlType": "inputfield",
-                            "value": 0,
-                            "id": "EE297335-F2D8-469A-B29B-C051A2171EE4",
-                            "max": 1,
-                            "description": "",
-                            "min": 0,
-                            "defaultValue": 0
-                          }
-                        }
-                      },
-                      "isParameterPort": true,
-                      "type": "Int",
-                      "isProxyPort": false
-                    },
-                    "name": "inputRenderPass"
-                  },
-                  {
-                    "payload": {
-                      "base": {
                         "name": "Position",
                         "published": false,
                         "id": "60174DB4-67F5-4A04-96AD-06C1699CB6D0",
@@ -1830,34 +1802,6 @@
                       },
                       "isProxyPort": false,
                       "isParameterPort": true
-                    }
-                  },
-                  {
-                    "name": "inputRenderPass",
-                    "payload": {
-                      "type": "Int",
-                      "base": {
-                        "id": "FFBC627F-0C28-4765-ADC1-0B4748E7B534",
-                        "name": "Render Pass",
-                        "connections": [],
-                        "published": false,
-                        "kind": "Inlet",
-                        "parameter": {
-                          "type": "int",
-                          "base": {
-                            "label": "Render Pass",
-                            "id": "FFBC627F-0C28-4765-ADC1-0B4748E7B534",
-                            "min": 0,
-                            "controlType": "inputfield",
-                            "value": 0,
-                            "max": 1,
-                            "description": "",
-                            "defaultValue": 0
-                          }
-                        }
-                      },
-                      "isParameterPort": true,
-                      "isProxyPort": false
                     }
                   },
                   {
@@ -3409,50 +3353,6 @@
                 ],
                 "ports": [
                   {
-                    "name": "inputLookAt",
-                    "payload": {
-                      "type": "Vector 3",
-                      "base": {
-                        "connections": [],
-                        "name": "Look At",
-                        "kind": "Inlet",
-                        "published": false,
-                        "id": "464932E1-CD66-4CEA-AA59-15788B7848AF",
-                        "parameter": {
-                          "type": "float3",
-                          "base": {
-                            "value": [
-                              0,
-                              -1,
-                              0
-                            ],
-                            "defaultValue": [
-                              0,
-                              0,
-                              0
-                            ],
-                            "description": "",
-                            "label": "Look At",
-                            "max": [
-                              1,
-                              1,
-                              1
-                            ],
-                            "min": [
-                              0,
-                              0,
-                              0
-                            ],
-                            "controlType": "inputfield",
-                            "id": "464932E1-CD66-4CEA-AA59-15788B7848AF"
-                          }
-                        }
-                      },
-                      "isParameterPort": true,
-                      "isProxyPort": false
-                    }
-                  },
-                  {
                     "name": "inputVisible",
                     "payload": {
                       "base": {
@@ -3504,34 +3404,6 @@
                         "id": "AD1745D4-2B67-47DA-A2FA-9AD3848BA63F"
                       },
                       "isParameterPort": true
-                    }
-                  },
-                  {
-                    "name": "inputRenderPass",
-                    "payload": {
-                      "type": "Int",
-                      "base": {
-                        "parameter": {
-                          "base": {
-                            "description": "",
-                            "id": "97EAC252-31FF-4455-B921-36A1205250E3",
-                            "controlType": "inputfield",
-                            "defaultValue": 0,
-                            "label": "Render Pass",
-                            "value": 0,
-                            "max": 1,
-                            "min": 0
-                          },
-                          "type": "int"
-                        },
-                        "id": "97EAC252-31FF-4455-B921-36A1205250E3",
-                        "kind": "Inlet",
-                        "connections": [],
-                        "published": false,
-                        "name": "Render Pass"
-                      },
-                      "isParameterPort": true,
-                      "isProxyPort": false
                     }
                   },
                   {
@@ -5054,7 +4926,7 @@
   ],
   "notes": [
     {
-      "note": "# Genuary 5\n\n> Write \u201cGenuary\u201d. Avoid using a font.\n\n\nThis Graph uses an Environment to render with reflections\n\nInside the Environment node is \n\n* A Cursor node which tracks where the mouse is\n* Math to convert the mouse coordinate to world unit coordinates\n* Nodes that convert the resulting 3d position into a Queue (array) of transforms to send to a Mesh\n* The Mesh draws a PBR Shader along with a \u201cSuper Shape\u201d which is a mathematical 3D shade defined by numbers\n* Those numbers animate over time\n\nYou can write in \u2018digital grafitti\u2019 Genuary!\n\n\n> Hint\n\n* You have to load your own EXR HDRI image to get the environment to reflect something. Try searching for free HDRI\u2019s and see how the composition changes.",
+      "note": "# Genuary 5\n\n> Write “Genuary”. Avoid using a font.\n\n\nThis Graph uses an Environment to render with reflections\n\nInside the Environment node is \n\n* A Cursor node which tracks where the mouse is\n* Math to convert the mouse coordinate to world unit coordinates\n* Nodes that convert the resulting 3d position into a Queue (array) of transforms to send to a Mesh\n* The Mesh draws a PBR Shader along with a “Super Shape” which is a mathematical 3D shade defined by numbers\n* Those numbers animate over time\n\nYou can write in ‘digital grafitti’ Genuary!\n\n\n> Hint\n\n* You have to load your own EXR HDRI image to get the environment to reflect something. Try searching for free HDRI’s and see how the composition changes.",
       "id": "683C9AEF-E351-456A-92C3-60087A79121C",
       "rect": [
         [

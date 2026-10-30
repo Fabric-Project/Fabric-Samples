@@ -719,36 +719,6 @@
           },
           {
             "payload" : {
-              "isParameterPort" : true,
-              "isProxyPort" : false,
-              "base" : {
-                "id" : "EC2098CC-CC62-46DE-A36D-2CB865F8B43F",
-                "published" : false,
-                "kind" : "Inlet",
-                "name" : "Render Pass",
-                "connections" : [
-
-                ],
-                "parameter" : {
-                  "base" : {
-                    "label" : "Render Pass",
-                    "controlType" : "inputfield",
-                    "min" : 0,
-                    "max" : 1,
-                    "defaultValue" : 0,
-                    "value" : 0,
-                    "description" : "",
-                    "id" : "EC2098CC-CC62-46DE-A36D-2CB865F8B43F"
-                  },
-                  "type" : "int"
-                }
-              },
-              "type" : "Int"
-            },
-            "name" : "inputRenderPass"
-          },
-          {
-            "payload" : {
               "isProxyPort" : false,
               "type" : "Vector 3",
               "base" : {
@@ -1294,36 +1264,6 @@
             "payload" : {
               "isProxyPort" : false,
               "base" : {
-                "connections" : [
-
-                ],
-                "parameter" : {
-                  "base" : {
-                    "value" : 0,
-                    "controlType" : "inputfield",
-                    "defaultValue" : 0,
-                    "id" : "BA1FC14B-D792-4712-A51D-BE198B463F0C",
-                    "max" : 1,
-                    "label" : "Render Pass",
-                    "description" : "",
-                    "min" : 0
-                  },
-                  "type" : "int"
-                },
-                "id" : "BA1FC14B-D792-4712-A51D-BE198B463F0C",
-                "name" : "Render Pass",
-                "published" : false,
-                "kind" : "Inlet"
-              },
-              "type" : "Int",
-              "isParameterPort" : true
-            },
-            "name" : "inputRenderPass"
-          },
-          {
-            "payload" : {
-              "isProxyPort" : false,
-              "base" : {
                 "kind" : "Inlet",
                 "connections" : [
 
@@ -1750,36 +1690,6 @@
               },
               "isProxyPort" : false,
               "type" : "Int"
-            }
-          },
-          {
-            "name" : "inputRenderPass",
-            "payload" : {
-              "type" : "Int",
-              "isProxyPort" : false,
-              "isParameterPort" : true,
-              "base" : {
-                "name" : "Render Pass",
-                "id" : "6972DCC5-EF87-4737-941B-183DD6F1289E",
-                "published" : false,
-                "parameter" : {
-                  "base" : {
-                    "description" : "",
-                    "defaultValue" : 0,
-                    "value" : 0,
-                    "id" : "6972DCC5-EF87-4737-941B-183DD6F1289E",
-                    "label" : "Render Pass",
-                    "controlType" : "inputfield",
-                    "min" : 0,
-                    "max" : 1
-                  },
-                  "type" : "int"
-                },
-                "kind" : "Inlet",
-                "connections" : [
-
-                ]
-              }
             }
           },
           {
@@ -3218,7 +3128,7 @@
         "effectPath" : "Effects\/Generator\/Simplex FBM Noise.metal",
         "ports" : [
           {
-            "name" : "inputWidth",
+            "name" : "Width",
             "payload" : {
               "base" : {
                 "name" : "Width",
@@ -3248,7 +3158,7 @@
             }
           },
           {
-            "name" : "inputHeight",
+            "name" : "Height",
             "payload" : {
               "base" : {
                 "kind" : "Inlet",
@@ -3918,7 +3828,7 @@
       "value" : {
         "ports" : [
           {
-            "name" : "inputTexturePort",
+            "name" : "Image",
             "payload" : {
               "type" : "Image",
               "base" : {

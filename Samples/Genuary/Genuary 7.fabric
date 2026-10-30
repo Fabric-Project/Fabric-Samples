@@ -13,9 +13,7 @@
       "7BAD875E-6A3E-4C90-A0AA-DDD83B939BF3"
     ],
     "2541C496-2D61-4EC8-AD32-1147BFB7D731",
-    [
-      "0B34697D-CF72-418C-8243-EC6981738071"
-    ],
+    [],
     "B07C408B-5FEC-45F7-9E68-0A4A134099C2",
     [
       "71156355-5888-41CF-8D8A-CC43F1FC1C5F"
@@ -114,10 +112,6 @@
     "1B9711A3-1E8F-48D0-989F-17D44035ABA4",
     [
       "3DEC8A68-B7A3-4441-BCB0-FAC0F268562B"
-    ],
-    "0B34697D-CF72-418C-8243-EC6981738071",
-    [
-      "2541C496-2D61-4EC8-AD32-1147BFB7D731"
     ],
     "B7578698-9FCB-4A4A-8910-D8DAD7AD5F79",
     [
@@ -221,34 +215,6 @@
               "isParameterPort": true
             },
             "name": "inputRenderOrder"
-          },
-          {
-            "payload": {
-              "isParameterPort": true,
-              "isProxyPort": false,
-              "base": {
-                "published": false,
-                "kind": "Inlet",
-                "connections": [],
-                "parameter": {
-                  "type": "int",
-                  "base": {
-                    "min": 0,
-                    "description": "",
-                    "max": 1,
-                    "controlType": "inputfield",
-                    "defaultValue": 0,
-                    "label": "Render Pass",
-                    "id": "7A74FC81-97DF-47E3-8C37-01BDE50A1355",
-                    "value": 0
-                  }
-                },
-                "id": "7A74FC81-97DF-47E3-8C37-01BDE50A1355",
-                "name": "Render Pass"
-              },
-              "type": "Int"
-            },
-            "name": "inputRenderPass"
           },
           {
             "payload": {
@@ -743,7 +709,7 @@
                 "name": "Image"
               }
             },
-            "name": "inputTexturePort"
+            "name": "Image"
           },
           {
             "payload": {
@@ -1006,7 +972,7 @@
         ],
         "ports": [
           {
-            "name": "inputWidth",
+            "name": "Width",
             "payload": {
               "isParameterPort": true,
               "isProxyPort": false,
@@ -1036,7 +1002,7 @@
             }
           },
           {
-            "name": "inputHeight",
+            "name": "Height",
             "payload": {
               "isParameterPort": true,
               "isProxyPort": false,
@@ -1647,7 +1613,7 @@
         "id": "22BD4901-8311-48E9-936E-707C917C1463",
         "ports": [
           {
-            "name": "inputTexturePort",
+            "name": "Image",
             "payload": {
               "isParameterPort": false,
               "isProxyPort": false,
@@ -1664,7 +1630,7 @@
             }
           },
           {
-            "name": "inputTexture2Port",
+            "name": "Image 2",
             "payload": {
               "base": {
                 "id": "920A59C2-54F6-47D3-8EBB-97F8C89D403A",
@@ -1727,7 +1693,7 @@
               },
               "isProxyPort": false
             },
-            "name": "inputTexturePort"
+            "name": "Image"
           },
           {
             "payload": {
@@ -1742,7 +1708,7 @@
               },
               "isProxyPort": false
             },
-            "name": "inputTexture2Port"
+            "name": "Image 2"
           },
           {
             "payload": {
@@ -1831,7 +1797,7 @@
               },
               "isProxyPort": false
             },
-            "name": "inputWidth"
+            "name": "Width"
           },
           {
             "payload": {
@@ -1861,7 +1827,7 @@
                 }
               }
             },
-            "name": "inputHeight"
+            "name": "Height"
           },
           {
             "payload": {
@@ -2059,7 +2025,7 @@
         "lastKnownInputCount": 1,
         "ports": [
           {
-            "name": "inputTexturePort",
+            "name": "Image",
             "payload": {
               "isProxyPort": false,
               "type": "Image",
@@ -2134,7 +2100,7 @@
         "lastKnownInputCount": 2,
         "ports": [
           {
-            "name": "inputTexturePort",
+            "name": "Image",
             "payload": {
               "isParameterPort": false,
               "isProxyPort": false,
@@ -2149,7 +2115,7 @@
             }
           },
           {
-            "name": "inputTexture2Port",
+            "name": "Image 2",
             "payload": {
               "type": "Image",
               "base": {
@@ -2290,7 +2256,7 @@
                 "name": "Image"
               }
             },
-            "name": "inputTexturePort"
+            "name": "Image"
           },
           {
             "payload": {
@@ -2357,9 +2323,7 @@
                 "published": false,
                 "id": "2541C496-2D61-4EC8-AD32-1147BFB7D731",
                 "portDescription": "Output image",
-                "connections": [
-                  "0B34697D-CF72-418C-8243-EC6981738071"
-                ],
+                "connections": [],
                 "name": "Image"
               },
               "isParameterPort": false
@@ -2375,7 +2339,7 @@
       "value": {
         "ports": [
           {
-            "name": "inputTexturePort",
+            "name": "Image",
             "payload": {
               "type": "Image",
               "isProxyPort": false,
@@ -2387,24 +2351,6 @@
                 "published": false
               },
               "isParameterPort": false
-            }
-          },
-          {
-            "name": "Image 2",
-            "payload": {
-              "type": "Image",
-              "isParameterPort": false,
-              "isProxyPort": false,
-              "base": {
-                "id": "0B34697D-CF72-418C-8243-EC6981738071",
-                "name": "Image 2",
-                "published": false,
-                "kind": "Inlet",
-                "portDescription": "Input image 2",
-                "connections": [
-                  "2541C496-2D61-4EC8-AD32-1147BFB7D731"
-                ]
-              }
             }
           },
           {
@@ -2531,7 +2477,7 @@
       "value": {
         "ports": [
           {
-            "name": "inputTexturePort",
+            "name": "Image",
             "payload": {
               "isParameterPort": false,
               "type": "Image",
@@ -2607,7 +2553,7 @@
       "value": {
         "ports": [
           {
-            "name": "inputTexturePort",
+            "name": "Image",
             "payload": {
               "isParameterPort": false,
               "type": "Image",

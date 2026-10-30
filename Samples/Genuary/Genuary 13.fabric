@@ -296,33 +296,6 @@
           },
           {
             "payload": {
-              "type": "Int",
-              "isParameterPort": true,
-              "base": {
-                "parameter": {
-                  "type": "int",
-                  "base": {
-                    "description": "",
-                    "max": 1,
-                    "defaultValue": 0,
-                    "controlType": "inputfield",
-                    "label": "Render Pass",
-                    "id": "8AC09A2C-322E-487C-93A4-9FF1A115AFF2",
-                    "value": 0,
-                    "min": 0
-                  }
-                },
-                "kind": "Inlet",
-                "published": false,
-                "id": "8AC09A2C-322E-487C-93A4-9FF1A115AFF2",
-                "connections": [],
-                "name": "Render Pass"
-              }
-            },
-            "name": "inputRenderPass"
-          },
-          {
-            "payload": {
               "base": {
                 "published": false,
                 "kind": "Inlet",
@@ -1426,33 +1399,6 @@
             }
           },
           {
-            "name": "inputRenderPass",
-            "payload": {
-              "isParameterPort": true,
-              "base": {
-                "id": "CCF4EE59-B4C3-433D-A460-4B1D0A7A19B6",
-                "parameter": {
-                  "type": "int",
-                  "base": {
-                    "description": "",
-                    "value": 0,
-                    "id": "CCF4EE59-B4C3-433D-A460-4B1D0A7A19B6",
-                    "controlType": "inputfield",
-                    "defaultValue": 0,
-                    "min": 0,
-                    "max": 1,
-                    "label": "Render Pass"
-                  }
-                },
-                "kind": "Inlet",
-                "name": "Render Pass",
-                "published": false,
-                "connections": []
-              },
-              "type": "Int"
-            }
-          },
-          {
             "name": "inputPosition",
             "payload": {
               "type": "Vector 3",
@@ -2487,33 +2433,6 @@
             }
           },
           {
-            "name": "inputRenderPass",
-            "payload": {
-              "isParameterPort": true,
-              "base": {
-                "id": "5CEB0F12-8F60-423D-B85B-6E6B63D80BF7",
-                "name": "Render Pass",
-                "kind": "Inlet",
-                "published": false,
-                "connections": [],
-                "parameter": {
-                  "base": {
-                    "max": 1,
-                    "value": 0,
-                    "id": "5CEB0F12-8F60-423D-B85B-6E6B63D80BF7",
-                    "min": 0,
-                    "label": "Render Pass",
-                    "controlType": "inputfield",
-                    "defaultValue": 0,
-                    "description": ""
-                  },
-                  "type": "int"
-                }
-              },
-              "type": "Int"
-            }
-          },
-          {
             "name": "inputPosition",
             "payload": {
               "type": "Vector 3",
@@ -2837,33 +2756,6 @@
                 "name": "Render Order"
               },
               "type": "Int"
-            }
-          },
-          {
-            "name": "inputRenderPass",
-            "payload": {
-              "type": "Int",
-              "base": {
-                "id": "9964AE63-9033-42FA-836A-8E41AD96537A",
-                "kind": "Inlet",
-                "published": false,
-                "connections": [],
-                "parameter": {
-                  "type": "int",
-                  "base": {
-                    "max": 1,
-                    "defaultValue": 0,
-                    "description": "",
-                    "controlType": "inputfield",
-                    "value": 0,
-                    "label": "Render Pass",
-                    "min": 0,
-                    "id": "9964AE63-9033-42FA-836A-8E41AD96537A"
-                  }
-                },
-                "name": "Render Pass"
-              },
-              "isParameterPort": true
             }
           },
           {
@@ -3526,33 +3418,6 @@
               "type": "Int"
             },
             "name": "inputRenderOrder"
-          },
-          {
-            "payload": {
-              "isParameterPort": true,
-              "base": {
-                "kind": "Inlet",
-                "name": "Render Pass",
-                "published": false,
-                "connections": [],
-                "parameter": {
-                  "base": {
-                    "label": "Render Pass",
-                    "defaultValue": 0,
-                    "controlType": "inputfield",
-                    "max": 1,
-                    "id": "4380CD6C-E7E7-4EDD-9C0F-E8EF25FBC627",
-                    "description": "",
-                    "min": 0,
-                    "value": 0
-                  },
-                  "type": "int"
-                },
-                "id": "4380CD6C-E7E7-4EDD-9C0F-E8EF25FBC627"
-              },
-              "type": "Int"
-            },
-            "name": "inputRenderPass"
           },
           {
             "payload": {

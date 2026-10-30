@@ -187,36 +187,6 @@
           },
           {
             "payload" : {
-              "base" : {
-                "id" : "FDC1E24A-DD8C-48A7-BEA1-4B13C9A0AD36",
-                "kind" : "Inlet",
-                "connections" : [
-
-                ],
-                "name" : "Render Pass",
-                "published" : false,
-                "parameter" : {
-                  "type" : "int",
-                  "base" : {
-                    "description" : "",
-                    "value" : 0,
-                    "id" : "FDC1E24A-DD8C-48A7-BEA1-4B13C9A0AD36",
-                    "defaultValue" : 0,
-                    "max" : 1,
-                    "min" : 0,
-                    "controlType" : "inputfield",
-                    "label" : "Render Pass"
-                  }
-                }
-              },
-              "type" : "Int",
-              "isProxyPort" : false,
-              "isParameterPort" : true
-            },
-            "name" : "inputRenderPass"
-          },
-          {
-            "payload" : {
               "type" : "Vector 3",
               "isParameterPort" : true,
               "isProxyPort" : false,
@@ -1033,7 +1003,7 @@
                 "published" : false
               }
             },
-            "name" : "inputTexturePort"
+            "name" : "Image"
           },
           {
             "payload" : {
@@ -1069,7 +1039,7 @@
       "value" : {
         "ports" : [
           {
-            "name" : "inputTexturePort",
+            "name" : "Image",
             "payload" : {
               "type" : "Image",
               "isProxyPort" : false,
@@ -1134,7 +1104,7 @@
                 "name" : "Image"
               }
             },
-            "name" : "inputTexturePort"
+            "name" : "Image"
           },
           {
             "payload" : {
@@ -1175,7 +1145,7 @@
         "baseImageNodeVersion" : 1,
         "ports" : [
           {
-            "name" : "inputTexturePort",
+            "name" : "Image",
             "payload" : {
               "type" : "Image",
               "base" : {
@@ -1192,7 +1162,7 @@
             }
           },
           {
-            "name" : "inputTexture2Port",
+            "name" : "Image 2",
             "payload" : {
               "type" : "Image",
               "base" : {

@@ -1,7 +1,94 @@
 {
+  "connections" : [
+    {
+      "inletPortID" : "5101B3A9-B6D8-4DA3-AD17-6E3EC7D8C7B5",
+      "active" : true,
+      "id" : "4A28D533-C349-49EB-8316-E49AF009029F",
+      "outletPortID" : "39F9BDC9-C0AD-4A2D-A058-F1D602424BBC"
+    },
+    {
+      "inletPortID" : "3731EDFD-E4E2-4483-B384-8A1EC27D0016",
+      "active" : true,
+      "id" : "14EA414F-FEFF-419F-AA3B-1D41A5C8C7E9",
+      "outletPortID" : "A29EE9FA-59F3-4DD6-8C11-537F6FBB4356"
+    },
+    {
+      "inletPortID" : "EE3D91AB-BC18-46BB-88E3-D793E1FD4975",
+      "active" : true,
+      "id" : "991BDDA6-E7FA-4B5C-805D-F548B8960E03",
+      "outletPortID" : "A471FCF3-6A1C-4923-A686-83D7E2AD25BF"
+    },
+    {
+      "inletPortID" : "6C99CD0A-6AD1-4D09-B130-FDD1A54D023A",
+      "active" : true,
+      "id" : "7A219891-7573-4046-AF51-14F419619FC6",
+      "outletPortID" : "8684C8BD-E884-409C-AB3B-70C06AFB5053"
+    },
+    {
+      "inletPortID" : "47AF295C-5232-4F41-838B-716A0E099FD5",
+      "active" : true,
+      "id" : "6A2ADA76-EEAA-4861-BB73-4C2F782DAF7D",
+      "outletPortID" : "8684C8BD-E884-409C-AB3B-70C06AFB5053"
+    },
+    {
+      "inletPortID" : "17316D5D-46CE-47B5-8C62-4BDB9A9549D9",
+      "active" : true,
+      "id" : "38681077-D956-4FA3-8A01-7714984E4895",
+      "outletPortID" : "B00F07C7-1297-4108-A577-359302668017"
+    },
+    {
+      "inletPortID" : "4FE89661-310A-4AEE-BE09-89CE560FA099",
+      "active" : true,
+      "id" : "A949E679-4B03-4AF9-BA26-56222600C437",
+      "outletPortID" : "0FD936EA-B451-400C-818F-A73AA995A639"
+    },
+    {
+      "inletPortID" : "E4A4A825-05F5-41F9-9D55-44B6957A8FD4",
+      "active" : true,
+      "id" : "45D2B42D-96A9-4432-843E-218E7EA2D3C1",
+      "outletPortID" : "9C47C32D-E6B9-4808-8AEA-E76D160984E3"
+    },
+    {
+      "inletPortID" : "3EDE9260-E647-4BDD-B69E-2438ED01AC93",
+      "active" : true,
+      "id" : "D6C40ED3-DAAA-4756-B277-82334C854A9A",
+      "outletPortID" : "67106D6E-5F37-4425-BB35-F08CCE57910F"
+    },
+    {
+      "inletPortID" : "FCCF4730-3EAA-45C5-9224-FE2E92DBC4CC",
+      "active" : true,
+      "id" : "8E3BDEB7-790C-406B-B6BE-A85653765042",
+      "outletPortID" : "7FE7AB87-0A52-4219-9425-16F06C0B5E83"
+    },
+    {
+      "inletPortID" : "817CC00D-73D8-4AFE-A670-F76C3C76992F",
+      "active" : true,
+      "id" : "86A01A12-4429-46E8-8700-EB37CD20736B",
+      "outletPortID" : "108F107E-B5FB-47C7-9699-81D6D2B8FECF"
+    },
+    {
+      "inletPortID" : "78C4F8D9-0503-4C2F-AD0C-C09C7028BB60",
+      "active" : true,
+      "id" : "7FAFF36D-E47C-4057-BD92-FCBC61EDA9A2",
+      "outletPortID" : "756BF89B-8546-43D2-B0A6-B4B665C2AF3A"
+    },
+    {
+      "inletPortID" : "204E6C01-1B58-4772-924D-5DF62550EBF7",
+      "active" : true,
+      "id" : "D1C8BD4A-421A-47EE-9A26-274A9A819ACA",
+      "outletPortID" : "A697F063-237C-4BF3-BD07-831756F9C7EA"
+    }
+  ],
+  "version" : {
+    "beta" : {
+
+    }
+  },
+  "id" : "1D8BD95B-B724-4028-A124-D3C17908094A",
   "notes" : [
     {
-      "id" : "9C6A223E-3CA9-499A-BFEF-6609A1FC6A41",
+      "note" : "# Local Vision Language Model\n\nA Vision language Model (VLM) is a large language model that understands images or sequences of images. \n\nThis node lets you chose from a selection of VLM’s available to run locally. Node some of these require a LOT of Ram and disk space, and might not be actually able to run on all systems. \n\nWhen you chose a VLM, it will download from Hugging Face and then execute as long as the “Generate” toggle is set to true.\n\nSome VLMs can do instruction following, so experiment with a prompt!\n\nYou can ask them to describe the contents of the image, or whatever you want.\n",
+      "id" : "A5D08476-7947-4CBF-B4D0-E6522FB6031B",
       "rect" : [
         [
           -998.5,
@@ -11,210 +98,188 @@
           500,
           500
         ]
-      ],
-      "note" : "# Local Vision Language Model\n\nA Vision language Model (VLM) is a large language model that understands images or sequences of images. \n\nThis node lets you chose from a selection of VLM’s available to run locally. Node some of these require a LOT of Ram and disk space, and might not be actually able to run on all systems. \n\nWhen you chose a VLM, it will download from Hugging Face and then execute as long as the “Generate” toggle is set to true.\n\nSome VLMs can do instruction following, so experiment with a prompt!\n\nYou can ask them to describe the contents of the image, or whatever you want.\n"
+      ]
     }
   ],
-  "version" : {
-    "alpha1" : {
-
+  "requiredPlugins" : [
+    {
+      "id" : "graphics.fabric.CoreNodes"
     }
-  },
+  ],
   "nodeMap" : [
     {
-      "type" : "MeshNode",
       "value" : {
         "id" : "B2DEB1A8-ADE0-431F-ACF1-108307B37B0B",
+        "nodeOffset" : [
+          -235.56044541300162,
+          114.4596366129299
+        ],
         "ports" : [
           {
-            "name" : "inputVisible",
             "payload" : {
               "type" : "Bool",
+              "isProxyPort" : false,
               "isParameterPort" : true,
               "base" : {
-                "connections" : [
-
-                ],
-                "id" : "B5466AE8-04C8-462C-A7B0-569D30D1C029",
-                "kind" : "Inlet",
                 "parameter" : {
+                  "type" : "bool",
                   "base" : {
+                    "description" : "When enabled, the object is rendered in the scene",
                     "defaultValue" : true,
-                    "label" : "Visible",
                     "value" : true,
                     "id" : "B5466AE8-04C8-462C-A7B0-569D30D1C029",
-                    "description" : "",
-                    "controlType" : "button"
-                  },
-                  "type" : "bool"
+                    "controlType" : "button",
+                    "label" : "Visible"
+                  }
                 },
                 "name" : "Visible",
-                "published" : false
+                "kind" : "Inlet",
+                "published" : false,
+                "id" : "B5466AE8-04C8-462C-A7B0-569D30D1C029",
+                "portDescription" : "When enabled, the object is rendered in the scene"
               }
-            }
+            },
+            "name" : "inputVisible"
           },
           {
             "payload" : {
+              "isParameterPort" : true,
               "base" : {
-                "connections" : [
-
-                ],
                 "id" : "BB6A48FB-C0A6-4378-8D52-D038D1BC63F0",
                 "kind" : "Inlet",
+                "name" : "Render Order",
+                "portDescription" : "Draw order within the same render pass (lower = earlier)",
                 "parameter" : {
                   "type" : "int",
                   "base" : {
-                    "controlType" : "inputfield",
                     "defaultValue" : 0,
+                    "max" : 1,
+                    "value" : 0,
+                    "label" : "Render Order",
                     "min" : 0,
                     "id" : "BB6A48FB-C0A6-4378-8D52-D038D1BC63F0",
-                    "label" : "Render Order",
-                    "max" : 1,
-                    "description" : "",
-                    "value" : 0
+                    "controlType" : "inputfield",
+                    "description" : "Draw order within the same render pass (lower = earlier)"
                   }
                 },
-                "name" : "Render Order",
                 "published" : false
               },
-              "isParameterPort" : true,
+              "isProxyPort" : false,
               "type" : "Int"
             },
             "name" : "inputRenderOrder"
           },
           {
-            "name" : "inputRenderPass",
             "payload" : {
               "isParameterPort" : true,
               "base" : {
-                "connections" : [
-
-                ],
-                "id" : "AC072B5B-3814-49E4-92D8-87359316955D",
-                "kind" : "Inlet",
-                "parameter" : {
-                  "type" : "int",
-                  "base" : {
-                    "controlType" : "inputfield",
-                    "defaultValue" : 0,
-                    "min" : 0,
-                    "id" : "AC072B5B-3814-49E4-92D8-87359316955D",
-                    "label" : "Render Pass",
-                    "max" : 1,
-                    "description" : "",
-                    "value" : 0
-                  }
-                },
-                "name" : "Render Pass",
-                "published" : false
-              },
-              "type" : "Int"
-            }
-          },
-          {
-            "name" : "inputPosition",
-            "payload" : {
-              "type" : "Vector 3",
-              "base" : {
-                "connections" : [
-
-                ],
-                "id" : "CFEF7D01-1066-4178-A751-0A2F5030F22D",
-                "kind" : "Inlet",
                 "parameter" : {
                   "type" : "float3",
                   "base" : {
-                    "controlType" : "inputfield",
                     "defaultValue" : [
                       0,
                       0,
                       0
                     ],
+                    "max" : [
+                      1,
+                      1,
+                      1
+                    ],
+                    "value" : [
+                      0,
+                      0,
+                      0
+                    ],
+                    "label" : "Position",
                     "min" : [
                       0,
                       0,
                       0
                     ],
                     "id" : "CFEF7D01-1066-4178-A751-0A2F5030F22D",
-                    "label" : "Position",
-                    "max" : [
-                      1,
-                      1,
-                      1
-                    ],
-                    "description" : "",
-                    "value" : [
-                      0,
-                      0,
-                      0
-                    ]
+                    "controlType" : "inputfield",
+                    "description" : "Position in 3D space (X, Y, Z) in world units"
                   }
                 },
                 "name" : "Position",
-                "published" : false
+                "kind" : "Inlet",
+                "published" : false,
+                "portDescription" : "Position in 3D space (X, Y, Z) in world units",
+                "id" : "CFEF7D01-1066-4178-A751-0A2F5030F22D"
               },
-              "isParameterPort" : true
-            }
+              "type" : "Vector 3",
+              "isProxyPort" : false
+            },
+            "name" : "inputPosition"
           },
           {
-            "name" : "inputScale",
             "payload" : {
+              "type" : "Vector 3",
               "base" : {
-                "connections" : [
-
-                ],
                 "id" : "86D230F2-2CE9-4DDE-8078-7FC89A7546F8",
                 "kind" : "Inlet",
+                "published" : false,
+                "portDescription" : "Scale factor along each axis (X, Y, Z)",
+                "name" : "Scale",
                 "parameter" : {
+                  "type" : "float3",
                   "base" : {
-                    "controlType" : "inputfield",
                     "defaultValue" : [
                       1,
                       1,
                       1
                     ],
+                    "max" : [
+                      1,
+                      1,
+                      1
+                    ],
+                    "value" : [
+                      0.07,
+                      0.07,
+                      0.07
+                    ],
+                    "label" : "Scale",
                     "min" : [
                       0,
                       0,
                       0
                     ],
                     "id" : "86D230F2-2CE9-4DDE-8078-7FC89A7546F8",
-                    "label" : "Scale",
-                    "description" : "",
+                    "description" : "Scale factor along each axis (X, Y, Z)",
+                    "controlType" : "inputfield"
+                  }
+                }
+              },
+              "isParameterPort" : true,
+              "isProxyPort" : false
+            },
+            "name" : "inputScale"
+          },
+          {
+            "payload" : {
+              "isProxyPort" : false,
+              "base" : {
+                "id" : "51DB9DE7-B6E8-4A86-8C3F-B60DE6D6A771",
+                "kind" : "Inlet",
+                "portDescription" : "Orientation as quaternion (X, Y, Z, W)",
+                "parameter" : {
+                  "base" : {
+                    "defaultValue" : [
+                      0,
+                      0,
+                      0,
+                      0
+                    ],
                     "max" : [
+                      1,
                       1,
                       1,
                       1
                     ],
+                    "label" : "Orientation",
                     "value" : [
-                      0.070000000000000007,
-                      0.070000000000000007,
-                      0.070000000000000007
-                    ]
-                  },
-                  "type" : "float3"
-                },
-                "name" : "Scale",
-                "published" : false
-              },
-              "isParameterPort" : true,
-              "type" : "Vector 3"
-            }
-          },
-          {
-            "payload" : {
-              "type" : "Vector 4",
-              "isParameterPort" : true,
-              "base" : {
-                "connections" : [
-
-                ],
-                "id" : "51DB9DE7-B6E8-4A86-8C3F-B60DE6D6A771",
-                "kind" : "Inlet",
-                "parameter" : {
-                  "base" : {
-                    "controlType" : "inputfield",
-                    "defaultValue" : [
                       0,
                       0,
                       0,
@@ -227,210 +292,191 @@
                       0
                     ],
                     "id" : "51DB9DE7-B6E8-4A86-8C3F-B60DE6D6A771",
-                    "label" : "Orientation",
-                    "value" : [
-                      0,
-                      0,
-                      0,
-                      0
-                    ],
-                    "max" : [
-                      1,
-                      1,
-                      1,
-                      1
-                    ],
-                    "description" : ""
+                    "controlType" : "inputfield",
+                    "description" : "Orientation as quaternion (X, Y, Z, W)"
                   },
                   "type" : "float4"
                 },
                 "name" : "Orientation",
                 "published" : false
-              }
+              },
+              "isParameterPort" : true,
+              "type" : "Vector 4"
             },
             "name" : "inputOrientation"
           },
           {
-            "name" : "inputGeometry",
             "payload" : {
+              "isParameterPort" : false,
               "base" : {
-                "connections" : [
-                  "B00F07C7-1297-4108-A577-359302668017"
-                ],
-                "id" : "17316D5D-46CE-47B5-8C62-4BDB9A9549D9",
-                "kind" : "Inlet",
                 "name" : "Geometry",
-                "published" : false
+                "portDescription" : "Geometry mesh to render",
+                "id" : "17316D5D-46CE-47B5-8C62-4BDB9A9549D9",
+                "published" : false,
+                "kind" : "Inlet"
               },
-              "type" : "Geometry",
-              "isParameterPort" : false
-            }
+              "isProxyPort" : false,
+              "type" : "Geometry"
+            },
+            "name" : "inputGeometry"
           },
           {
-            "name" : "inputMaterial",
             "payload" : {
-              "type" : "Material",
+              "isProxyPort" : false,
               "base" : {
-                "connections" : [
-                  "7FE7AB87-0A52-4219-9425-16F06C0B5E83"
-                ],
                 "id" : "FCCF4730-3EAA-45C5-9224-FE2E92DBC4CC",
-                "kind" : "Inlet",
                 "name" : "Material",
-                "published" : false
+                "published" : false,
+                "portDescription" : "Material to apply to the geometry",
+                "kind" : "Inlet"
               },
+              "type" : "Material",
               "isParameterPort" : false
-            }
+            },
+            "name" : "inputMaterial"
           },
           {
             "payload" : {
-              "type" : "Bool",
               "isParameterPort" : true,
               "base" : {
-                "connections" : [
-
-                ],
-                "id" : "53C2F1DE-3621-45A6-B993-64017A08E127",
                 "kind" : "Inlet",
+                "name" : "Enable Shadows",
                 "parameter" : {
+                  "type" : "bool",
                   "base" : {
-                    "defaultValue" : true,
                     "label" : "Enable Shadows",
                     "id" : "53C2F1DE-3621-45A6-B993-64017A08E127",
+                    "description" : "When enabled, the mesh casts and receives shadows",
+                    "defaultValue" : true,
                     "value" : true,
-                    "description" : "",
                     "controlType" : "button"
-                  },
-                  "type" : "bool"
+                  }
                 },
-                "name" : "Enable Shadows",
-                "published" : false
-              }
+                "id" : "53C2F1DE-3621-45A6-B993-64017A08E127",
+                "published" : false,
+                "portDescription" : "When enabled, the mesh casts and receives shadows"
+              },
+              "isProxyPort" : false,
+              "type" : "Bool"
             },
             "name" : "inputCastsShadow"
           },
           {
-            "name" : "inputDoubleSided",
             "payload" : {
-              "type" : "Bool",
-              "isParameterPort" : true,
               "base" : {
-                "connections" : [
-
-                ],
+                "name" : "Double Sided",
+                "published" : false,
+                "portDescription" : "When enabled, renders both front and back faces",
                 "id" : "8BBA811A-70A8-4B13-A5B3-9DC3C6F4A916",
-                "kind" : "Inlet",
                 "parameter" : {
                   "base" : {
-                    "defaultValue" : false,
-                    "id" : "8BBA811A-70A8-4B13-A5B3-9DC3C6F4A916",
-                    "label" : "Double Sided",
                     "value" : false,
+                    "defaultValue" : false,
+                    "label" : "Double Sided",
                     "controlType" : "button",
-                    "description" : ""
+                    "description" : "When enabled, renders both front and back faces",
+                    "id" : "8BBA811A-70A8-4B13-A5B3-9DC3C6F4A916"
                   },
                   "type" : "bool"
                 },
-                "name" : "Double Sided",
-                "published" : false
-              }
-            }
+                "kind" : "Inlet"
+              },
+              "type" : "Bool",
+              "isParameterPort" : true,
+              "isProxyPort" : false
+            },
+            "name" : "inputDoubleSided"
           },
           {
-            "name" : "inputCullingMode",
             "payload" : {
+              "type" : "String",
+              "isParameterPort" : true,
               "base" : {
-                "connections" : [
-
-                ],
-                "id" : "D749ADA0-0538-4C1E-A1FF-64EA2F512653",
-                "kind" : "Inlet",
                 "parameter" : {
+                  "type" : "string",
                   "base" : {
-                    "controlType" : "dropdown",
                     "defaultValue" : "Back",
-                    "id" : "D749ADA0-0538-4C1E-A1FF-64EA2F512653",
-                    "label" : "Culling Mode",
-                    "description" : "",
                     "options" : [
                       "Back",
                       "Front",
                       "None"
                     ],
-                    "value" : "Back"
-                  },
-                  "type" : "string"
+                    "label" : "Culling Mode",
+                    "value" : "Back",
+                    "id" : "D749ADA0-0538-4C1E-A1FF-64EA2F512653",
+                    "description" : "Which faces to cull during rendering",
+                    "controlType" : "dropdown"
+                  }
                 },
                 "name" : "Culling Mode",
-                "published" : false
+                "published" : false,
+                "id" : "D749ADA0-0538-4C1E-A1FF-64EA2F512653",
+                "kind" : "Inlet",
+                "portDescription" : "Which faces to cull during rendering"
               },
-              "type" : "String",
-              "isParameterPort" : true
-            }
+              "isProxyPort" : false
+            },
+            "name" : "inputCullingMode"
           }
-        ],
-        "nodeOffset" : [
-          -235.56044541300162,
-          114.4596366129299
         ]
-      }
+      },
+      "type" : "graphics.fabric.CoreNodes\/MeshNode"
     },
     {
       "value" : {
+        "nodeOffset" : [
+          -441.0682579130016,
+          20.0846366129299
+        ],
         "id" : "F4D00208-F755-47BA-BB9C-A338204FC97E",
         "ports" : [
           {
             "name" : "inputText",
             "payload" : {
-              "isParameterPort" : true,
+              "isProxyPort" : false,
               "base" : {
-                "connections" : [
-                  "756BF89B-8546-43D2-B0A6-B4B665C2AF3A"
-                ],
-                "id" : "78C4F8D9-0503-4C2F-AD0C-C09C7028BB60",
-                "kind" : "Inlet",
+                "name" : "Text",
                 "parameter" : {
+                  "type" : "string",
                   "base" : {
-                    "controlType" : "inputfield",
                     "defaultValue" : "Testing",
-                    "id" : "78C4F8D9-0503-4C2F-AD0C-C09C7028BB60",
-                    "value" : "\n A man wearing glasses is lying\non a tufted couch. He is smiling\nand appears to be enjoying the moment.",
-                    "description" : "",
-                    "label" : "Text",
                     "options" : [
 
-                    ]
-                  },
-                  "type" : "string"
+                    ],
+                    "label" : "Text",
+                    "value" : "true",
+                    "id" : "78C4F8D9-0503-4C2F-AD0C-C09C7028BB60",
+                    "description" : "The text string to render as 2D geometry",
+                    "controlType" : "inputfield"
+                  }
                 },
-                "name" : "Text",
-                "published" : false
+                "portDescription" : "The text string to render as 2D geometry",
+                "id" : "78C4F8D9-0503-4C2F-AD0C-C09C7028BB60",
+                "published" : false,
+                "kind" : "Inlet"
               },
+              "isParameterPort" : true,
               "type" : "String"
             }
           },
           {
             "name" : "inputFont",
             "payload" : {
+              "isParameterPort" : true,
+              "isProxyPort" : false,
+              "type" : "String",
               "base" : {
-                "connections" : [
-
-                ],
-                "id" : "73B70D1F-5653-4402-8B8C-F9B0C852249A",
                 "kind" : "Inlet",
+                "id" : "73B70D1F-5653-4402-8B8C-F9B0C852249A",
                 "parameter" : {
-                  "type" : "string",
                   "base" : {
-                    "controlType" : "dropdown",
                     "defaultValue" : "Helvetica",
-                    "id" : "73B70D1F-5653-4402-8B8C-F9B0C852249A",
-                    "value" : "Avenir",
-                    "description" : "",
                     "options" : [
                       "Academy Engraved LET",
                       "Al Bayan",
                       "Al Nile",
                       "Al Tarikh",
+                      "Alcyone",
                       "American Typewriter",
                       "Andale Mono",
                       "Apple Braille",
@@ -650,6 +696,7 @@
                       "Thunder",
                       "Times New Roman",
                       "Titillium Web",
+                      "Toppan Bunkyu Gothic",
                       "Trattatello",
                       "Trebuchet MS",
                       "Verdana",
@@ -664,33 +711,62 @@
                       "Zapf Dingbats",
                       "Zapfino"
                     ],
-                    "label" : "Font"
-                  }
+                    "label" : "Font",
+                    "value" : "Avenir",
+                    "id" : "73B70D1F-5653-4402-8B8C-F9B0C852249A",
+                    "controlType" : "dropdown",
+                    "description" : "Font family to use for text rendering"
+                  },
+                  "type" : "string"
                 },
                 "name" : "Font",
-                "published" : false
+                "published" : false,
+                "portDescription" : "Font family to use for text rendering"
+              }
+            }
+          },
+          {
+            "name" : "inputPieceGeneration",
+            "payload" : {
+              "isProxyPort" : false,
+              "type" : "String",
+              "base" : {
+                "kind" : "Inlet",
+                "parameter" : {
+                  "type" : "string",
+                  "base" : {
+                    "defaultValue" : "None",
+                    "options" : [
+                      "None",
+                      "Sentence",
+                      "Word",
+                      "Character"
+                    ],
+                    "value" : "None",
+                    "label" : "Pieces",
+                    "id" : "D40D886A-ED10-4444-895C-ED383A2B47FB",
+                    "controlType" : "dropdown",
+                    "description" : "Divides the text into pieces, one per sentence, word or character, for Transform Pieces and Piece Info. None draws the text as one piece"
+                  }
+                },
+                "published" : false,
+                "name" : "Pieces",
+                "portDescription" : "Divides the text into pieces, one per sentence, word or character, for Transform Pieces and Piece Info. None draws the text as one piece",
+                "id" : "D40D886A-ED10-4444-895C-ED383A2B47FB"
               },
-              "isParameterPort" : true,
-              "type" : "String"
+              "isParameterPort" : true
             }
           },
           {
             "name" : "inputPrimitiveType",
             "payload" : {
+              "isProxyPort" : false,
               "isParameterPort" : true,
               "base" : {
-                "connections" : [
-
-                ],
-                "id" : "F1DC7470-1519-4219-BD1F-F249D4C19BD1",
-                "kind" : "Inlet",
+                "portDescription" : "Rendering primitive type for the geometry mesh",
                 "parameter" : {
                   "base" : {
-                    "controlType" : "dropdown",
                     "defaultValue" : "Triangle",
-                    "id" : "F1DC7470-1519-4219-BD1F-F249D4C19BD1",
-                    "value" : "Triangle",
-                    "description" : "",
                     "options" : [
                       "Point",
                       "Line",
@@ -698,173 +774,166 @@
                       "Triangle",
                       "Triangle Strip"
                     ],
-                    "label" : "Primitive"
+                    "label" : "Primitive",
+                    "value" : "Triangle",
+                    "id" : "F1DC7470-1519-4219-BD1F-F249D4C19BD1",
+                    "controlType" : "dropdown",
+                    "description" : "Rendering primitive type for the geometry mesh"
                   },
                   "type" : "string"
                 },
-                "name" : "Primitive",
-                "published" : false
+                "id" : "F1DC7470-1519-4219-BD1F-F249D4C19BD1",
+                "kind" : "Inlet",
+                "published" : false,
+                "name" : "Primitive"
               },
               "type" : "String"
             }
           },
           {
+            "name" : "outputGeometry",
             "payload" : {
               "isParameterPort" : false,
               "type" : "Geometry",
+              "isProxyPort" : false,
               "base" : {
-                "connections" : [
-                  "17316D5D-46CE-47B5-8C62-4BDB9A9549D9"
-                ],
                 "id" : "B00F07C7-1297-4108-A577-359302668017",
-                "kind" : "Outlet",
                 "name" : "Geometry",
-                "published" : false
+                "published" : false,
+                "portDescription" : "The generated geometry mesh",
+                "kind" : "Outlet"
               }
-            },
-            "name" : "outputGeometry"
+            }
           }
-        ],
-        "nodeOffset" : [
-          -441.06825791300162,
-          20.084636612929899
         ]
       },
-      "type" : "TesselatedTextGeometryNode"
+      "type" : "graphics.fabric.CoreNodes\/TesselatedTextGeometryNode"
     },
     {
-      "type" : "graphics.fabric.CoreNodes\/SampleAndHoldNode",
       "value" : {
-        "nodeOffset" : [
-          -1242.3964363483665,
-          -241.79761000663439
-        ],
-        "strategy" : "Image",
         "id" : "90DF792F-4379-4FFE-B4D0-9525368D6967",
         "ports" : [
           {
             "name" : "inputValue",
             "payload" : {
               "isParameterPort" : false,
+              "isProxyPort" : false,
+              "type" : "Image",
               "base" : {
-                "connections" : [
-                  "108F107E-B5FB-47C7-9699-81D6D2B8FECF"
-                ],
+                "portDescription" : "Value to sample and hold",
                 "id" : "817CC00D-73D8-4AFE-A670-F76C3C76992F",
-                "kind" : "Inlet",
+                "published" : false,
                 "name" : "Value",
-                "published" : false
-              },
-              "type" : "Image"
-            }
-          },
-          {
-            "name" : "inputSample",
-            "payload" : {
-              "isParameterPort" : true,
-              "base" : {
-                "connections" : [
-
-                ],
-                "id" : "24D184B8-7066-454D-85E7-162EA35A3653",
-                "kind" : "Inlet",
-                "parameter" : {
-                  "type" : "bool",
-                  "base" : {
-                    "defaultValue" : true,
-                    "id" : "24D184B8-7066-454D-85E7-162EA35A3653",
-                    "value" : true,
-                    "label" : "Sample",
-                    "controlType" : "button",
-                    "description" : ""
-                  }
-                },
-                "name" : "Sample",
-                "published" : false
-              },
-              "type" : "Bool"
-            }
-          },
-          {
-            "name" : "inputReset",
-            "payload" : {
-              "isParameterPort" : true,
-              "type" : "Bool",
-              "base" : {
-                "connections" : [
-
-                ],
-                "id" : "21A5C8F3-772C-474C-9C5F-30D1FC7C0275",
-                "kind" : "Inlet",
-                "parameter" : {
-                  "base" : {
-                    "defaultValue" : false,
-                    "id" : "21A5C8F3-772C-474C-9C5F-30D1FC7C0275",
-                    "label" : "Reset",
-                    "value" : false,
-                    "controlType" : "button",
-                    "description" : ""
-                  },
-                  "type" : "bool"
-                },
-                "name" : "Reset",
-                "published" : false
+                "kind" : "Inlet"
               }
             }
           },
           {
             "name" : "outputValue",
             "payload" : {
-              "isParameterPort" : false,
               "base" : {
-                "connections" : [
-                  "6C99CD0A-6AD1-4D09-B130-FDD1A54D023A",
-                  "47AF295C-5232-4F41-838B-716A0E099FD5"
-                ],
                 "id" : "8684C8BD-E884-409C-AB3B-70C06AFB5053",
-                "kind" : "Outlet",
+                "portDescription" : "The last sampled value",
                 "name" : "Value",
+                "kind" : "Outlet",
                 "published" : false
               },
-              "type" : "Image"
+              "type" : "Image",
+              "isProxyPort" : false,
+              "isParameterPort" : false
+            }
+          },
+          {
+            "name" : "inputSample",
+            "payload" : {
+              "base" : {
+                "portDescription" : "When enabled, samples and holds the input value",
+                "parameter" : {
+                  "type" : "bool",
+                  "base" : {
+                    "defaultValue" : true,
+                    "controlType" : "button",
+                    "label" : "Sample",
+                    "value" : true,
+                    "description" : "When enabled, samples and holds the input value",
+                    "id" : "24D184B8-7066-454D-85E7-162EA35A3653"
+                  }
+                },
+                "published" : false,
+                "kind" : "Inlet",
+                "id" : "24D184B8-7066-454D-85E7-162EA35A3653",
+                "name" : "Sample"
+              },
+              "type" : "Bool",
+              "isParameterPort" : true,
+              "isProxyPort" : false
+            }
+          },
+          {
+            "name" : "inputReset",
+            "payload" : {
+              "base" : {
+                "published" : false,
+                "portDescription" : "Reset the held value to nil",
+                "parameter" : {
+                  "base" : {
+                    "controlType" : "button",
+                    "value" : false,
+                    "label" : "Reset",
+                    "id" : "21A5C8F3-772C-474C-9C5F-30D1FC7C0275",
+                    "description" : "Reset the held value to nil",
+                    "defaultValue" : false
+                  },
+                  "type" : "bool"
+                },
+                "kind" : "Inlet",
+                "name" : "Reset",
+                "id" : "21A5C8F3-772C-474C-9C5F-30D1FC7C0275"
+              },
+              "type" : "Bool",
+              "isParameterPort" : true,
+              "isProxyPort" : false
             }
           }
+        ],
+        "strategy" : "Image",
+        "nodeOffset" : [
+          -1242.3964363483665,
+          -241.7976100066344
         ]
-      }
+      },
+      "type" : "graphics.fabric.CoreNodes\/SampleAndHoldNode"
     },
     {
-      "type" : "CameraProviderNode",
       "value" : {
         "ports" : [
           {
             "payload" : {
               "type" : "String",
               "isParameterPort" : true,
+              "isProxyPort" : false,
               "base" : {
-                "connections" : [
-
-                ],
-                "id" : "88C2BEE3-F092-4B7F-A09E-4167832301A6",
                 "kind" : "Inlet",
+                "portDescription" : "Camera device to capture video from",
+                "published" : false,
                 "parameter" : {
-                  "type" : "string",
                   "base" : {
-                    "controlType" : "dropdown",
                     "defaultValue" : "",
-                    "id" : "88C2BEE3-F092-4B7F-A09E-4167832301A6",
-                    "label" : "Device Name",
-                    "description" : "",
                     "value" : "FaceTime HD Camera",
+                    "id" : "88C2BEE3-F092-4B7F-A09E-4167832301A6",
+                    "description" : "Camera device to capture video from",
+                    "label" : "Device Name",
                     "options" : [
-                      "OBS Virtual Camera",
-                      "Entertainment Room",
                       "FaceTime HD Camera",
+                      "OBS Virtual Camera",
                       "VPhone14 Camera"
-                    ]
-                  }
+                    ],
+                    "controlType" : "dropdown"
+                  },
+                  "type" : "string"
                 },
                 "name" : "Device Name",
-                "published" : false
+                "id" : "88C2BEE3-F092-4B7F-A09E-4167832301A6"
               }
             },
             "name" : "inputCamera"
@@ -872,49 +941,46 @@
           {
             "payload" : {
               "base" : {
-                "connections" : [
-                  "204E6C01-1B58-4772-924D-5DF62550EBF7"
-                ],
                 "id" : "A697F063-237C-4BF3-BD07-831756F9C7EA",
-                "kind" : "Outlet",
                 "name" : "Image",
+                "kind" : "Outlet",
+                "portDescription" : "Live camera feed",
                 "published" : false
               },
               "type" : "Image",
-              "isParameterPort" : false
+              "isParameterPort" : false,
+              "isProxyPort" : false
             },
             "name" : "outputTexturePort"
           }
         ],
         "nodeOffset" : [
           -1653.3845767140265,
-          -265.44054662113649
+          -265.4405466211365
         ],
-        "id" : "8C431963-DD8D-4D6F-9833-B6E25DBA4749",
-        "displayName" : "Camera Provider"
-      }
+        "id" : "8C431963-DD8D-4D6F-9833-B6E25DBA4749"
+      },
+      "type" : "graphics.fabric.CoreNodes\/CameraProviderNode"
     },
     {
-      "type" : "PlaneGeometryNode",
       "value" : {
         "id" : "4B558A85-027D-4309-B4BE-BF70DA24CC50",
         "ports" : [
           {
             "payload" : {
+              "isParameterPort" : true,
+              "isProxyPort" : false,
+              "type" : "String",
               "base" : {
-                "connections" : [
-
-                ],
+                "name" : "Plane",
                 "id" : "2559269D-7357-417F-806B-623CD206EBC8",
                 "kind" : "Inlet",
+                "published" : false,
+                "portDescription" : "Orientation plane defining which axes the plane spans",
                 "parameter" : {
                   "base" : {
-                    "controlType" : "dropdown",
-                    "defaultValue" : "XY",
                     "id" : "2559269D-7357-417F-806B-623CD206EBC8",
-                    "value" : "XY",
-                    "description" : "",
-                    "label" : "Plane",
+                    "defaultValue" : "XY",
                     "options" : [
                       "XY",
                       "YX",
@@ -922,15 +988,15 @@
                       "ZX",
                       "YZ",
                       "ZY"
-                    ]
+                    ],
+                    "description" : "Orientation plane defining which axes the plane spans",
+                    "label" : "Plane",
+                    "value" : "XY",
+                    "controlType" : "dropdown"
                   },
                   "type" : "string"
-                },
-                "name" : "Plane",
-                "published" : false
-              },
-              "type" : "String",
-              "isParameterPort" : true
+                }
+              }
             },
             "name" : "inputPlane"
           },
@@ -938,27 +1004,26 @@
             "payload" : {
               "type" : "Float",
               "isParameterPort" : true,
+              "isProxyPort" : false,
               "base" : {
-                "connections" : [
-
-                ],
-                "id" : "A7945B01-C066-49FF-8108-ECE72772490B",
                 "kind" : "Inlet",
+                "published" : false,
+                "id" : "A7945B01-C066-49FF-8108-ECE72772490B",
+                "name" : "Width",
+                "portDescription" : "Width of the plane in world units",
                 "parameter" : {
                   "base" : {
-                    "controlType" : "inputfield",
+                    "value" : 2,
                     "defaultValue" : 1,
-                    "min" : 0,
-                    "id" : "A7945B01-C066-49FF-8108-ECE72772490B",
+                    "controlType" : "inputfield",
                     "label" : "Width",
-                    "description" : "",
+                    "min" : 0,
                     "max" : 1,
-                    "value" : 2
+                    "description" : "Width of the plane in world units",
+                    "id" : "A7945B01-C066-49FF-8108-ECE72772490B"
                   },
                   "type" : "float"
-                },
-                "name" : "Width",
-                "published" : false
+                }
               }
             },
             "name" : "inputWidth"
@@ -966,106 +1031,106 @@
           {
             "payload" : {
               "isParameterPort" : true,
+              "type" : "Float",
+              "isProxyPort" : false,
               "base" : {
-                "connections" : [
-
-                ],
-                "id" : "42215357-EF75-4E93-A30F-61842648CB37",
-                "kind" : "Inlet",
                 "parameter" : {
-                  "type" : "float",
                   "base" : {
-                    "controlType" : "inputfield",
-                    "defaultValue" : 1,
-                    "min" : 0,
                     "id" : "42215357-EF75-4E93-A30F-61842648CB37",
+                    "defaultValue" : 1,
                     "value" : 1.2,
-                    "description" : "",
-                    "max" : 1,
-                    "label" : "Height"
-                  }
+                    "label" : "Height",
+                    "description" : "Height of the plane in world units",
+                    "min" : 0,
+                    "controlType" : "inputfield",
+                    "max" : 1
+                  },
+                  "type" : "float"
                 },
+                "published" : false,
+                "portDescription" : "Height of the plane in world units",
+                "id" : "42215357-EF75-4E93-A30F-61842648CB37",
                 "name" : "Height",
-                "published" : false
-              },
-              "type" : "Float"
+                "kind" : "Inlet"
+              }
             },
             "name" : "inputHeight"
           },
           {
             "payload" : {
               "isParameterPort" : true,
+              "type" : "Int",
+              "isProxyPort" : false,
               "base" : {
-                "connections" : [
-
-                ],
-                "id" : "561B316F-C163-4F70-81D3-52370D4690DE",
-                "kind" : "Inlet",
+                "portDescription" : "Number of segments along the width",
+                "published" : false,
                 "parameter" : {
                   "base" : {
-                    "controlType" : "inputfield",
-                    "defaultValue" : 1,
                     "min" : 0,
-                    "id" : "561B316F-C163-4F70-81D3-52370D4690DE",
-                    "value" : 1,
-                    "description" : "",
+                    "controlType" : "inputfield",
                     "max" : 1,
-                    "label" : "Width"
+                    "defaultValue" : 1,
+                    "description" : "Number of segments along the width",
+                    "label" : "Width Segments",
+                    "id" : "561B316F-C163-4F70-81D3-52370D4690DE",
+                    "value" : 1
                   },
                   "type" : "int"
                 },
-                "name" : "Width",
-                "published" : false
-              },
-              "type" : "Int"
+                "name" : "Width Segments",
+                "id" : "561B316F-C163-4F70-81D3-52370D4690DE",
+                "kind" : "Inlet"
+              }
             },
             "name" : "inputResolutionWidth"
           },
           {
-            "name" : "inputResolutionHeight",
             "payload" : {
               "base" : {
-                "connections" : [
-
-                ],
-                "id" : "2B355A64-ACF2-46A8-AB76-B238C2DE02A3",
-                "kind" : "Inlet",
+                "portDescription" : "Number of segments along the height",
                 "parameter" : {
-                  "type" : "int",
                   "base" : {
-                    "controlType" : "inputfield",
-                    "defaultValue" : 1,
-                    "min" : 0,
                     "id" : "2B355A64-ACF2-46A8-AB76-B238C2DE02A3",
-                    "label" : "Height",
+                    "min" : 0,
                     "max" : 1,
+                    "defaultValue" : 1,
+                    "description" : "Number of segments along the height",
+                    "label" : "Height Segments",
                     "value" : 1,
-                    "description" : ""
-                  }
+                    "controlType" : "inputfield"
+                  },
+                  "type" : "int"
                 },
-                "name" : "Height",
-                "published" : false
+                "id" : "2B355A64-ACF2-46A8-AB76-B238C2DE02A3",
+                "name" : "Height Segments",
+                "published" : false,
+                "kind" : "Inlet"
               },
               "type" : "Int",
+              "isProxyPort" : false,
               "isParameterPort" : true
-            }
+            },
+            "name" : "inputResolutionHeight"
           },
           {
             "payload" : {
+              "isParameterPort" : true,
+              "type" : "String",
+              "isProxyPort" : false,
               "base" : {
-                "connections" : [
-
-                ],
+                "name" : "Primitive",
                 "id" : "22365DD2-BCE7-40E7-A609-E117827F552E",
+                "portDescription" : "Rendering primitive type for the geometry mesh",
                 "kind" : "Inlet",
+                "published" : false,
                 "parameter" : {
                   "type" : "string",
                   "base" : {
+                    "description" : "Rendering primitive type for the geometry mesh",
+                    "label" : "Primitive",
                     "controlType" : "dropdown",
-                    "defaultValue" : "Triangle",
-                    "id" : "22365DD2-BCE7-40E7-A609-E117827F552E",
                     "value" : "Triangle",
-                    "description" : "",
+                    "id" : "22365DD2-BCE7-40E7-A609-E117827F552E",
                     "options" : [
                       "Point",
                       "Line",
@@ -1073,74 +1138,65 @@
                       "Triangle",
                       "Triangle Strip"
                     ],
-                    "label" : "Primitive"
+                    "defaultValue" : "Triangle"
                   }
-                },
-                "name" : "Primitive",
-                "published" : false
-              },
-              "type" : "String",
-              "isParameterPort" : true
+                }
+              }
             },
             "name" : "inputPrimitiveType"
           },
           {
-            "name" : "outputGeometry",
             "payload" : {
               "isParameterPort" : false,
+              "isProxyPort" : false,
+              "type" : "Geometry",
               "base" : {
-                "connections" : [
-                  "3EDE9260-E647-4BDD-B69E-2438ED01AC93"
-                ],
                 "id" : "67106D6E-5F37-4425-BB35-F08CCE57910F",
-                "kind" : "Outlet",
+                "published" : false,
+                "portDescription" : "The generated geometry mesh",
                 "name" : "Geometry",
-                "published" : false
-              },
-              "type" : "Geometry"
-            }
+                "kind" : "Outlet"
+              }
+            },
+            "name" : "outputGeometry"
           }
         ],
         "nodeOffset" : [
-          -522.49794541300162,
+          -522.4979454130016,
           -377.9114571370701
         ]
-      }
+      },
+      "type" : "graphics.fabric.CoreNodes\/PlaneGeometryNode"
     },
     {
       "value" : {
-        "id" : "F98AEA31-509E-4D2C-904B-C72E30DBD360",
         "ports" : [
           {
-            "name" : "inputTexture",
             "payload" : {
+              "isParameterPort" : false,
               "base" : {
-                "connections" : [
-                  "8684C8BD-E884-409C-AB3B-70C06AFB5053"
-                ],
+                "published" : false,
+                "portDescription" : "Texture image to apply to the material surface",
                 "id" : "6C99CD0A-6AD1-4D09-B130-FDD1A54D023A",
                 "kind" : "Inlet",
-                "name" : "Image",
-                "published" : false
+                "name" : "Image"
               },
-              "isParameterPort" : false,
+              "isProxyPort" : false,
               "type" : "Image"
-            }
+            },
+            "name" : "inputTexture"
           },
           {
-            "name" : "inputColor",
             "payload" : {
               "isParameterPort" : true,
-              "type" : "Vector 4",
               "base" : {
-                "connections" : [
-
-                ],
                 "id" : "2DE47217-A26A-47CC-B7BC-A5B1037CE777",
+                "portDescription" : "Flat color applied to the entire surface (RGBA)",
                 "kind" : "Inlet",
+                "published" : false,
+                "name" : "Color",
                 "parameter" : {
                   "base" : {
-                    "controlType" : "colorpicker",
                     "defaultValue" : [
                       1,
                       1,
@@ -1152,932 +1208,180 @@
                       0,
                       0,
                       0
+                    ],
+                    "max" : [
+                      1,
+                      1,
+                      1,
+                      1
                     ],
                     "id" : "2DE47217-A26A-47CC-B7BC-A5B1037CE777",
+                    "value" : [
+                      1,
+                      1,
+                      1,
+                      1
+                    ],
+                    "controlType" : "colorpicker",
                     "label" : "Color",
-                    "value" : [
-                      1,
-                      1,
-                      1,
-                      1
-                    ],
-                    "description" : "",
-                    "max" : [
-                      1,
-                      1,
-                      1,
-                      1
-                    ]
+                    "description" : "Flat color applied to the entire surface (RGBA)"
                   },
                   "type" : "float4"
-                },
-                "name" : "Color",
-                "published" : false
-              }
-            }
-          },
-          {
-            "payload" : {
-              "base" : {
-                "connections" : [
-
-                ],
-                "id" : "0EF4002A-DA23-4639-B9F5-519BF22CB066",
-                "kind" : "Inlet",
-                "parameter" : {
-                  "type" : "bool",
-                  "base" : {
-                    "defaultValue" : true,
-                    "id" : "0EF4002A-DA23-4639-B9F5-519BF22CB066",
-                    "value" : true,
-                    "label" : "Receives Lighting",
-                    "description" : "",
-                    "controlType" : "button"
-                  }
-                },
-                "name" : "Receives Lighting",
-                "published" : false
+                }
               },
-              "type" : "Bool",
-              "isParameterPort" : true
+              "isProxyPort" : false,
+              "type" : "Color"
             },
-            "name" : "inputReceivesLighting"
+            "name" : "inputColor"
           },
           {
-            "name" : "inputWriteDepth",
             "payload" : {
+              "type" : "Float",
               "base" : {
-                "connections" : [
-
-                ],
-                "id" : "3754D6D0-5FFF-4522-8022-29598D8D7DD4",
-                "kind" : "Inlet",
-                "parameter" : {
-                  "type" : "bool",
-                  "base" : {
-                    "defaultValue" : true,
-                    "label" : "Write Depth",
-                    "id" : "3754D6D0-5FFF-4522-8022-29598D8D7DD4",
-                    "value" : true,
-                    "controlType" : "button",
-                    "description" : ""
-                  }
-                },
-                "name" : "Write Depth",
-                "published" : false
-              },
-              "isParameterPort" : true,
-              "type" : "Bool"
-            }
-          },
-          {
-            "name" : "inputDepthTest",
-            "payload" : {
-              "base" : {
-                "connections" : [
-
-                ],
-                "id" : "E81E772B-3E5D-425E-8374-1A12BEF1ADF7",
-                "kind" : "Inlet",
                 "parameter" : {
                   "base" : {
-                    "defaultValue" : true,
-                    "id" : "E81E772B-3E5D-425E-8374-1A12BEF1ADF7",
-                    "value" : true,
-                    "label" : "Depth Test",
-                    "controlType" : "button",
-                    "description" : ""
-                  },
-                  "type" : "bool"
-                },
-                "name" : "Depth Test",
-                "published" : false
-              },
-              "isParameterPort" : true,
-              "type" : "Bool"
-            }
-          },
-          {
-            "payload" : {
-              "type" : "String",
-              "isParameterPort" : true,
-              "base" : {
-                "connections" : [
-
-                ],
-                "id" : "73090551-6BB0-402A-BB8E-7B5AE7F3A50A",
-                "kind" : "Inlet",
-                "parameter" : {
-                  "type" : "string",
-                  "base" : {
-                    "controlType" : "dropdown",
-                    "defaultValue" : "Disabled",
-                    "id" : "73090551-6BB0-402A-BB8E-7B5AE7F3A50A",
-                    "label" : "Blending Mode",
-                    "value" : "Disabled",
-                    "description" : "",
-                    "options" : [
-                      "Disabled",
-                      "Alpha",
-                      "Additive",
-                      "Subtractive"
-                    ]
-                  }
-                },
-                "name" : "Blending Mode",
-                "published" : false
-              }
-            },
-            "name" : "inputBlending"
-          },
-          {
-            "name" : "outputMaterial",
-            "payload" : {
-              "type" : "Material",
-              "isParameterPort" : false,
-              "base" : {
-                "connections" : [
-                  "4FE89661-310A-4AEE-BE09-89CE560FA099"
-                ],
-                "id" : "0FD936EA-B451-400C-818F-A73AA995A639",
-                "kind" : "Outlet",
-                "name" : "Material",
-                "published" : false
-              }
-            }
-          }
-        ],
-        "nodeOffset" : [
-          -511.08388291300162,
-          -205.3763008870701
-        ]
-      },
-      "type" : "BasicTextureMaterialNode"
-    },
-    {
-      "value" : {
-        "id" : "EAB1C0C2-51E5-4183-B093-11CB2B5E9E63",
-        "ports" : [
-          {
-            "payload" : {
-              "base" : {
-                "connections" : [
-
-                ],
-                "id" : "A40942C7-C63D-478B-9779-4EF98CE537F2",
-                "kind" : "Inlet",
-                "parameter" : {
-                  "base" : {
-                    "defaultValue" : true,
-                    "value" : true,
-                    "label" : "Visible",
-                    "id" : "A40942C7-C63D-478B-9779-4EF98CE537F2",
-                    "description" : "",
-                    "controlType" : "button"
-                  },
-                  "type" : "bool"
-                },
-                "name" : "Visible",
-                "published" : false
-              },
-              "isParameterPort" : true,
-              "type" : "Bool"
-            },
-            "name" : "inputVisible"
-          },
-          {
-            "payload" : {
-              "isParameterPort" : true,
-              "base" : {
-                "connections" : [
-
-                ],
-                "id" : "3A193EBC-D36F-4CE5-B8E3-E6CE96914D71",
-                "kind" : "Inlet",
-                "parameter" : {
-                  "base" : {
-                    "controlType" : "inputfield",
-                    "defaultValue" : 0,
-                    "min" : 0,
-                    "id" : "3A193EBC-D36F-4CE5-B8E3-E6CE96914D71",
-                    "value" : 0,
-                    "description" : "",
-                    "max" : 1,
-                    "label" : "Render Order"
-                  },
-                  "type" : "int"
-                },
-                "name" : "Render Order",
-                "published" : false
-              },
-              "type" : "Int"
-            },
-            "name" : "inputRenderOrder"
-          },
-          {
-            "payload" : {
-              "isParameterPort" : true,
-              "base" : {
-                "connections" : [
-
-                ],
-                "id" : "44624C43-6B4D-4FA4-A065-E7EC7DBBDF7C",
-                "kind" : "Inlet",
-                "parameter" : {
-                  "type" : "int",
-                  "base" : {
-                    "controlType" : "inputfield",
-                    "defaultValue" : 0,
-                    "min" : 0,
-                    "id" : "44624C43-6B4D-4FA4-A065-E7EC7DBBDF7C",
-                    "label" : "Render Pass",
-                    "description" : "",
-                    "value" : 0,
-                    "max" : 1
-                  }
-                },
-                "name" : "Render Pass",
-                "published" : false
-              },
-              "type" : "Int"
-            },
-            "name" : "inputRenderPass"
-          },
-          {
-            "name" : "inputPosition",
-            "payload" : {
-              "base" : {
-                "connections" : [
-
-                ],
-                "id" : "109F0E45-3723-476F-91F7-4E9725FD6D78",
-                "kind" : "Inlet",
-                "parameter" : {
-                  "base" : {
-                    "controlType" : "inputfield",
-                    "defaultValue" : [
-                      0,
-                      0,
-                      0
-                    ],
-                    "min" : [
-                      0,
-                      0,
-                      0
-                    ],
-                    "id" : "109F0E45-3723-476F-91F7-4E9725FD6D78",
-                    "label" : "Position",
-                    "max" : [
-                      1,
-                      1,
-                      1
-                    ],
-                    "value" : [
-                      0,
-                      0,
-                      -0.10000000000000001
-                    ],
-                    "description" : ""
-                  },
-                  "type" : "float3"
-                },
-                "name" : "Position",
-                "published" : false
-              },
-              "isParameterPort" : true,
-              "type" : "Vector 3"
-            }
-          },
-          {
-            "name" : "inputScale",
-            "payload" : {
-              "base" : {
-                "connections" : [
-
-                ],
-                "id" : "3CD3A26F-EC5A-4160-B6ED-29A07C8E6F1E",
-                "kind" : "Inlet",
-                "parameter" : {
-                  "base" : {
-                    "controlType" : "inputfield",
-                    "defaultValue" : [
-                      1,
-                      1,
-                      1
-                    ],
-                    "min" : [
-                      0,
-                      0,
-                      0
-                    ],
-                    "id" : "3CD3A26F-EC5A-4160-B6ED-29A07C8E6F1E",
-                    "value" : [
-                      1,
-                      1,
-                      1
-                    ],
-                    "label" : "Scale",
-                    "description" : "",
-                    "max" : [
-                      1,
-                      1,
-                      1
-                    ]
-                  },
-                  "type" : "float3"
-                },
-                "name" : "Scale",
-                "published" : false
-              },
-              "type" : "Vector 3",
-              "isParameterPort" : true
-            }
-          },
-          {
-            "payload" : {
-              "type" : "Vector 4",
-              "isParameterPort" : true,
-              "base" : {
-                "connections" : [
-
-                ],
-                "id" : "AC8252D2-2C78-4101-BDEE-B7586C2BE94D",
-                "kind" : "Inlet",
-                "parameter" : {
-                  "base" : {
-                    "controlType" : "inputfield",
-                    "defaultValue" : [
-                      0,
-                      0,
-                      0,
-                      0
-                    ],
-                    "min" : [
-                      0,
-                      0,
-                      0,
-                      0
-                    ],
-                    "id" : "AC8252D2-2C78-4101-BDEE-B7586C2BE94D",
-                    "label" : "Orientation",
-                    "value" : [
-                      0,
-                      0,
-                      0,
-                      0
-                    ],
-                    "max" : [
-                      1,
-                      1,
-                      1,
-                      1
-                    ],
-                    "description" : ""
-                  },
-                  "type" : "float4"
-                },
-                "name" : "Orientation",
-                "published" : false
-              }
-            },
-            "name" : "inputOrientation"
-          },
-          {
-            "name" : "inputGeometry",
-            "payload" : {
-              "isParameterPort" : false,
-              "base" : {
-                "connections" : [
-                  "67106D6E-5F37-4425-BB35-F08CCE57910F"
-                ],
-                "id" : "3EDE9260-E647-4BDD-B69E-2438ED01AC93",
-                "kind" : "Inlet",
-                "name" : "Geometry",
-                "published" : false
-              },
-              "type" : "Geometry"
-            }
-          },
-          {
-            "name" : "inputMaterial",
-            "payload" : {
-              "base" : {
-                "connections" : [
-                  "0FD936EA-B451-400C-818F-A73AA995A639"
-                ],
-                "id" : "4FE89661-310A-4AEE-BE09-89CE560FA099",
-                "kind" : "Inlet",
-                "name" : "Material",
-                "published" : false
-              },
-              "type" : "Material",
-              "isParameterPort" : false
-            }
-          },
-          {
-            "name" : "inputCastsShadow",
-            "payload" : {
-              "type" : "Bool",
-              "base" : {
-                "connections" : [
-
-                ],
-                "id" : "99C806B1-BD8C-4139-82CE-324E6A0ADCC2",
-                "kind" : "Inlet",
-                "parameter" : {
-                  "base" : {
-                    "defaultValue" : true,
-                    "id" : "99C806B1-BD8C-4139-82CE-324E6A0ADCC2",
-                    "value" : true,
-                    "label" : "Enable Shadows",
-                    "controlType" : "button",
-                    "description" : ""
-                  },
-                  "type" : "bool"
-                },
-                "name" : "Enable Shadows",
-                "published" : false
-              },
-              "isParameterPort" : true
-            }
-          },
-          {
-            "name" : "inputDoubleSided",
-            "payload" : {
-              "isParameterPort" : true,
-              "base" : {
-                "connections" : [
-
-                ],
-                "id" : "1AB53F9E-2989-4B0A-96CF-275C84BDD8B9",
-                "kind" : "Inlet",
-                "parameter" : {
-                  "base" : {
-                    "defaultValue" : false,
-                    "label" : "Double Sided",
-                    "id" : "1AB53F9E-2989-4B0A-96CF-275C84BDD8B9",
-                    "value" : false,
-                    "controlType" : "button",
-                    "description" : ""
-                  },
-                  "type" : "bool"
-                },
-                "name" : "Double Sided",
-                "published" : false
-              },
-              "type" : "Bool"
-            }
-          },
-          {
-            "payload" : {
-              "type" : "String",
-              "isParameterPort" : true,
-              "base" : {
-                "connections" : [
-
-                ],
-                "id" : "67F4892D-3F71-4A62-B631-E9CBBDCC724D",
-                "kind" : "Inlet",
-                "parameter" : {
-                  "base" : {
-                    "controlType" : "dropdown",
-                    "defaultValue" : "Back",
-                    "id" : "67F4892D-3F71-4A62-B631-E9CBBDCC724D",
-                    "label" : "Culling Mode",
-                    "description" : "",
-                    "options" : [
-                      "Back",
-                      "Front",
-                      "None"
-                    ],
-                    "value" : "Back"
-                  },
-                  "type" : "string"
-                },
-                "name" : "Culling Mode",
-                "published" : false
-              }
-            },
-            "name" : "inputCullingMode"
-          }
-        ],
-        "nodeOffset" : [
-          -239.08778916300162,
-          -228.6575508870701
-        ]
-      },
-      "type" : "MeshNode"
-    },
-    {
-      "type" : "LocalVLMNode",
-      "value" : {
-        "id" : "569386EF-0531-444A-80F1-02451D5EE6FD",
-        "ports" : [
-          {
-            "payload" : {
-              "base" : {
-                "connections" : [
-
-                ],
-                "id" : "6C237905-3F5A-4182-A950-97CFB43ABFF5",
-                "kind" : "Inlet",
-                "parameter" : {
-                  "type" : "string",
-                  "base" : {
-                    "controlType" : "dropdown",
-                    "defaultValue" : "HuggingFaceTB\/SmolVLM2-500M-Video-Instruct-mlx",
-                    "id" : "6C237905-3F5A-4182-A950-97CFB43ABFF5",
-                    "label" : "Model",
-                    "value" : "mlx-community\/FastVLM-0.5B-bf16",
-                    "description" : "",
-                    "options" : [
-                      "mlx-community\/paligemma-3b-mix-448-8bit",
-                      "mlx-community\/FastVLM-0.5B-bf16",
-                      "mlx-community\/gemma-3-27b-it-qat-4bit",
-                      "mlx-community\/SmolVLM-Instruct-4bit",
-                      "mlx-community\/gemma-3-12b-it-qat-4bit",
-                      "mlx-community\/Qwen2.5-VL-3B-Instruct-4bit",
-                      "mlx-community\/gemma-3-4b-it-qat-4bit",
-                      "HuggingFaceTB\/SmolVLM2-500M-Video-Instruct-mlx",
-                      "mlx-community\/Qwen2-VL-2B-Instruct-4bit",
-                      "lmstudio-community\/Qwen3-VL-4B-Instruct-MLX-4bit",
-                      "mlx-community\/Qwen3-VL-4B-Instruct-8bit"
-                    ]
-                  }
-                },
-                "name" : "Model",
-                "published" : false
-              },
-              "isParameterPort" : true,
-              "type" : "String"
-            },
-            "name" : "inputModel"
-          },
-          {
-            "payload" : {
-              "isParameterPort" : true,
-              "base" : {
-                "connections" : [
-
-                ],
-                "id" : "3B0285CD-DAD2-4E72-B98E-686DBF75E2C4",
-                "kind" : "Inlet",
-                "parameter" : {
-                  "base" : {
-                    "controlType" : "inputfield",
-                    "defaultValue" : "Describe this image?",
-                    "id" : "3B0285CD-DAD2-4E72-B98E-686DBF75E2C4",
-                    "value" : " Is the person smiling? Answer only \"true\" or \"false\", nothing else!",
-                    "label" : "Prompt",
-                    "options" : [
-
-                    ],
-                    "description" : ""
-                  },
-                  "type" : "string"
-                },
-                "name" : "Prompt",
-                "published" : false
-              },
-              "type" : "String"
-            },
-            "name" : "inputPrompt"
-          },
-          {
-            "payload" : {
-              "base" : {
-                "connections" : [
-                  "8684C8BD-E884-409C-AB3B-70C06AFB5053"
-                ],
-                "id" : "47AF295C-5232-4F41-838B-716A0E099FD5",
-                "kind" : "Inlet",
-                "name" : "Image",
-                "published" : false
-              },
-              "isParameterPort" : false,
-              "type" : "Image"
-            },
-            "name" : "inputTexturePort"
-          },
-          {
-            "payload" : {
-              "base" : {
-                "connections" : [
-
-                ],
-                "id" : "89FD59FA-95E4-47CE-8D72-C1D73B70F5E5",
-                "kind" : "Inlet",
-                "parameter" : {
-                  "type" : "bool",
-                  "base" : {
-                    "defaultValue" : false,
-                    "value" : false,
-                    "id" : "89FD59FA-95E4-47CE-8D72-C1D73B70F5E5",
-                    "label" : "Generate",
-                    "controlType" : "button",
-                    "description" : ""
-                  }
-                },
-                "name" : "Generate",
-                "published" : false
-              },
-              "type" : "Bool",
-              "isParameterPort" : true
-            },
-            "name" : "inputGenerate"
-          },
-          {
-            "payload" : {
-              "base" : {
-                "connections" : [
-
-                ],
-                "id" : "88236EB8-E4E3-4821-9857-3DE37E8A318D",
-                "kind" : "Inlet",
-                "parameter" : {
-                  "base" : {
-                    "controlType" : "inputfield",
-                    "defaultValue" : 0.59999999999999998,
-                    "min" : 0,
-                    "id" : "88236EB8-E4E3-4821-9857-3DE37E8A318D",
-                    "value" : 0.25,
-                    "description" : "",
-                    "label" : "Temerature",
-                    "max" : 1
+                    "id" : "99556436-C2A9-4A36-A59F-C778EC7AD1B1",
+                    "controlType" : "slider",
+                    "max" : 64,
+                    "value" : 1,
+                    "defaultValue" : 1,
+                    "label" : "Point Size",
+                    "description" : "Point Size",
+                    "min" : 0.5
                   },
                   "type" : "float"
                 },
-                "name" : "Temerature",
-                "published" : false
+                "kind" : "Inlet",
+                "published" : false,
+                "id" : "99556436-C2A9-4A36-A59F-C778EC7AD1B1",
+                "name" : "Point Size",
+                "portDescription" : "Point Size"
               },
-              "type" : "Float",
-              "isParameterPort" : true
-            },
-            "name" : "inputTemp"
-          },
-          {
-            "payload" : {
               "isParameterPort" : true,
-              "type" : "Float",
-              "base" : {
-                "connections" : [
-
-                ],
-                "id" : "37754E1F-03D2-440F-9CA0-E2DA7EAC9467",
-                "kind" : "Inlet",
-                "parameter" : {
-                  "type" : "float",
-                  "base" : {
-                    "controlType" : "inputfield",
-                    "defaultValue" : 0.25,
-                    "min" : 0,
-                    "id" : "37754E1F-03D2-440F-9CA0-E2DA7EAC9467",
-                    "label" : "Update Interval",
-                    "description" : "",
-                    "value" : 0.10000000000000001,
-                    "max" : 1
-                  }
-                },
-                "name" : "Update Interval",
-                "published" : false
-              }
+              "isProxyPort" : false
             },
-            "name" : "inputUpdateInterval"
-          },
-          {
-            "payload" : {
-              "type" : "String",
-              "base" : {
-                "connections" : [
-                  "3731EDFD-E4E2-4483-B384-8A1EC27D0016"
-                ],
-                "id" : "A29EE9FA-59F3-4DD6-8C11-537F6FBB4356",
-                "kind" : "Outlet",
-                "name" : "Output",
-                "published" : false
-              },
-              "isParameterPort" : false
-            },
-            "name" : "outputPort"
+            "name" : "inputPointSize"
           },
           {
             "payload" : {
               "base" : {
-                "connections" : [
-                  "C5073747-5169-4EEA-BF49-45C2C9C3FB7A"
-                ],
-                "id" : "4697935C-BF81-4D82-AFFF-DC4C1BB69213",
-                "kind" : "Outlet",
-                "name" : "Stats",
-                "published" : false
-              },
-              "type" : "String",
-              "isParameterPort" : false
-            },
-            "name" : "outputStats"
-          },
-          {
-            "name" : "outputModel",
-            "payload" : {
-              "isParameterPort" : false,
-              "type" : "String",
-              "base" : {
-                "connections" : [
-                  "5101B3A9-B6D8-4DA3-AD17-6E3EC7D8C7B5",
-                  "23801F94-F0B5-4EAC-B874-6644EBC2B09A"
-                ],
-                "id" : "39F9BDC9-C0AD-4A2D-A058-F1D602424BBC",
-                "kind" : "Outlet",
-                "name" : "Model Info",
-                "published" : false
-              }
-            }
-          }
-        ],
-        "nodeOffset" : [
-          -1020.4137659793332,
-          -125.80527964521571
-        ]
-      }
-    },
-    {
-      "value" : {
-        "id" : "EF092B9D-EBB7-428C-A98F-B136581C8467",
-        "ports" : [
-          {
-            "name" : "inputColor",
-            "payload" : {
-              "type" : "Vector 4",
-              "isParameterPort" : true,
-              "base" : {
-                "connections" : [
-
-                ],
-                "id" : "FF347075-CC1E-41E1-B803-86084245CFB0",
+                "id" : "0EF4002A-DA23-4639-B9F5-519BF22CB066",
+                "portDescription" : "When enabled, the material responds to scene lighting",
                 "kind" : "Inlet",
                 "parameter" : {
                   "base" : {
-                    "controlType" : "colorpicker",
-                    "defaultValue" : [
-                      1,
-                      1,
-                      1,
-                      1
-                    ],
-                    "min" : [
-                      0,
-                      0,
-                      0,
-                      0
-                    ],
-                    "id" : "FF347075-CC1E-41E1-B803-86084245CFB0",
-                    "label" : "Color",
-                    "max" : [
-                      1,
-                      1,
-                      1,
-                      1
-                    ],
-                    "description" : "",
-                    "value" : [
-                      1,
-                      1,
-                      1,
-                      1
-                    ]
-                  },
-                  "type" : "float4"
-                },
-                "name" : "Color",
-                "published" : false
-              }
-            }
-          },
-          {
-            "payload" : {
-              "type" : "Bool",
-              "base" : {
-                "connections" : [
-
-                ],
-                "id" : "E4E19CF0-E6DA-4E3E-9383-0866239A7C94",
-                "kind" : "Inlet",
-                "parameter" : {
-                  "type" : "bool",
-                  "base" : {
-                    "defaultValue" : true,
-                    "label" : "Receives Lighting",
-                    "id" : "E4E19CF0-E6DA-4E3E-9383-0866239A7C94",
-                    "value" : true,
                     "controlType" : "button",
-                    "description" : ""
-                  }
+                    "description" : "When enabled, the material responds to scene lighting",
+                    "defaultValue" : true,
+                    "id" : "0EF4002A-DA23-4639-B9F5-519BF22CB066",
+                    "label" : "Receives Lighting",
+                    "value" : true
+                  },
+                  "type" : "bool"
                 },
                 "name" : "Receives Lighting",
                 "published" : false
               },
-              "isParameterPort" : true
+              "type" : "Bool",
+              "isParameterPort" : true,
+              "isProxyPort" : false
             },
             "name" : "inputReceivesLighting"
           },
           {
-            "name" : "inputWriteDepth",
             "payload" : {
+              "isProxyPort" : false,
               "isParameterPort" : true,
               "base" : {
-                "connections" : [
-
-                ],
-                "id" : "EF189217-42F7-4DC2-9894-9CDEE5B55416",
-                "kind" : "Inlet",
+                "id" : "3754D6D0-5FFF-4522-8022-29598D8D7DD4",
                 "parameter" : {
-                  "type" : "bool",
                   "base" : {
-                    "defaultValue" : true,
                     "label" : "Write Depth",
-                    "id" : "EF189217-42F7-4DC2-9894-9CDEE5B55416",
+                    "controlType" : "button",
+                    "description" : "When enabled, writes depth values to the depth buffer",
                     "value" : true,
-                    "description" : "",
-                    "controlType" : "button"
-                  }
+                    "defaultValue" : true,
+                    "id" : "3754D6D0-5FFF-4522-8022-29598D8D7DD4"
+                  },
+                  "type" : "bool"
                 },
-                "name" : "Write Depth",
-                "published" : false
+                "kind" : "Inlet",
+                "published" : false,
+                "portDescription" : "When enabled, writes depth values to the depth buffer",
+                "name" : "Write Depth"
               },
               "type" : "Bool"
-            }
+            },
+            "name" : "inputWriteDepth"
           },
           {
             "payload" : {
-              "type" : "Bool",
+              "isProxyPort" : false,
               "base" : {
-                "connections" : [
-
-                ],
-                "id" : "F5B04147-0804-4130-BD1B-D3E4302450F7",
-                "kind" : "Inlet",
                 "parameter" : {
                   "type" : "bool",
                   "base" : {
-                    "defaultValue" : true,
-                    "id" : "F5B04147-0804-4130-BD1B-D3E4302450F7",
-                    "label" : "Depth Test",
-                    "value" : true,
                     "controlType" : "button",
-                    "description" : ""
+                    "id" : "E81E772B-3E5D-425E-8374-1A12BEF1ADF7",
+                    "label" : "Depth Test",
+                    "description" : "When enabled, performs depth testing against existing geometry",
+                    "value" : true,
+                    "defaultValue" : true
                   }
                 },
-                "name" : "Depth Test",
-                "published" : false
+                "portDescription" : "When enabled, performs depth testing against existing geometry",
+                "id" : "E81E772B-3E5D-425E-8374-1A12BEF1ADF7",
+                "kind" : "Inlet",
+                "published" : false,
+                "name" : "Depth Test"
               },
-              "isParameterPort" : true
+              "isParameterPort" : true,
+              "type" : "Bool"
             },
             "name" : "inputDepthTest"
           },
           {
             "payload" : {
               "base" : {
-                "connections" : [
-
-                ],
-                "id" : "542A81F9-152C-4121-9CEB-6E6BA9A12627",
-                "kind" : "Inlet",
+                "id" : "73090551-6BB0-402A-BB8E-7B5AE7F3A50A",
                 "parameter" : {
                   "type" : "string",
                   "base" : {
-                    "controlType" : "dropdown",
+                    "id" : "73090551-6BB0-402A-BB8E-7B5AE7F3A50A",
+                    "label" : "Blending Mode",
                     "defaultValue" : "Disabled",
-                    "id" : "542A81F9-152C-4121-9CEB-6E6BA9A12627",
-                    "value" : "Disabled",
-                    "description" : "",
                     "options" : [
                       "Disabled",
                       "Alpha",
                       "Additive",
                       "Subtractive"
                     ],
-                    "label" : "Blending Mode"
+                    "description" : "Blending mode for combining with background pixels",
+                    "value" : "Disabled",
+                    "controlType" : "dropdown"
                   }
                 },
                 "name" : "Blending Mode",
-                "published" : false
+                "kind" : "Inlet",
+                "published" : false,
+                "portDescription" : "Blending mode for combining with background pixels"
               },
               "isParameterPort" : true,
-              "type" : "String"
+              "type" : "String",
+              "isProxyPort" : false
             },
             "name" : "inputBlending"
           },
           {
             "payload" : {
               "isParameterPort" : false,
+              "isProxyPort" : false,
               "base" : {
-                "connections" : [
-                  "FCCF4730-3EAA-45C5-9224-FE2E92DBC4CC"
-                ],
-                "id" : "7FE7AB87-0A52-4219-9425-16F06C0B5E83",
                 "kind" : "Outlet",
-                "name" : "Material",
-                "published" : false
+                "portDescription" : "The configured material",
+                "id" : "0FD936EA-B451-400C-818F-A73AA995A639",
+                "published" : false,
+                "name" : "Material"
               },
               "type" : "Material"
             },
@@ -2085,343 +1389,188 @@
           }
         ],
         "nodeOffset" : [
-          -429.23232041300162,
-          211.1393241129299
-        ]
+          -511.0838829130016,
+          -205.3763008870701
+        ],
+        "id" : "F98AEA31-509E-4D2C-904B-C72E30DBD360"
       },
-      "type" : "BasicColorMaterialNode"
-    },
-    {
-      "value" : {
-        "id" : "C3A9EAE4-E032-4A64-8F69-2D01BD12BBA7",
-        "ports" : [
-          {
-            "payload" : {
-              "base" : {
-                "connections" : [
-                  "A29EE9FA-59F3-4DD6-8C11-537F6FBB4356"
-                ],
-                "id" : "3731EDFD-E4E2-4483-B384-8A1EC27D0016",
-                "kind" : "Inlet",
-                "name" : "String",
-                "published" : false
-              },
-              "type" : "String",
-              "isParameterPort" : false
-            },
-            "name" : "inputPort"
-          },
-          {
-            "name" : "inputWordWrapCount",
-            "payload" : {
-              "base" : {
-                "connections" : [
-
-                ],
-                "id" : "336641EC-DFE8-4024-BFF1-52393D00223D",
-                "kind" : "Inlet",
-                "parameter" : {
-                  "base" : {
-                    "controlType" : "inputfield",
-                    "defaultValue" : 10,
-                    "min" : 0,
-                    "id" : "336641EC-DFE8-4024-BFF1-52393D00223D",
-                    "label" : "Word Count",
-                    "max" : 1,
-                    "description" : "",
-                    "value" : 7
-                  },
-                  "type" : "int"
-                },
-                "name" : "Word Count",
-                "published" : false
-              },
-              "type" : "Int",
-              "isParameterPort" : true
-            }
-          },
-          {
-            "payload" : {
-              "base" : {
-                "connections" : [
-                  "78C4F8D9-0503-4C2F-AD0C-C09C7028BB60"
-                ],
-                "id" : "756BF89B-8546-43D2-B0A6-B4B665C2AF3A",
-                "kind" : "Outlet",
-                "name" : "String",
-                "published" : false
-              },
-              "type" : "String",
-              "isParameterPort" : false
-            },
-            "name" : "outputPort"
-          }
-        ],
-        "nodeOffset" : [
-          -797.78013982925131,
-          -174.76610467602495
-        ]
-      },
-      "type" : "StringWrapNode"
-    },
-    {
-      "type" : "BaseEffectNode",
-      "value" : {
-        "ports" : [
-          {
-            "payload" : {
-              "isParameterPort" : false,
-              "base" : {
-                "connections" : [
-                  "A697F063-237C-4BF3-BD07-831756F9C7EA"
-                ],
-                "id" : "204E6C01-1B58-4772-924D-5DF62550EBF7",
-                "kind" : "Inlet",
-                "name" : "Image",
-                "published" : false
-              },
-              "type" : "Image"
-            },
-            "name" : "inputTexturePort"
-          },
-          {
-            "payload" : {
-              "type" : "Image",
-              "base" : {
-                "connections" : [
-                  "64864878-1F5C-43BA-B148-655E1E1DAD5B",
-                  "817CC00D-73D8-4AFE-A670-F76C3C76992F"
-                ],
-                "id" : "108F107E-B5FB-47C7-9699-81D6D2B8FECF",
-                "kind" : "Outlet",
-                "name" : "Image",
-                "published" : false
-              },
-              "isParameterPort" : false
-            },
-            "name" : "outputTexturePort"
-          }
-        ],
-        "nodeOffset" : [
-          -1449.7076618965593,
-          -266.23686564940908
-        ],
-        "id" : "9C24DCF7-FD64-4E0B-AB13-46089E083355",
-        "effectPath" : "Effects\/ColorAdjust\/SRGBToLinearRGB.metal"
-      }
+      "type" : "graphics.fabric.CoreNodes\/BasicTextureMaterialNode"
     },
     {
       "value" : {
         "ports" : [
           {
             "payload" : {
-              "isParameterPort" : true,
+              "isProxyPort" : false,
               "base" : {
-                "connections" : [
-
-                ],
-                "id" : "6328D480-3D81-4E87-821F-F3649F8C9045",
-                "kind" : "Inlet",
                 "parameter" : {
                   "type" : "bool",
                   "base" : {
-                    "defaultValue" : true,
-                    "value" : true,
-                    "id" : "6328D480-3D81-4E87-821F-F3649F8C9045",
+                    "id" : "A40942C7-C63D-478B-9779-4EF98CE537F2",
                     "label" : "Visible",
-                    "description" : "",
+                    "description" : "When enabled, the object is rendered in the scene",
+                    "value" : true,
+                    "defaultValue" : true,
                     "controlType" : "button"
                   }
                 },
                 "name" : "Visible",
-                "published" : false
+                "published" : false,
+                "kind" : "Inlet",
+                "portDescription" : "When enabled, the object is rendered in the scene",
+                "id" : "A40942C7-C63D-478B-9779-4EF98CE537F2"
               },
+              "isParameterPort" : true,
               "type" : "Bool"
             },
             "name" : "inputVisible"
           },
           {
             "payload" : {
+              "isParameterPort" : true,
               "type" : "Int",
               "base" : {
-                "connections" : [
-
-                ],
-                "id" : "3594B915-7537-42CF-B342-C25BC67ECE8B",
-                "kind" : "Inlet",
                 "parameter" : {
                   "base" : {
-                    "controlType" : "inputfield",
-                    "defaultValue" : 0,
                     "min" : 0,
-                    "id" : "3594B915-7537-42CF-B342-C25BC67ECE8B",
-                    "value" : 0,
-                    "description" : "",
+                    "controlType" : "inputfield",
                     "max" : 1,
-                    "label" : "Render Order"
+                    "defaultValue" : 0,
+                    "value" : 0,
+                    "description" : "Draw order within the same render pass (lower = earlier)",
+                    "label" : "Render Order",
+                    "id" : "3A193EBC-D36F-4CE5-B8E3-E6CE96914D71"
                   },
                   "type" : "int"
                 },
+                "published" : false,
+                "kind" : "Inlet",
+                "portDescription" : "Draw order within the same render pass (lower = earlier)",
                 "name" : "Render Order",
-                "published" : false
+                "id" : "3A193EBC-D36F-4CE5-B8E3-E6CE96914D71"
               },
-              "isParameterPort" : true
+              "isProxyPort" : false
             },
             "name" : "inputRenderOrder"
           },
           {
-            "name" : "inputRenderPass",
             "payload" : {
-              "type" : "Int",
-              "isParameterPort" : true,
               "base" : {
-                "connections" : [
-
-                ],
-                "id" : "17EA3827-3F84-4BB9-AF9E-08A199024071",
+                "name" : "Position",
+                "id" : "109F0E45-3723-476F-91F7-4E9725FD6D78",
                 "kind" : "Inlet",
+                "published" : false,
                 "parameter" : {
-                  "type" : "int",
+                  "type" : "float3",
                   "base" : {
+                    "description" : "Position in 3D space (X, Y, Z) in world units",
                     "controlType" : "inputfield",
-                    "defaultValue" : 0,
-                    "min" : 0,
-                    "id" : "17EA3827-3F84-4BB9-AF9E-08A199024071",
-                    "value" : 0,
-                    "max" : 1,
-                    "label" : "Render Pass",
-                    "description" : ""
-                  }
-                },
-                "name" : "Render Pass",
-                "published" : false
-              }
-            }
-          },
-          {
-            "payload" : {
-              "type" : "Vector 3",
-              "base" : {
-                "connections" : [
-
-                ],
-                "id" : "EBA2E932-F022-45C0-801E-C8A6B49144A5",
-                "kind" : "Inlet",
-                "parameter" : {
-                  "base" : {
-                    "controlType" : "inputfield",
+                    "value" : [
+                      0,
+                      0,
+                      -0.1
+                    ],
                     "defaultValue" : [
                       0,
                       0,
-                      0
-                    ],
-                    "min" : [
-                      0,
-                      0,
-                      0
-                    ],
-                    "id" : "EBA2E932-F022-45C0-801E-C8A6B49144A5",
-                    "label" : "Position",
-                    "description" : "",
-                    "value" : [
-                      0,
-                      -0.5,
                       0
                     ],
                     "max" : [
                       1,
                       1,
                       1
-                    ]
-                  },
-                  "type" : "float3"
+                    ],
+                    "label" : "Position",
+                    "min" : [
+                      0,
+                      0,
+                      0
+                    ],
+                    "id" : "109F0E45-3723-476F-91F7-4E9725FD6D78"
+                  }
                 },
-                "name" : "Position",
-                "published" : false
+                "portDescription" : "Position in 3D space (X, Y, Z) in world units"
               },
-              "isParameterPort" : true
+              "type" : "Vector 3",
+              "isParameterPort" : true,
+              "isProxyPort" : false
             },
             "name" : "inputPosition"
           },
           {
             "payload" : {
+              "type" : "Vector 3",
+              "isParameterPort" : true,
+              "isProxyPort" : false,
               "base" : {
-                "connections" : [
-
-                ],
-                "id" : "A925C1B6-127C-4CC8-B668-420AE7EFDFC3",
                 "kind" : "Inlet",
+                "portDescription" : "Scale factor along each axis (X, Y, Z)",
                 "parameter" : {
                   "base" : {
-                    "controlType" : "inputfield",
-                    "defaultValue" : [
-                      1,
-                      1,
-                      1
-                    ],
                     "min" : [
                       0,
                       0,
                       0
                     ],
-                    "id" : "A925C1B6-127C-4CC8-B668-420AE7EFDFC3",
+                    "label" : "Scale",
                     "value" : [
-                      0.050000000000000003,
-                      0.050000000000000003,
-                      0.050000000000000003
+                      1,
+                      1,
+                      1
                     ],
                     "max" : [
                       1,
                       1,
                       1
                     ],
-                    "label" : "Scale",
-                    "description" : ""
+                    "id" : "3CD3A26F-EC5A-4160-B6ED-29A07C8E6F1E",
+                    "defaultValue" : [
+                      1,
+                      1,
+                      1
+                    ],
+                    "description" : "Scale factor along each axis (X, Y, Z)",
+                    "controlType" : "inputfield"
                   },
                   "type" : "float3"
                 },
-                "name" : "Scale",
-                "published" : false
-              },
-              "isParameterPort" : true,
-              "type" : "Vector 3"
+                "published" : false,
+                "id" : "3CD3A26F-EC5A-4160-B6ED-29A07C8E6F1E",
+                "name" : "Scale"
+              }
             },
             "name" : "inputScale"
           },
           {
-            "name" : "inputOrientation",
             "payload" : {
-              "type" : "Vector 4",
+              "isProxyPort" : false,
               "isParameterPort" : true,
               "base" : {
-                "connections" : [
-
-                ],
-                "id" : "7A8288A4-9C77-4B8C-868E-5846A61EF315",
                 "kind" : "Inlet",
+                "id" : "AC8252D2-2C78-4101-BDEE-B7586C2BE94D",
                 "parameter" : {
                   "base" : {
                     "controlType" : "inputfield",
-                    "defaultValue" : [
-                      0,
-                      0,
-                      0,
-                      0
-                    ],
                     "min" : [
                       0,
                       0,
                       0,
                       0
                     ],
-                    "id" : "7A8288A4-9C77-4B8C-868E-5846A61EF315",
+                    "description" : "Orientation as quaternion (X, Y, Z, W)",
+                    "id" : "AC8252D2-2C78-4101-BDEE-B7586C2BE94D",
+                    "defaultValue" : [
+                      0,
+                      0,
+                      0,
+                      0
+                    ],
                     "value" : [
                       0,
                       0,
                       0,
                       0
                     ],
-                    "description" : "",
                     "max" : [
                       1,
                       1,
@@ -2433,36 +1582,37 @@
                   "type" : "float4"
                 },
                 "name" : "Orientation",
-                "published" : false
-              }
-            }
+                "published" : false,
+                "portDescription" : "Orientation as quaternion (X, Y, Z, W)"
+              },
+              "type" : "Vector 4"
+            },
+            "name" : "inputOrientation"
           },
           {
             "payload" : {
-              "base" : {
-                "connections" : [
-                  "9C47C32D-E6B9-4808-8AEA-E76D160984E3"
-                ],
-                "id" : "E4A4A825-05F5-41F9-9D55-44B6957A8FD4",
-                "kind" : "Inlet",
-                "name" : "Geometry",
-                "published" : false
-              },
+              "type" : "Geometry",
               "isParameterPort" : false,
-              "type" : "Geometry"
+              "isProxyPort" : false,
+              "base" : {
+                "portDescription" : "Geometry mesh to render",
+                "published" : false,
+                "name" : "Geometry",
+                "kind" : "Inlet",
+                "id" : "3EDE9260-E647-4BDD-B69E-2438ED01AC93"
+              }
             },
             "name" : "inputGeometry"
           },
           {
             "payload" : {
+              "isProxyPort" : false,
               "base" : {
-                "connections" : [
-                  "A471FCF3-6A1C-4923-A686-83D7E2AD25BF"
-                ],
-                "id" : "EE3D91AB-BC18-46BB-88E3-D793E1FD4975",
-                "kind" : "Inlet",
+                "published" : false,
+                "id" : "4FE89661-310A-4AEE-BE09-89CE560FA099",
+                "portDescription" : "Material to apply to the geometry",
                 "name" : "Material",
-                "published" : false
+                "kind" : "Inlet"
               },
               "isParameterPort" : false,
               "type" : "Material"
@@ -2470,157 +1620,996 @@
             "name" : "inputMaterial"
           },
           {
-            "name" : "inputCastsShadow",
             "payload" : {
-              "type" : "Bool",
-              "isParameterPort" : true,
               "base" : {
-                "connections" : [
-
-                ],
-                "id" : "21A218B8-C1D2-4103-A237-9FE551EDBD9E",
+                "portDescription" : "When enabled, the mesh casts and receives shadows",
+                "id" : "99C806B1-BD8C-4139-82CE-324E6A0ADCC2",
+                "published" : false,
                 "kind" : "Inlet",
                 "parameter" : {
+                  "type" : "bool",
                   "base" : {
+                    "controlType" : "button",
                     "defaultValue" : true,
-                    "label" : "Enable Shadows",
                     "value" : true,
-                    "id" : "21A218B8-C1D2-4103-A237-9FE551EDBD9E",
-                    "description" : "",
-                    "controlType" : "button"
-                  },
-                  "type" : "bool"
+                    "label" : "Enable Shadows",
+                    "id" : "99C806B1-BD8C-4139-82CE-324E6A0ADCC2",
+                    "description" : "When enabled, the mesh casts and receives shadows"
+                  }
                 },
-                "name" : "Enable Shadows",
-                "published" : false
-              }
-            }
+                "name" : "Enable Shadows"
+              },
+              "isParameterPort" : true,
+              "type" : "Bool",
+              "isProxyPort" : false
+            },
+            "name" : "inputCastsShadow"
           },
           {
-            "name" : "inputDoubleSided",
             "payload" : {
-              "type" : "Bool",
               "isParameterPort" : true,
+              "isProxyPort" : false,
               "base" : {
-                "connections" : [
-
-                ],
-                "id" : "2838A255-348E-4760-A570-F62A2F7DAE3C",
+                "name" : "Double Sided",
+                "published" : false,
+                "portDescription" : "When enabled, renders both front and back faces",
                 "kind" : "Inlet",
                 "parameter" : {
                   "type" : "bool",
                   "base" : {
                     "defaultValue" : false,
+                    "id" : "1AB53F9E-2989-4B0A-96CF-275C84BDD8B9",
                     "label" : "Double Sided",
-                    "id" : "2838A255-348E-4760-A570-F62A2F7DAE3C",
-                    "value" : false,
                     "controlType" : "button",
-                    "description" : ""
+                    "value" : false,
+                    "description" : "When enabled, renders both front and back faces"
                   }
                 },
-                "name" : "Double Sided",
+                "id" : "1AB53F9E-2989-4B0A-96CF-275C84BDD8B9"
+              },
+              "type" : "Bool"
+            },
+            "name" : "inputDoubleSided"
+          },
+          {
+            "payload" : {
+              "base" : {
+                "name" : "Culling Mode",
+                "parameter" : {
+                  "base" : {
+                    "label" : "Culling Mode",
+                    "defaultValue" : "Back",
+                    "description" : "Which faces to cull during rendering",
+                    "value" : "Back",
+                    "controlType" : "dropdown",
+                    "id" : "67F4892D-3F71-4A62-B631-E9CBBDCC724D",
+                    "options" : [
+                      "Back",
+                      "Front",
+                      "None"
+                    ]
+                  },
+                  "type" : "string"
+                },
+                "published" : false,
+                "portDescription" : "Which faces to cull during rendering",
+                "kind" : "Inlet",
+                "id" : "67F4892D-3F71-4A62-B631-E9CBBDCC724D"
+              },
+              "isParameterPort" : true,
+              "type" : "String",
+              "isProxyPort" : false
+            },
+            "name" : "inputCullingMode"
+          }
+        ],
+        "id" : "EAB1C0C2-51E5-4183-B093-11CB2B5E9E63",
+        "nodeOffset" : [
+          -239.08778916300162,
+          -228.6575508870701
+        ]
+      },
+      "type" : "graphics.fabric.CoreNodes\/MeshNode"
+    },
+    {
+      "value" : {
+        "desiredMaxContextTokens" : 4096,
+        "temperature" : 0.6,
+        "ports" : [
+          {
+            "name" : "inputPrompt",
+            "payload" : {
+              "isProxyPort" : false,
+              "type" : "String",
+              "base" : {
+                "name" : "Prompt",
+                "portDescription" : "Text prompt to send to the model",
+                "parameter" : {
+                  "type" : "string",
+                  "base" : {
+                    "id" : "3B0285CD-DAD2-4E72-B98E-686DBF75E2C4",
+                    "defaultValue" : "Describe this image?",
+                    "options" : [
+
+                    ],
+                    "description" : "Text prompt to send to the model",
+                    "controlType" : "inputfield",
+                    "value" : "Is the person smiling? Answer only \"true\" or \"false\", nothing else!",
+                    "label" : "Prompt"
+                  }
+                },
+                "kind" : "Inlet",
+                "published" : false,
+                "id" : "3B0285CD-DAD2-4E72-B98E-686DBF75E2C4"
+              },
+              "isParameterPort" : true
+            }
+          },
+          {
+            "name" : "inputTexturePort",
+            "payload" : {
+              "type" : "Image",
+              "isParameterPort" : false,
+              "base" : {
+                "id" : "47AF295C-5232-4F41-838B-716A0E099FD5",
+                "kind" : "Inlet",
+                "published" : false,
+                "name" : "Image",
+                "portDescription" : "Image to analyze with the VLM"
+              },
+              "isProxyPort" : false
+            }
+          },
+          {
+            "name" : "inputGenerate",
+            "payload" : {
+              "isProxyPort" : false,
+              "base" : {
+                "portDescription" : "Trigger text generation",
+                "name" : "Generate",
+                "id" : "89FD59FA-95E4-47CE-8D72-C1D73B70F5E5",
+                "published" : false,
+                "kind" : "Inlet",
+                "parameter" : {
+                  "type" : "bool",
+                  "base" : {
+                    "defaultValue" : false,
+                    "value" : false,
+                    "label" : "Generate",
+                    "description" : "Trigger text generation",
+                    "controlType" : "button",
+                    "id" : "89FD59FA-95E4-47CE-8D72-C1D73B70F5E5"
+                  }
+                }
+              },
+              "type" : "Bool",
+              "isParameterPort" : true
+            }
+          },
+          {
+            "name" : "outputPort",
+            "payload" : {
+              "base" : {
+                "name" : "Output",
+                "kind" : "Outlet",
+                "portDescription" : "Generated text response",
+                "id" : "A29EE9FA-59F3-4DD6-8C11-537F6FBB4356",
+                "published" : false
+              },
+              "type" : "String",
+              "isParameterPort" : false,
+              "isProxyPort" : false
+            }
+          },
+          {
+            "name" : "outputStats",
+            "payload" : {
+              "base" : {
+                "kind" : "Outlet",
+                "portDescription" : "Generation statistics",
+                "name" : "Stats",
+                "id" : "4697935C-BF81-4D82-AFFF-DC4C1BB69213",
+                "published" : false
+              },
+              "isProxyPort" : false,
+              "isParameterPort" : false,
+              "type" : "String"
+            }
+          },
+          {
+            "name" : "outputModel",
+            "payload" : {
+              "isParameterPort" : false,
+              "base" : {
+                "id" : "39F9BDC9-C0AD-4A2D-A058-F1D602424BBC",
+                "portDescription" : "Current model information",
+                "name" : "Model Info",
+                "kind" : "Outlet",
+                "published" : false
+              },
+              "isProxyPort" : false,
+              "type" : "String"
+            }
+          }
+        ],
+        "updateIntervalSeconds" : 0.25,
+        "nodeOffset" : [
+          -1020.4137659793332,
+          -125.8052796452157
+        ],
+        "id" : "569386EF-0531-444A-80F1-02451D5EE6FD",
+        "selectedModelID" : "HuggingFaceTB\/SmolVLM2-500M-Video-Instruct-mlx",
+        "systemPromptOverride" : "",
+        "chatModeEnabled" : true
+      },
+      "type" : "graphics.fabric.CoreNodes\/LocalVLMNode"
+    },
+    {
+      "value" : {
+        "ports" : [
+          {
+            "name" : "inputColor",
+            "payload" : {
+              "type" : "Color",
+              "isParameterPort" : true,
+              "base" : {
+                "portDescription" : "Flat color applied to the entire surface (RGBA)",
+                "published" : false,
+                "id" : "FF347075-CC1E-41E1-B803-86084245CFB0",
+                "parameter" : {
+                  "base" : {
+                    "min" : [
+                      0,
+                      0,
+                      0,
+                      0
+                    ],
+                    "label" : "Color",
+                    "description" : "Flat color applied to the entire surface (RGBA)",
+                    "value" : [
+                      1,
+                      1,
+                      1,
+                      1
+                    ],
+                    "defaultValue" : [
+                      1,
+                      1,
+                      1,
+                      1
+                    ],
+                    "max" : [
+                      1,
+                      1,
+                      1,
+                      1
+                    ],
+                    "controlType" : "colorpicker",
+                    "id" : "FF347075-CC1E-41E1-B803-86084245CFB0"
+                  },
+                  "type" : "float4"
+                },
+                "name" : "Color",
+                "kind" : "Inlet"
+              },
+              "isProxyPort" : false
+            }
+          },
+          {
+            "name" : "inputPointSize",
+            "payload" : {
+              "base" : {
+                "published" : false,
+                "id" : "9811666C-F558-46D8-BA62-6331E42E7E61",
+                "kind" : "Inlet",
+                "parameter" : {
+                  "base" : {
+                    "min" : 0.5,
+                    "max" : 64,
+                    "description" : "Point Size",
+                    "value" : 1,
+                    "id" : "9811666C-F558-46D8-BA62-6331E42E7E61",
+                    "label" : "Point Size",
+                    "defaultValue" : 1,
+                    "controlType" : "slider"
+                  },
+                  "type" : "float"
+                },
+                "portDescription" : "Point Size",
+                "name" : "Point Size"
+              },
+              "isParameterPort" : true,
+              "type" : "Float",
+              "isProxyPort" : false
+            }
+          },
+          {
+            "name" : "inputReceivesLighting",
+            "payload" : {
+              "isParameterPort" : true,
+              "type" : "Bool",
+              "isProxyPort" : false,
+              "base" : {
+                "id" : "E4E19CF0-E6DA-4E3E-9383-0866239A7C94",
+                "published" : false,
+                "name" : "Receives Lighting",
+                "portDescription" : "When enabled, the material responds to scene lighting",
+                "parameter" : {
+                  "base" : {
+                    "defaultValue" : true,
+                    "value" : true,
+                    "label" : "Receives Lighting",
+                    "controlType" : "button",
+                    "id" : "E4E19CF0-E6DA-4E3E-9383-0866239A7C94",
+                    "description" : "When enabled, the material responds to scene lighting"
+                  },
+                  "type" : "bool"
+                },
+                "kind" : "Inlet"
+              }
+            }
+          },
+          {
+            "name" : "inputWriteDepth",
+            "payload" : {
+              "type" : "Bool",
+              "isProxyPort" : false,
+              "isParameterPort" : true,
+              "base" : {
+                "published" : false,
+                "id" : "EF189217-42F7-4DC2-9894-9CDEE5B55416",
+                "parameter" : {
+                  "base" : {
+                    "controlType" : "button",
+                    "id" : "EF189217-42F7-4DC2-9894-9CDEE5B55416",
+                    "defaultValue" : true,
+                    "label" : "Write Depth",
+                    "description" : "When enabled, writes depth values to the depth buffer",
+                    "value" : true
+                  },
+                  "type" : "bool"
+                },
+                "name" : "Write Depth",
+                "kind" : "Inlet",
+                "portDescription" : "When enabled, writes depth values to the depth buffer"
+              }
+            }
+          },
+          {
+            "name" : "inputDepthTest",
+            "payload" : {
+              "type" : "Bool",
+              "isProxyPort" : false,
+              "base" : {
+                "name" : "Depth Test",
+                "kind" : "Inlet",
+                "published" : false,
+                "portDescription" : "When enabled, performs depth testing against existing geometry",
+                "parameter" : {
+                  "type" : "bool",
+                  "base" : {
+                    "controlType" : "button",
+                    "id" : "F5B04147-0804-4130-BD1B-D3E4302450F7",
+                    "description" : "When enabled, performs depth testing against existing geometry",
+                    "label" : "Depth Test",
+                    "value" : true,
+                    "defaultValue" : true
+                  }
+                },
+                "id" : "F5B04147-0804-4130-BD1B-D3E4302450F7"
+              },
+              "isParameterPort" : true
+            }
+          },
+          {
+            "name" : "inputBlending",
+            "payload" : {
+              "isParameterPort" : true,
+              "type" : "String",
+              "isProxyPort" : false,
+              "base" : {
+                "kind" : "Inlet",
+                "portDescription" : "Blending mode for combining with background pixels",
+                "parameter" : {
+                  "type" : "string",
+                  "base" : {
+                    "controlType" : "dropdown",
+                    "id" : "542A81F9-152C-4121-9CEB-6E6BA9A12627",
+                    "options" : [
+                      "Disabled",
+                      "Alpha",
+                      "Additive",
+                      "Subtractive"
+                    ],
+                    "label" : "Blending Mode",
+                    "description" : "Blending mode for combining with background pixels",
+                    "value" : "Disabled",
+                    "defaultValue" : "Disabled"
+                  }
+                },
+                "id" : "542A81F9-152C-4121-9CEB-6E6BA9A12627",
+                "name" : "Blending Mode",
                 "published" : false
               }
             }
           },
           {
+            "name" : "outputMaterial",
+            "payload" : {
+              "type" : "Material",
+              "isProxyPort" : false,
+              "isParameterPort" : false,
+              "base" : {
+                "published" : false,
+                "id" : "7FE7AB87-0A52-4219-9425-16F06C0B5E83",
+                "name" : "Material",
+                "kind" : "Outlet",
+                "portDescription" : "The configured material"
+              }
+            }
+          }
+        ],
+        "nodeOffset" : [
+          -429.2323204130016,
+          211.1393241129299
+        ],
+        "id" : "EF092B9D-EBB7-428C-A98F-B136581C8467"
+      },
+      "type" : "graphics.fabric.CoreNodes\/BasicColorMaterialNode"
+    },
+    {
+      "value" : {
+        "id" : "C3A9EAE4-E032-4A64-8F69-2D01BD12BBA7",
+        "nodeOffset" : [
+          -797.7801398292513,
+          -174.76610467602495
+        ],
+        "ports" : [
+          {
             "payload" : {
               "isParameterPort" : true,
               "base" : {
-                "connections" : [
-
-                ],
-                "id" : "BF4D4DC4-9A84-4966-AE10-E01386CFF787",
                 "kind" : "Inlet",
+                "portDescription" : "Input string to wrap",
+                "published" : false,
+                "id" : "3731EDFD-E4E2-4483-B384-8A1EC27D0016",
                 "parameter" : {
-                  "type" : "string",
+                  "base" : {
+                    "label" : "String",
+                    "description" : "Input string to wrap",
+                    "value" : " true",
+                    "options" : [
+
+                    ],
+                    "controlType" : "inputfield",
+                    "defaultValue" : "",
+                    "id" : "3731EDFD-E4E2-4483-B384-8A1EC27D0016"
+                  },
+                  "type" : "string"
+                },
+                "name" : "String"
+              },
+              "type" : "String",
+              "isProxyPort" : false
+            },
+            "name" : "inputPort"
+          },
+          {
+            "payload" : {
+              "isProxyPort" : false,
+              "base" : {
+                "portDescription" : "Wrap criterion: Characters, Words, or Aspect",
+                "published" : false,
+                "id" : "100F665B-2C33-4DFA-9A59-CA1F1FEB27AA",
+                "parameter" : {
                   "base" : {
                     "controlType" : "dropdown",
-                    "defaultValue" : "Back",
-                    "id" : "BF4D4DC4-9A84-4966-AE10-E01386CFF787",
-                    "value" : "Back",
+                    "label" : "Mode",
+                    "options" : [
+                      "Characters",
+                      "Words",
+                      "Aspect"
+                    ],
+                    "id" : "100F665B-2C33-4DFA-9A59-CA1F1FEB27AA",
+                    "description" : "Wrap criterion: Characters, Words, or Aspect",
+                    "value" : "Characters",
+                    "defaultValue" : "Characters"
+                  },
+                  "type" : "string"
+                },
+                "name" : "Mode",
+                "kind" : "Inlet"
+              },
+              "type" : "String",
+              "isParameterPort" : true
+            },
+            "name" : "inputMode"
+          },
+          {
+            "payload" : {
+              "isProxyPort" : false,
+              "isParameterPort" : true,
+              "type" : "Int",
+              "base" : {
+                "kind" : "Inlet",
+                "portDescription" : "Character or word count per line",
+                "name" : "Limit",
+                "parameter" : {
+                  "type" : "int",
+                  "base" : {
+                    "defaultValue" : 40,
+                    "description" : "Character or word count per line",
+                    "controlType" : "inputfield",
+                    "value" : 40,
+                    "id" : "D145FCF8-A6C2-47B8-BF86-BC467CAC8B16",
+                    "label" : "Limit",
+                    "min" : 1,
+                    "max" : 10000
+                  }
+                },
+                "id" : "D145FCF8-A6C2-47B8-BF86-BC467CAC8B16",
+                "published" : false
+              }
+            },
+            "name" : "inputLimit"
+          },
+          {
+            "payload" : {
+              "isParameterPort" : true,
+              "base" : {
+                "published" : false,
+                "portDescription" : "Target aspect ratio (characters across \/ lines down)",
+                "id" : "E1A61C5C-C915-4AE1-8418-42F2D8C268C6",
+                "name" : "Aspect",
+                "kind" : "Inlet",
+                "parameter" : {
+                  "base" : {
+                    "value" : 4,
+                    "min" : 0.01,
+                    "id" : "E1A61C5C-C915-4AE1-8418-42F2D8C268C6",
+                    "defaultValue" : 4,
+                    "label" : "Aspect",
+                    "description" : "Target aspect ratio (characters across \/ lines down)",
+                    "controlType" : "inputfield",
+                    "max" : 100
+                  },
+                  "type" : "float"
+                }
+              },
+              "isProxyPort" : false,
+              "type" : "Float"
+            },
+            "name" : "inputAspect"
+          },
+          {
+            "payload" : {
+              "type" : "String",
+              "base" : {
+                "name" : "String",
+                "portDescription" : "String with newlines inserted at word boundaries",
+                "kind" : "Outlet",
+                "published" : false,
+                "id" : "756BF89B-8546-43D2-B0A6-B4B665C2AF3A"
+              },
+              "isProxyPort" : false,
+              "isParameterPort" : false
+            },
+            "name" : "outputPort"
+          }
+        ]
+      },
+      "type" : "graphics.fabric.CoreNodes\/StringWrapNode"
+    },
+    {
+      "value" : {
+        "id" : "9C24DCF7-FD64-4E0B-AB13-46089E083355",
+        "baseImageNodeVersion" : 1,
+        "effectPath" : "Effects\/ColorAdjust\/SRGBToLinearRGB.metal",
+        "lastKnownInputCount" : 1,
+        "nodeOffset" : [
+          -1449.7076618965593,
+          -266.2368656494091
+        ],
+        "ports" : [
+          {
+            "name" : "Image",
+            "payload" : {
+              "isParameterPort" : false,
+              "isProxyPort" : false,
+              "type" : "Image",
+              "base" : {
+                "published" : false,
+                "kind" : "Inlet",
+                "id" : "204E6C01-1B58-4772-924D-5DF62550EBF7",
+                "portDescription" : "Input image 1",
+                "name" : "Image"
+              }
+            }
+          },
+          {
+            "name" : "outputImage0",
+            "payload" : {
+              "isParameterPort" : false,
+              "isProxyPort" : false,
+              "base" : {
+                "kind" : "Outlet",
+                "published" : false,
+                "portDescription" : "Output image",
+                "name" : "Image",
+                "id" : "108F107E-B5FB-47C7-9699-81D6D2B8FECF"
+              },
+              "type" : "Image"
+            }
+          }
+        ]
+      },
+      "type" : "graphics.fabric.CoreNodes\/BaseImageNode"
+    },
+    {
+      "value" : {
+        "id" : "5D69CF71-3346-4573-BBEF-0C770DD98CFA",
+        "ports" : [
+          {
+            "payload" : {
+              "base" : {
+                "name" : "Visible",
+                "id" : "6328D480-3D81-4E87-821F-F3649F8C9045",
+                "published" : false,
+                "parameter" : {
+                  "base" : {
+                    "id" : "6328D480-3D81-4E87-821F-F3649F8C9045",
+                    "value" : true,
+                    "controlType" : "button",
+                    "description" : "When enabled, the object is rendered in the scene",
+                    "defaultValue" : true,
+                    "label" : "Visible"
+                  },
+                  "type" : "bool"
+                },
+                "kind" : "Inlet",
+                "portDescription" : "When enabled, the object is rendered in the scene"
+              },
+              "isProxyPort" : false,
+              "type" : "Bool",
+              "isParameterPort" : true
+            },
+            "name" : "inputVisible"
+          },
+          {
+            "payload" : {
+              "type" : "Int",
+              "isProxyPort" : false,
+              "isParameterPort" : true,
+              "base" : {
+                "published" : false,
+                "portDescription" : "Draw order within the same render pass (lower = earlier)",
+                "id" : "3594B915-7537-42CF-B342-C25BC67ECE8B",
+                "name" : "Render Order",
+                "kind" : "Inlet",
+                "parameter" : {
+                  "type" : "int",
+                  "base" : {
+                    "min" : 0,
+                    "max" : 1,
+                    "value" : 0,
+                    "controlType" : "inputfield",
+                    "id" : "3594B915-7537-42CF-B342-C25BC67ECE8B",
+                    "defaultValue" : 0,
+                    "description" : "Draw order within the same render pass (lower = earlier)",
+                    "label" : "Render Order"
+                  }
+                }
+              }
+            },
+            "name" : "inputRenderOrder"
+          },
+          {
+            "payload" : {
+              "type" : "Vector 3",
+              "base" : {
+                "parameter" : {
+                  "base" : {
+                    "defaultValue" : [
+                      0,
+                      0,
+                      0
+                    ],
+                    "value" : [
+                      0,
+                      -0.5,
+                      0
+                    ],
+                    "min" : [
+                      0,
+                      0,
+                      0
+                    ],
+                    "controlType" : "inputfield",
+                    "label" : "Position",
+                    "description" : "Position in 3D space (X, Y, Z) in world units",
+                    "id" : "EBA2E932-F022-45C0-801E-C8A6B49144A5",
+                    "max" : [
+                      1,
+                      1,
+                      1
+                    ]
+                  },
+                  "type" : "float3"
+                },
+                "name" : "Position",
+                "kind" : "Inlet",
+                "id" : "EBA2E932-F022-45C0-801E-C8A6B49144A5",
+                "published" : false,
+                "portDescription" : "Position in 3D space (X, Y, Z) in world units"
+              },
+              "isProxyPort" : false,
+              "isParameterPort" : true
+            },
+            "name" : "inputPosition"
+          },
+          {
+            "payload" : {
+              "base" : {
+                "kind" : "Inlet",
+                "parameter" : {
+                  "base" : {
+                    "controlType" : "inputfield",
+                    "id" : "A925C1B6-127C-4CC8-B668-420AE7EFDFC3",
+                    "min" : [
+                      0,
+                      0,
+                      0
+                    ],
+                    "description" : "Scale factor along each axis (X, Y, Z)",
+                    "value" : [
+                      0.05,
+                      0.05,
+                      0.05
+                    ],
+                    "max" : [
+                      1,
+                      1,
+                      1
+                    ],
+                    "defaultValue" : [
+                      1,
+                      1,
+                      1
+                    ],
+                    "label" : "Scale"
+                  },
+                  "type" : "float3"
+                },
+                "published" : false,
+                "portDescription" : "Scale factor along each axis (X, Y, Z)",
+                "name" : "Scale",
+                "id" : "A925C1B6-127C-4CC8-B668-420AE7EFDFC3"
+              },
+              "isParameterPort" : true,
+              "isProxyPort" : false,
+              "type" : "Vector 3"
+            },
+            "name" : "inputScale"
+          },
+          {
+            "payload" : {
+              "type" : "Vector 4",
+              "isParameterPort" : true,
+              "isProxyPort" : false,
+              "base" : {
+                "name" : "Orientation",
+                "kind" : "Inlet",
+                "published" : false,
+                "parameter" : {
+                  "base" : {
+                    "id" : "7A8288A4-9C77-4B8C-868E-5846A61EF315",
+                    "max" : [
+                      1,
+                      1,
+                      1,
+                      1
+                    ],
+                    "description" : "Orientation as quaternion (X, Y, Z, W)",
+                    "value" : [
+                      0,
+                      0,
+                      0,
+                      0
+                    ],
+                    "controlType" : "inputfield",
+                    "min" : [
+                      0,
+                      0,
+                      0,
+                      0
+                    ],
+                    "defaultValue" : [
+                      0,
+                      0,
+                      0,
+                      0
+                    ],
+                    "label" : "Orientation"
+                  },
+                  "type" : "float4"
+                },
+                "portDescription" : "Orientation as quaternion (X, Y, Z, W)",
+                "id" : "7A8288A4-9C77-4B8C-868E-5846A61EF315"
+              }
+            },
+            "name" : "inputOrientation"
+          },
+          {
+            "payload" : {
+              "type" : "Geometry",
+              "isParameterPort" : false,
+              "isProxyPort" : false,
+              "base" : {
+                "id" : "E4A4A825-05F5-41F9-9D55-44B6957A8FD4",
+                "published" : false,
+                "name" : "Geometry",
+                "kind" : "Inlet",
+                "portDescription" : "Geometry mesh to render"
+              }
+            },
+            "name" : "inputGeometry"
+          },
+          {
+            "payload" : {
+              "base" : {
+                "kind" : "Inlet",
+                "portDescription" : "Material to apply to the geometry",
+                "published" : false,
+                "name" : "Material",
+                "id" : "EE3D91AB-BC18-46BB-88E3-D793E1FD4975"
+              },
+              "type" : "Material",
+              "isParameterPort" : false,
+              "isProxyPort" : false
+            },
+            "name" : "inputMaterial"
+          },
+          {
+            "payload" : {
+              "type" : "Bool",
+              "base" : {
+                "kind" : "Inlet",
+                "published" : false,
+                "portDescription" : "When enabled, the mesh casts and receives shadows",
+                "parameter" : {
+                  "base" : {
+                    "defaultValue" : true,
+                    "controlType" : "button",
+                    "description" : "When enabled, the mesh casts and receives shadows",
+                    "id" : "21A218B8-C1D2-4103-A237-9FE551EDBD9E",
+                    "label" : "Enable Shadows",
+                    "value" : true
+                  },
+                  "type" : "bool"
+                },
+                "id" : "21A218B8-C1D2-4103-A237-9FE551EDBD9E",
+                "name" : "Enable Shadows"
+              },
+              "isProxyPort" : false,
+              "isParameterPort" : true
+            },
+            "name" : "inputCastsShadow"
+          },
+          {
+            "payload" : {
+              "base" : {
+                "published" : false,
+                "name" : "Double Sided",
+                "portDescription" : "When enabled, renders both front and back faces",
+                "parameter" : {
+                  "base" : {
+                    "id" : "2838A255-348E-4760-A570-F62A2F7DAE3C",
+                    "label" : "Double Sided",
+                    "defaultValue" : false,
+                    "controlType" : "button",
+                    "value" : false,
+                    "description" : "When enabled, renders both front and back faces"
+                  },
+                  "type" : "bool"
+                },
+                "id" : "2838A255-348E-4760-A570-F62A2F7DAE3C",
+                "kind" : "Inlet"
+              },
+              "isProxyPort" : false,
+              "type" : "Bool",
+              "isParameterPort" : true
+            },
+            "name" : "inputDoubleSided"
+          },
+          {
+            "payload" : {
+              "base" : {
+                "published" : false,
+                "portDescription" : "Which faces to cull during rendering",
+                "parameter" : {
+                  "base" : {
+                    "controlType" : "dropdown",
                     "label" : "Culling Mode",
+                    "id" : "BF4D4DC4-9A84-4966-AE10-E01386CFF787",
+                    "description" : "Which faces to cull during rendering",
+                    "defaultValue" : "Back",
                     "options" : [
                       "Back",
                       "Front",
                       "None"
                     ],
-                    "description" : ""
-                  }
+                    "value" : "Back"
+                  },
+                  "type" : "string"
                 },
                 "name" : "Culling Mode",
-                "published" : false
+                "id" : "BF4D4DC4-9A84-4966-AE10-E01386CFF787",
+                "kind" : "Inlet"
               },
-              "type" : "String"
+              "type" : "String",
+              "isParameterPort" : true,
+              "isProxyPort" : false
             },
             "name" : "inputCullingMode"
           }
         ],
         "nodeOffset" : [
-          -507.23983634458727,
+          -507.2398363445873,
           458.99049423935503
-        ],
-        "id" : "5D69CF71-3346-4573-BBEF-0C770DD98CFA"
+        ]
       },
-      "type" : "MeshNode"
+      "type" : "graphics.fabric.CoreNodes\/MeshNode"
     },
     {
-      "type" : "TesselatedTextGeometryNode",
       "value" : {
         "ports" : [
           {
+            "name" : "inputText",
             "payload" : {
-              "isParameterPort" : true,
               "type" : "String",
               "base" : {
-                "connections" : [
-                  "39F9BDC9-C0AD-4A2D-A058-F1D602424BBC"
-                ],
                 "id" : "5101B3A9-B6D8-4DA3-AD17-6E3EC7D8C7B5",
-                "kind" : "Inlet",
                 "parameter" : {
                   "type" : "string",
                   "base" : {
-                    "controlType" : "inputfield",
-                    "defaultValue" : "Testing",
                     "id" : "5101B3A9-B6D8-4DA3-AD17-6E3EC7D8C7B5",
-                    "value" : "Loaded id(\"HuggingFaceTB\/SmolVLM2-500M-Video-Instruct-mlx\", revision: \"main\"). Weights: 483M",
+                    "controlType" : "inputfield",
                     "label" : "Text",
-                    "description" : "",
                     "options" : [
 
-                    ]
+                    ],
+                    "defaultValue" : "Testing",
+                    "value" : "Loaded HuggingFaceTB\/SmolVLM2-500M-Video-Instruct-mlx. Weights: 483M",
+                    "description" : "The text string to render as 2D geometry"
                   }
                 },
+                "published" : false,
                 "name" : "Text",
-                "published" : false
-              }
-            },
-            "name" : "inputText"
+                "portDescription" : "The text string to render as 2D geometry",
+                "kind" : "Inlet"
+              },
+              "isProxyPort" : false,
+              "isParameterPort" : true
+            }
           },
           {
+            "name" : "inputFont",
             "payload" : {
-              "type" : "String",
               "isParameterPort" : true,
               "base" : {
-                "connections" : [
-
-                ],
-                "id" : "F1DD6E4A-0261-4432-9F6F-8211240A986F",
-                "kind" : "Inlet",
+                "name" : "Font",
                 "parameter" : {
-                  "type" : "string",
                   "base" : {
-                    "controlType" : "dropdown",
-                    "defaultValue" : "Helvetica",
-                    "id" : "F1DD6E4A-0261-4432-9F6F-8211240A986F",
                     "label" : "Font",
-                    "description" : "",
+                    "defaultValue" : "Helvetica",
+                    "value" : "Helvetica",
+                    "controlType" : "dropdown",
                     "options" : [
                       "Academy Engraved LET",
                       "Al Bayan",
                       "Al Nile",
                       "Al Tarikh",
+                      "Alcyone",
                       "American Typewriter",
                       "Andale Mono",
                       "Apple Braille",
@@ -2840,6 +2829,7 @@
                       "Thunder",
                       "Times New Roman",
                       "Titillium Web",
+                      "Toppan Bunkyu Gothic",
                       "Trattatello",
                       "Trebuchet MS",
                       "Verdana",
@@ -2854,96 +2844,122 @@
                       "Zapf Dingbats",
                       "Zapfino"
                     ],
-                    "value" : "Helvetica"
-                  }
+                    "id" : "F1DD6E4A-0261-4432-9F6F-8211240A986F",
+                    "description" : "Font family to use for text rendering"
+                  },
+                  "type" : "string"
                 },
-                "name" : "Font",
-                "published" : false
+                "kind" : "Inlet",
+                "id" : "F1DD6E4A-0261-4432-9F6F-8211240A986F",
+                "published" : false,
+                "portDescription" : "Font family to use for text rendering"
+              },
+              "type" : "String",
+              "isProxyPort" : false
+            }
+          },
+          {
+            "name" : "inputPieceGeneration",
+            "payload" : {
+              "isProxyPort" : false,
+              "type" : "String",
+              "isParameterPort" : true,
+              "base" : {
+                "id" : "2A534C3A-FC10-4FBF-BBAE-1D925DA44F76",
+                "published" : false,
+                "parameter" : {
+                  "base" : {
+                    "options" : [
+                      "None",
+                      "Sentence",
+                      "Word",
+                      "Character"
+                    ],
+                    "id" : "2A534C3A-FC10-4FBF-BBAE-1D925DA44F76",
+                    "description" : "Divides the text into pieces, one per sentence, word or character, for Transform Pieces and Piece Info. None draws the text as one piece",
+                    "defaultValue" : "None",
+                    "value" : "None",
+                    "label" : "Pieces",
+                    "controlType" : "dropdown"
+                  },
+                  "type" : "string"
+                },
+                "name" : "Pieces",
+                "kind" : "Inlet",
+                "portDescription" : "Divides the text into pieces, one per sentence, word or character, for Transform Pieces and Piece Info. None draws the text as one piece"
               }
-            },
-            "name" : "inputFont"
+            }
           },
           {
             "name" : "inputPrimitiveType",
             "payload" : {
-              "type" : "String",
-              "isParameterPort" : true,
+              "isProxyPort" : false,
               "base" : {
-                "connections" : [
-
-                ],
-                "id" : "9CCE0878-0EA9-4EE6-A131-03B3359487BC",
-                "kind" : "Inlet",
+                "name" : "Primitive",
                 "parameter" : {
-                  "type" : "string",
                   "base" : {
-                    "controlType" : "dropdown",
                     "defaultValue" : "Triangle",
-                    "id" : "9CCE0878-0EA9-4EE6-A131-03B3359487BC",
+                    "controlType" : "dropdown",
                     "value" : "Triangle",
+                    "id" : "9CCE0878-0EA9-4EE6-A131-03B3359487BC",
                     "label" : "Primitive",
+                    "description" : "Rendering primitive type for the geometry mesh",
                     "options" : [
                       "Point",
                       "Line",
                       "Line Strip",
                       "Triangle",
                       "Triangle Strip"
-                    ],
-                    "description" : ""
-                  }
+                    ]
+                  },
+                  "type" : "string"
                 },
-                "name" : "Primitive",
-                "published" : false
-              }
+                "kind" : "Inlet",
+                "portDescription" : "Rendering primitive type for the geometry mesh",
+                "published" : false,
+                "id" : "9CCE0878-0EA9-4EE6-A131-03B3359487BC"
+              },
+              "type" : "String",
+              "isParameterPort" : true
             }
           },
           {
+            "name" : "outputGeometry",
             "payload" : {
               "isParameterPort" : false,
               "base" : {
-                "connections" : [
-                  "E4A4A825-05F5-41F9-9D55-44B6957A8FD4"
-                ],
+                "published" : false,
                 "id" : "9C47C32D-E6B9-4808-8AEA-E76D160984E3",
-                "kind" : "Outlet",
                 "name" : "Geometry",
-                "published" : false
+                "kind" : "Outlet",
+                "portDescription" : "The generated geometry mesh"
               },
-              "type" : "Geometry"
-            },
-            "name" : "outputGeometry"
+              "type" : "Geometry",
+              "isProxyPort" : false
+            }
           }
         ],
+        "id" : "F1C16EE6-14AA-46B7-A299-62AFB494DA72",
         "nodeOffset" : [
-          -726.39237532900279,
-          392.29256623480069
-        ],
-        "id" : "F1C16EE6-14AA-46B7-A299-62AFB494DA72"
-      }
+          -726.3923753290028,
+          392.2925662348007
+        ]
+      },
+      "type" : "graphics.fabric.CoreNodes\/TesselatedTextGeometryNode"
     },
     {
-      "type" : "BasicColorMaterialNode",
       "value" : {
         "ports" : [
           {
+            "name" : "inputColor",
             "payload" : {
-              "type" : "Vector 4",
-              "isParameterPort" : true,
               "base" : {
-                "connections" : [
-
-                ],
-                "id" : "9D0234A8-BAFA-428C-B45C-79B07EDE543B",
-                "kind" : "Inlet",
+                "name" : "Color",
+                "published" : false,
                 "parameter" : {
+                  "type" : "float4",
                   "base" : {
-                    "controlType" : "colorpicker",
-                    "defaultValue" : [
-                      1,
-                      1,
-                      1,
-                      1
-                    ],
+                    "description" : "Flat color applied to the entire surface (RGBA)",
                     "min" : [
                       0,
                       0,
@@ -2951,6 +2967,7 @@
                       0
                     ],
                     "id" : "9D0234A8-BAFA-428C-B45C-79B07EDE543B",
+                    "label" : "Color",
                     "value" : [
                       1,
                       1,
@@ -2963,264 +2980,185 @@
                       1,
                       1
                     ],
-                    "description" : "",
-                    "label" : "Color"
-                  },
-                  "type" : "float4"
+                    "controlType" : "colorpicker",
+                    "defaultValue" : [
+                      1,
+                      1,
+                      1,
+                      1
+                    ]
+                  }
                 },
-                "name" : "Color",
-                "published" : false
-              }
-            },
-            "name" : "inputColor"
-          },
-          {
-            "name" : "inputReceivesLighting",
-            "payload" : {
-              "base" : {
-                "connections" : [
-
-                ],
-                "id" : "64010A4D-7EAB-450F-AE14-44548646F66E",
+                "id" : "9D0234A8-BAFA-428C-B45C-79B07EDE543B",
                 "kind" : "Inlet",
-                "parameter" : {
-                  "base" : {
-                    "defaultValue" : true,
-                    "value" : true,
-                    "label" : "Receives Lighting",
-                    "id" : "64010A4D-7EAB-450F-AE14-44548646F66E",
-                    "controlType" : "button",
-                    "description" : ""
-                  },
-                  "type" : "bool"
-                },
-                "name" : "Receives Lighting",
-                "published" : false
+                "portDescription" : "Flat color applied to the entire surface (RGBA)"
               },
-              "type" : "Bool",
+              "type" : "Color",
+              "isProxyPort" : false,
               "isParameterPort" : true
             }
           },
           {
+            "name" : "inputPointSize",
             "payload" : {
-              "type" : "Bool",
-              "isParameterPort" : true,
               "base" : {
-                "connections" : [
-
-                ],
-                "id" : "2A5C8E44-3AD4-4F9E-9128-6CD91722B60D",
+                "id" : "1EE2F28A-373A-4BBD-936B-5B1041D3C80E",
+                "name" : "Point Size",
                 "kind" : "Inlet",
+                "portDescription" : "Point Size",
                 "parameter" : {
-                  "type" : "bool",
                   "base" : {
-                    "defaultValue" : true,
-                    "label" : "Write Depth",
-                    "id" : "2A5C8E44-3AD4-4F9E-9128-6CD91722B60D",
-                    "value" : true,
-                    "controlType" : "button",
-                    "description" : ""
-                  }
+                    "description" : "Point Size",
+                    "label" : "Point Size",
+                    "id" : "1EE2F28A-373A-4BBD-936B-5B1041D3C80E",
+                    "value" : 1,
+                    "defaultValue" : 1,
+                    "min" : 0.5,
+                    "controlType" : "slider",
+                    "max" : 64
+                  },
+                  "type" : "float"
                 },
-                "name" : "Write Depth",
                 "published" : false
-              }
-            },
-            "name" : "inputWriteDepth"
+              },
+              "isParameterPort" : true,
+              "type" : "Float",
+              "isProxyPort" : false
+            }
           },
           {
+            "name" : "inputReceivesLighting",
             "payload" : {
-              "isParameterPort" : true,
               "type" : "Bool",
+              "isProxyPort" : false,
+              "isParameterPort" : true,
               "base" : {
-                "connections" : [
-
-                ],
-                "id" : "D2F619D0-D5AC-4D0F-912C-E2274E9387A2",
-                "kind" : "Inlet",
+                "id" : "64010A4D-7EAB-450F-AE14-44548646F66E",
                 "parameter" : {
                   "base" : {
-                    "defaultValue" : true,
-                    "id" : "D2F619D0-D5AC-4D0F-912C-E2274E9387A2",
-                    "label" : "Depth Test",
                     "value" : true,
+                    "label" : "Receives Lighting",
+                    "description" : "When enabled, the material responds to scene lighting",
+                    "id" : "64010A4D-7EAB-450F-AE14-44548646F66E",
                     "controlType" : "button",
-                    "description" : ""
+                    "defaultValue" : true
                   },
                   "type" : "bool"
                 },
-                "name" : "Depth Test",
-                "published" : false
+                "published" : false,
+                "kind" : "Inlet",
+                "portDescription" : "When enabled, the material responds to scene lighting",
+                "name" : "Receives Lighting"
               }
-            },
-            "name" : "inputDepthTest"
+            }
+          },
+          {
+            "name" : "inputWriteDepth",
+            "payload" : {
+              "isParameterPort" : true,
+              "isProxyPort" : false,
+              "base" : {
+                "portDescription" : "When enabled, writes depth values to the depth buffer",
+                "parameter" : {
+                  "base" : {
+                    "value" : true,
+                    "controlType" : "button",
+                    "label" : "Write Depth",
+                    "defaultValue" : true,
+                    "id" : "2A5C8E44-3AD4-4F9E-9128-6CD91722B60D",
+                    "description" : "When enabled, writes depth values to the depth buffer"
+                  },
+                  "type" : "bool"
+                },
+                "id" : "2A5C8E44-3AD4-4F9E-9128-6CD91722B60D",
+                "name" : "Write Depth",
+                "published" : false,
+                "kind" : "Inlet"
+              },
+              "type" : "Bool"
+            }
+          },
+          {
+            "name" : "inputDepthTest",
+            "payload" : {
+              "type" : "Bool",
+              "base" : {
+                "parameter" : {
+                  "type" : "bool",
+                  "base" : {
+                    "label" : "Depth Test",
+                    "defaultValue" : true,
+                    "value" : true,
+                    "description" : "When enabled, performs depth testing against existing geometry",
+                    "id" : "D2F619D0-D5AC-4D0F-912C-E2274E9387A2",
+                    "controlType" : "button"
+                  }
+                },
+                "id" : "D2F619D0-D5AC-4D0F-912C-E2274E9387A2",
+                "published" : false,
+                "portDescription" : "When enabled, performs depth testing against existing geometry",
+                "name" : "Depth Test",
+                "kind" : "Inlet"
+              },
+              "isProxyPort" : false,
+              "isParameterPort" : true
+            }
           },
           {
             "name" : "inputBlending",
             "payload" : {
-              "isParameterPort" : true,
-              "type" : "String",
+              "isProxyPort" : false,
               "base" : {
-                "connections" : [
-
-                ],
+                "portDescription" : "Blending mode for combining with background pixels",
                 "id" : "ECA15D38-27B8-48C3-AE8F-F554098A24EB",
                 "kind" : "Inlet",
                 "parameter" : {
+                  "type" : "string",
                   "base" : {
-                    "controlType" : "dropdown",
-                    "defaultValue" : "Disabled",
-                    "id" : "ECA15D38-27B8-48C3-AE8F-F554098A24EB",
                     "label" : "Blending Mode",
-                    "value" : "Disabled",
+                    "id" : "ECA15D38-27B8-48C3-AE8F-F554098A24EB",
+                    "controlType" : "dropdown",
                     "options" : [
                       "Disabled",
                       "Alpha",
                       "Additive",
                       "Subtractive"
                     ],
-                    "description" : ""
-                  },
-                  "type" : "string"
+                    "description" : "Blending mode for combining with background pixels",
+                    "value" : "Disabled",
+                    "defaultValue" : "Disabled"
+                  }
                 },
-                "name" : "Blending Mode",
-                "published" : false
-              }
+                "published" : false,
+                "name" : "Blending Mode"
+              },
+              "isParameterPort" : true,
+              "type" : "String"
             }
           },
           {
+            "name" : "outputMaterial",
             "payload" : {
-              "isParameterPort" : false,
-              "type" : "Material",
               "base" : {
-                "connections" : [
-                  "EE3D91AB-BC18-46BB-88E3-D793E1FD4975"
-                ],
-                "id" : "A471FCF3-6A1C-4923-A686-83D7E2AD25BF",
-                "kind" : "Outlet",
+                "published" : false,
                 "name" : "Material",
-                "published" : false
-              }
-            },
-            "name" : "outputMaterial"
+                "portDescription" : "The configured material",
+                "id" : "A471FCF3-6A1C-4923-A686-83D7E2AD25BF",
+                "kind" : "Outlet"
+              },
+              "isProxyPort" : false,
+              "type" : "Material",
+              "isParameterPort" : false
+            }
           }
         ],
+        "id" : "05B12330-AE2B-4710-84B1-D360DF2A3F1D",
         "nodeOffset" : [
           -735.2581317379063,
-          576.42604627324545
-        ],
-        "id" : "05B12330-AE2B-4710-84B1-D360DF2A3F1D"
-      }
+          576.4260462732454
+        ]
+      },
+      "type" : "graphics.fabric.CoreNodes\/BasicColorMaterialNode"
     }
-  ],
-  "id" : "1D8BD95B-B724-4028-A124-D3C17908094A",
-  "portConnectionMap" : [
-    "3731EDFD-E4E2-4483-B384-8A1EC27D0016",
-    [
-      "A29EE9FA-59F3-4DD6-8C11-537F6FBB4356"
-    ],
-    "756BF89B-8546-43D2-B0A6-B4B665C2AF3A",
-    [
-      "78C4F8D9-0503-4C2F-AD0C-C09C7028BB60"
-    ],
-    "9C47C32D-E6B9-4808-8AEA-E76D160984E3",
-    [
-      "E4A4A825-05F5-41F9-9D55-44B6957A8FD4"
-    ],
-    "4FE89661-310A-4AEE-BE09-89CE560FA099",
-    [
-      "0FD936EA-B451-400C-818F-A73AA995A639"
-    ],
-    "B00F07C7-1297-4108-A577-359302668017",
-    [
-      "17316D5D-46CE-47B5-8C62-4BDB9A9549D9"
-    ],
-    "67106D6E-5F37-4425-BB35-F08CCE57910F",
-    [
-      "3EDE9260-E647-4BDD-B69E-2438ED01AC93"
-    ],
-    "A29EE9FA-59F3-4DD6-8C11-537F6FBB4356",
-    [
-      "3731EDFD-E4E2-4483-B384-8A1EC27D0016"
-    ],
-    "204E6C01-1B58-4772-924D-5DF62550EBF7",
-    [
-      "A697F063-237C-4BF3-BD07-831756F9C7EA"
-    ],
-    "4697935C-BF81-4D82-AFFF-DC4C1BB69213",
-    [
-      "C5073747-5169-4EEA-BF49-45C2C9C3FB7A"
-    ],
-    "78C4F8D9-0503-4C2F-AD0C-C09C7028BB60",
-    [
-      "756BF89B-8546-43D2-B0A6-B4B665C2AF3A"
-    ],
-    "FCCF4730-3EAA-45C5-9224-FE2E92DBC4CC",
-    [
-      "7FE7AB87-0A52-4219-9425-16F06C0B5E83"
-    ],
-    "A471FCF3-6A1C-4923-A686-83D7E2AD25BF",
-    [
-      "EE3D91AB-BC18-46BB-88E3-D793E1FD4975"
-    ],
-    "5101B3A9-B6D8-4DA3-AD17-6E3EC7D8C7B5",
-    [
-      "39F9BDC9-C0AD-4A2D-A058-F1D602424BBC"
-    ],
-    "39F9BDC9-C0AD-4A2D-A058-F1D602424BBC",
-    [
-      "5101B3A9-B6D8-4DA3-AD17-6E3EC7D8C7B5",
-      "23801F94-F0B5-4EAC-B874-6644EBC2B09A"
-    ],
-    "108F107E-B5FB-47C7-9699-81D6D2B8FECF",
-    [
-      "64864878-1F5C-43BA-B148-655E1E1DAD5B",
-      "817CC00D-73D8-4AFE-A670-F76C3C76992F"
-    ],
-    "6C99CD0A-6AD1-4D09-B130-FDD1A54D023A",
-    [
-      "8684C8BD-E884-409C-AB3B-70C06AFB5053"
-    ],
-    "47AF295C-5232-4F41-838B-716A0E099FD5",
-    [
-      "8684C8BD-E884-409C-AB3B-70C06AFB5053"
-    ],
-    "3EDE9260-E647-4BDD-B69E-2438ED01AC93",
-    [
-      "67106D6E-5F37-4425-BB35-F08CCE57910F"
-    ],
-    "817CC00D-73D8-4AFE-A670-F76C3C76992F",
-    [
-      "108F107E-B5FB-47C7-9699-81D6D2B8FECF"
-    ],
-    "E4A4A825-05F5-41F9-9D55-44B6957A8FD4",
-    [
-      "9C47C32D-E6B9-4808-8AEA-E76D160984E3"
-    ],
-    "8684C8BD-E884-409C-AB3B-70C06AFB5053",
-    [
-      "6C99CD0A-6AD1-4D09-B130-FDD1A54D023A",
-      "47AF295C-5232-4F41-838B-716A0E099FD5"
-    ],
-    "0FD936EA-B451-400C-818F-A73AA995A639",
-    [
-      "4FE89661-310A-4AEE-BE09-89CE560FA099"
-    ],
-    "A697F063-237C-4BF3-BD07-831756F9C7EA",
-    [
-      "204E6C01-1B58-4772-924D-5DF62550EBF7"
-    ],
-    "EE3D91AB-BC18-46BB-88E3-D793E1FD4975",
-    [
-      "A471FCF3-6A1C-4923-A686-83D7E2AD25BF"
-    ],
-    "17316D5D-46CE-47B5-8C62-4BDB9A9549D9",
-    [
-      "B00F07C7-1297-4108-A577-359302668017"
-    ],
-    "7FE7AB87-0A52-4219-9425-16F06C0B5E83",
-    [
-      "FCCF4730-3EAA-45C5-9224-FE2E92DBC4CC"
-    ]
   ]
 }

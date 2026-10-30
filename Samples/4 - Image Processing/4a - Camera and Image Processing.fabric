@@ -64,34 +64,6 @@
             }
           },
           {
-            "name" : "inputRenderPass",
-            "payload" : {
-              "type" : "Int",
-              "isParameterPort" : true,
-              "isProxyPort" : false,
-              "base" : {
-                "id" : "985EB6A2-D074-48F9-92FB-2130380EB585",
-                "parameter" : {
-                  "base" : {
-                    "value" : 0,
-                    "min" : 0,
-                    "label" : "Render Pass",
-                    "max" : 1,
-                    "id" : "985EB6A2-D074-48F9-92FB-2130380EB585",
-                    "defaultValue" : 0,
-                    "description" : "Render pass index for multi-pass rendering",
-                    "controlType" : "inputfield"
-                  },
-                  "type" : "int"
-                },
-                "name" : "Render Pass",
-                "published" : false,
-                "kind" : "Inlet",
-                "portDescription" : "Render pass index for multi-pass rendering"
-              }
-            }
-          },
-          {
             "name" : "inputPosition",
             "payload" : {
               "isParameterPort" : true,

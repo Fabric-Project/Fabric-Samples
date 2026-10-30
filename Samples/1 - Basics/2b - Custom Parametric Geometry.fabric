@@ -1198,37 +1198,6 @@
             }
           },
           {
-            "name" : "inputRenderPass",
-            "payload" : {
-              "base" : {
-                "id" : "67E6D828-844C-4D27-BD35-46CCF66C6720",
-                "name" : "Render Pass",
-                "published" : false,
-                "parameter" : {
-                  "base" : {
-                    "max" : 1,
-                    "description" : "Render pass index for multi-pass rendering",
-                    "value" : 0,
-                    "id" : "67E6D828-844C-4D27-BD35-46CCF66C6720",
-                    "min" : 0,
-                    "controlType" : "inputfield",
-                    "defaultValue" : 0,
-                    "label" : "Render Pass"
-                  },
-                  "type" : "int"
-                },
-                "kind" : "Inlet",
-                "connections" : [
-
-                ],
-                "portDescription" : "Render pass index for multi-pass rendering"
-              },
-              "type" : "Int",
-              "isProxyPort" : false,
-              "isParameterPort" : true
-            }
-          },
-          {
             "name" : "inputPosition",
             "payload" : {
               "isProxyPort" : false,
@@ -1793,37 +1762,6 @@
           },
           {
             "payload" : {
-              "type" : "Int",
-              "isProxyPort" : false,
-              "base" : {
-                "id" : "D5C557E7-096E-4BEC-9D6E-9DDA3F2B0226",
-                "connections" : [
-
-                ],
-                "parameter" : {
-                  "type" : "int",
-                  "base" : {
-                    "id" : "D5C557E7-096E-4BEC-9D6E-9DDA3F2B0226",
-                    "max" : 1,
-                    "label" : "Render Pass",
-                    "description" : "Render pass index for multi-pass rendering",
-                    "defaultValue" : 0,
-                    "value" : 0,
-                    "min" : 0,
-                    "controlType" : "inputfield"
-                  }
-                },
-                "portDescription" : "Render pass index for multi-pass rendering",
-                "published" : false,
-                "name" : "Render Pass",
-                "kind" : "Inlet"
-              },
-              "isParameterPort" : true
-            },
-            "name" : "inputRenderPass"
-          },
-          {
-            "payload" : {
               "type" : "Vector 3",
               "isParameterPort" : true,
               "base" : {
@@ -1977,53 +1915,6 @@
         "id" : "50BA8C12-8E2E-4981-A03F-D9303E4A1284",
         "ports" : [
           {
-            "name" : "inputLookAt",
-            "payload" : {
-              "base" : {
-                "portDescription" : "Target position the camera points toward",
-                "parameter" : {
-                  "type" : "float3",
-                  "base" : {
-                    "max" : [
-                      1,
-                      1,
-                      1
-                    ],
-                    "controlType" : "inputfield",
-                    "description" : "Target position the camera points toward",
-                    "min" : [
-                      0,
-                      0,
-                      0
-                    ],
-                    "defaultValue" : [
-                      0,
-                      0,
-                      0
-                    ],
-                    "id" : "A66D9FDB-860C-4BB4-BF30-58EBE308D95F",
-                    "value" : [
-                      0,
-                      0,
-                      0
-                    ],
-                    "label" : "Look At"
-                  }
-                },
-                "name" : "Look At",
-                "id" : "A66D9FDB-860C-4BB4-BF30-58EBE308D95F",
-                "connections" : [
-
-                ],
-                "kind" : "Inlet",
-                "published" : false
-              },
-              "type" : "Vector 3",
-              "isProxyPort" : false,
-              "isParameterPort" : true
-            }
-          },
-          {
             "name" : "inputVisible",
             "payload" : {
               "base" : {
@@ -2080,37 +1971,6 @@
                 ],
                 "published" : false,
                 "kind" : "Inlet"
-              }
-            }
-          },
-          {
-            "name" : "inputRenderPass",
-            "payload" : {
-              "isParameterPort" : true,
-              "type" : "Int",
-              "isProxyPort" : false,
-              "base" : {
-                "id" : "19FDAEC0-7C49-4DE9-9423-C53F79213695",
-                "connections" : [
-
-                ],
-                "portDescription" : "Render pass index for multi-pass rendering",
-                "name" : "Render Pass",
-                "kind" : "Inlet",
-                "parameter" : {
-                  "type" : "int",
-                  "base" : {
-                    "id" : "19FDAEC0-7C49-4DE9-9423-C53F79213695",
-                    "label" : "Render Pass",
-                    "defaultValue" : 0,
-                    "max" : 1,
-                    "controlType" : "inputfield",
-                    "value" : 0,
-                    "description" : "Render pass index for multi-pass rendering",
-                    "min" : 0
-                  }
-                },
-                "published" : false
               }
             }
           },
